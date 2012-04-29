@@ -1,0 +1,21 @@
+<%= form_for(@misconception) do |f| %>
+  <% if @misconception.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@misconception.errors.count, "error") %> prohibited this misconception from being saved:</h2>
+
+      <ul>
+      <% @misconception.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :statement %><br />
+    <%= f.text_field :statement %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+<h1>Listing misconceptions</h1>
+
+<table>
+  <tr>
+    <th>Statement</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @misconceptions.each do |misconception| %>
+  <tr>
+    <td><%= misconception.statement %></td>
+    <td><%= link_to 'Show', misconception %></td>
+    <td><%= link_to 'Edit', edit_misconception_path(misconception) %></td>
+    <td><%= link_to 'Destroy', misconception, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Misconception', new_misconception_path %>

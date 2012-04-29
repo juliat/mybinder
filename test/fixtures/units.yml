@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  course_id: 
+  name: MyString
+  start_date: 2012-04-29
+  weeks: 
+
+two:
+  course_id: 
+  name: MyString
+  start_date: 2012-04-29
+  weeks: 

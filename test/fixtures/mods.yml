@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  days: 1
+  unit_id: 1
+
+two:
+  days: 1
+  unit_id: 1
