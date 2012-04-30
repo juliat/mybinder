@@ -12,7 +12,7 @@
 <% @mods.each do |mod| %>
   <tr>
     <td><%= mod.days %></td>
-    <td><%= mod.unit_id %></td>
+    <td><%= mod.unit.name %></td>
     <td><%= link_to 'Show', mod %></td>
     <td><%= link_to 'Edit', edit_mod_path(mod) %></td>
     <td><%= link_to 'Destroy', mod, confirm: 'Are you sure?', method: :delete %></td>

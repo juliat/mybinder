@@ -5,7 +5,7 @@
     <th>Course</th>
     <th>Name</th>
     <th>Start date</th>
-    <th>Weeks</th>
+    <th>Days</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +13,10 @@
 
 <% @units.each do |unit| %>
   <tr>
-    <td><%= unit.course_id %></td>
+    <td><%= unit.course.name %></td>
     <td><%= unit.name %></td>
     <td><%= unit.start_date %></td>
-    <td><%= unit.weeks %></td>
+    <td><%= unit.days %></td>
     <td><%= link_to 'Show', unit %></td>
     <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
     <td><%= link_to 'Destroy', unit, confirm: 'Are you sure?', method: :delete %></td>

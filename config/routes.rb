@@ -1,4 +1,10 @@
 Mybinder::Application.routes.draw do
+  
+  resources :courses
+  resources :units
+  resources :mods
+  resources :topics
+  resources :goals
   resources :activities
 
   # The priority is based upon order of creation:

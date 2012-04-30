@@ -1,33 +1,7 @@
-<%= form_for(@unit) do |f| %>
-  <% if @unit.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@unit.errors.count, "error") %> prohibited this unit from being saved:</h2>
-
-      <ul>
-      <% @unit.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :course_id %><br />
-    <%= f.text_field :course_id %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :start_date %><br />
-    <%= f.date_select :start_date %>
-  </div>
-  <div class="field">
-    <%= f.label :weeks %><br />
-    <%= f.text_field :weeks %>
-  </div>
-  <div class="actions">
+<%= simple_form_for(@unit) do |f| %>
+    <%= f.association :course %>
+    <%= f.input :name %>
+    <%= f.input :start_date, :order => [:month, :day, :year] %>
+    <%= f.input :days %>
     <%= f.submit %>
-  </div>
 <% end %>
