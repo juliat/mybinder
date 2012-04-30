@@ -4,7 +4,8 @@ class CreateUnits < ActiveRecord::Migration
       t.integer :course_id
       t.string :name
       t.date :start_date
-      t.integer :weeks
+      t.integer :days
+      t.text :notes
 
       t.timestamps
     end

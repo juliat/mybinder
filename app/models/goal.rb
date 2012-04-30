@@ -1,10 +1,15 @@
 class Goal < ActiveRecord::Base
-  attr_accessible :goal_type, :statement, :topic_id
-  
-  # Relationships
-  belongs_to :topic
-  
-  # Constants
-  GOAL_TYPES_LIST = [['Content Expectation', 'ce'],['Performance Expectation', 'pe']]
-  
+    attr_accessible :goal_type_id, :statement, :topic_id
+
+    # Validations
+    # =================================================================================
+    validates_presence_of :statement
+    
+    
+    # Relationships
+    # =================================================================================
+    belongs_to :topic
+    # has a type id
+
+
 end
