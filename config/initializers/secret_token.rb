@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Mybinder::Application.config.secret_token = 'e45f38f4f0d44576ec3695a3419e5a00b7810fff5391a0be1748b6dd1d06bdb73b604414a427e75aedf2a1f6781f14eee2e3d7d84420d9769905168a26a61520'
+Mybinder::Application.config.secret_token = '787721db70b0bb1d7b5e12b827d0355aa33e20975bf1537170b4867b845a41a612e35788fb07b3f0a413a135e4f2fbc3b8a085e001d11c6ab3d7750f16ea2b02'

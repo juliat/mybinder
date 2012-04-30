@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rationale: MyText
+  prior_knowledge: MyText
+  topic_id: 1
+
+two:
+  rationale: MyText
+  prior_knowledge: MyText
+  topic_id: 1
