@@ -1,15 +1,27 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = @goal.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
 
 <p>
-  <b>Statement:</b>
+  <strong><%= model_class.human_attribute_name(:statement) %>:</strong><br>
   <%= @goal.statement %>
 </p>
-
 <p>
-  <b>Goal type:</b>
+  <strong><%= model_class.human_attribute_name(:goal_type_id) %>:</strong><br>
   <%= @goal.goal_type_id %>
 </p>
+<p>
+  <strong><%= model_class.human_attribute_name(:topic_id) %>:</strong><br>
+  <%= @goal.topic_id %>
+</p>
 
-
-<%= link_to 'Edit', edit_goal_path(@goal) %> |
-<%= link_to 'Back', goals_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              goals_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_goal_path(@goal), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              goal_path(@goal),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>

@@ -1,5 +1,5 @@
 class Course < ActiveRecord::Base
-    attr_accessible :description, :name
+    attr_accessible :description, :name, :notes
 
     # Validations
     # =================================================================================

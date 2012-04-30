@@ -1,25 +1,35 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = @unit.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
 
 <p>
-  <b>Course:</b>
-  <%= @unit.course.name %>
+  <strong><%= model_class.human_attribute_name(:course_id) %>:</strong><br>
+  <%= @unit.course_id %>
 </p>
-
 <p>
-  <b>Name:</b>
+  <strong><%= model_class.human_attribute_name(:name) %>:</strong><br>
   <%= @unit.name %>
 </p>
-
 <p>
-  <b>Start date:</b>
+  <strong><%= model_class.human_attribute_name(:start_date) %>:</strong><br>
   <%= @unit.start_date %>
 </p>
-
 <p>
-  <b>Days:</b>
+  <strong><%= model_class.human_attribute_name(:days) %>:</strong><br>
   <%= @unit.days %>
 </p>
+<p>
+  <strong><%= model_class.human_attribute_name(:notes) %>:</strong><br>
+  <%= @unit.notes %>
+</p>
 
-
-<%= link_to 'Edit', edit_unit_path(@unit) %> |
-<%= link_to 'Back', units_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              units_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_unit_path(@unit), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              unit_path(@unit),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>

@@ -1,15 +1,23 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = @mod.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
 
 <p>
-  <b>Days:</b>
+  <strong><%= model_class.human_attribute_name(:days) %>:</strong><br>
   <%= @mod.days %>
 </p>
-
 <p>
-  <b>Unit:</b>
-  <%= @mod.unit.name %>
+  <strong><%= model_class.human_attribute_name(:unit_id) %>:</strong><br>
+  <%= @mod.unit_id %>
 </p>
 
-
-<%= link_to 'Edit', edit_mod_path(@mod) %> |
-<%= link_to 'Back', mods_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              mods_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_mod_path(@mod), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              mod_path(@mod),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>
