@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @units.each do |unit| %>
+      <tr>
+        <td><%= link_to(unit.name, unit_path(unit)) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

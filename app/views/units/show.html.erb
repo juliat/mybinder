@@ -1,17 +1,9 @@
 <%- model_class = @unit.class -%>
-<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+<h1><%= link_to(@unit.course.name, course_path(@unit.course)) %> > <%=t '.title', :default => @unit.name %></h1>
 
 <p>
-  <strong><%= model_class.human_attribute_name(:course_id) %>:</strong><br>
-  <%= @unit.course_id %>
-</p>
-<p>
-  <strong><%= model_class.human_attribute_name(:name) %>:</strong><br>
-  <%= @unit.name %>
-</p>
-<p>
   <strong><%= model_class.human_attribute_name(:start_date) %>:</strong><br>
-  <%= @unit.start_date %>
+  <%= humanize_date(@unit.start_date) %>
 </p>
 <p>
   <strong><%= model_class.human_attribute_name(:days) %>:</strong><br>
@@ -22,6 +14,15 @@
   <%= @unit.notes %>
 </p>
 
+<!-- accordion -->
+<%= render :partial => "unit_things" %>
+
+<!-- modules -->
+<% for mod in @mods %>
+    <%= render :partial => 'module_box', :locals => {:mod => mod} %>
+<% end %>
+
+<!--
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
               units_path, :class => 'btn'  %>
@@ -33,3 +34,4 @@
               :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
               :class => 'btn btn-danger' %>
 </div>
+-->

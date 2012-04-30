@@ -7,7 +7,7 @@ Mybinder::Application.routes.draw do
   resources :goals
   resources :activities
   
-  root :to => 'courses#1'
+  root :to => 'courses#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

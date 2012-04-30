@@ -12,5 +12,8 @@ class Mod < ActiveRecord::Base
     has_many :goals, :through =>  :topics
     has_many :activities, :through => :topics
     # has_many :misconceptions
-  
+    
+    # Scopes
+    # =================================================================================
+    scope :for_unit, lambda {|unit_id| where("unit_id = ?", unit_id) }
 end

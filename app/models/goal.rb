@@ -11,5 +11,8 @@ class Goal < ActiveRecord::Base
     belongs_to :topic
     # has a type id
 
+    # Scopes
+    # =================================================================================
+    scope :for_topic, lambda {|topic_id| where("topic_id = ?", topic_id) }
 
 end

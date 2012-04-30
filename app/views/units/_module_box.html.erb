@@ -1,0 +1,11 @@
+<div class="module_box">
+	<h2>Module <%= mod.id %></h2>
+	<div class="topics">
+		<h3>Topics</h3>
+		<ul>
+			<% for topic in mod.topics %>
+				<li><%= link_to(topic.name, topic_path(topic)) %></li>
+			<% end %>
+		</ul>
+	</div>
+</div>

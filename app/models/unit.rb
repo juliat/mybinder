@@ -22,4 +22,7 @@ class Unit < ActiveRecord::Base
     has_many :topics, :through => :mods
     has_many :goals, :through => :topics
   
+    # Scopes
+    # =================================================================================
+    scope :for_course, lambda {|course_id| where("course_id = ?", course_id) }
 end
