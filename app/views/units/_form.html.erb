@@ -1,5 +1,5 @@
 <%= simple_form_for @unit, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :course_id %>
+  <%= f.association :course, :prompt => "Select a course" %>
   <%= f.input :name %>
   <%= f.input :start_date %>
   <%= f.input :days %>

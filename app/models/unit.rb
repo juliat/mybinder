@@ -10,7 +10,7 @@ class Unit < ActiveRecord::Base
     # =================================================================================
     validates_presence_of :name, :start_date, :days
 
-    attr_accessible :course_id, :name, :start_date, :days
+    attr_accessible :course_id, :name, :start_date, :days, :notes
 
 
     # Relationships

@@ -1,5 +1,5 @@
 <%= simple_form_for @topic, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :mod_id %>
+  <%= f.association :mod, :label => "Module", :label_method => lambda{|mod| mod.id} %>
   <%= f.input :name %>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>

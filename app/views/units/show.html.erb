@@ -17,9 +17,12 @@
 <!-- accordion -->
 <%= render :partial => "unit_things" %>
 
-<!-- modules -->
-<% for mod in @mods %>
-    <%= render :partial => 'module_box', :locals => {:mod => mod} %>
+
+<% unless @mods.empty? %>
+    <!-- modules -->
+    <% for mod in @mods %>
+        <%= render :partial => 'module_box', :locals => {:mod => mod} %>
+    <% end %>
 <% end %>
 
 <!--

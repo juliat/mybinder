@@ -1,5 +1,6 @@
 <div class="module_box">
 	<h2>Module <%= mod.id %></h2>
+	<% unless mod.topics.nil? %>
 	<div class="topics">
 		<h3>Topics</h3>
 		<ul>
@@ -8,4 +9,7 @@
 			<% end %>
 		</ul>
 	</div>
+	<% else %>
+	<p>This module doesn't have any associated topics yet. <%= link_to("Click here to add one", new_mod_path) %></p>
+	<% end %>
 </div>
