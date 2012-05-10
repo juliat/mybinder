@@ -79,5 +79,5 @@ class GoalsController < ApplicationController
       format.html { redirect_to goals_url }
       format.json { head :no_content }
     end
-  end
+  end 
 end
