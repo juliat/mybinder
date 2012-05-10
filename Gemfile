@@ -8,6 +8,8 @@ gem 'rails', '3.2.3'
 gem 'simple_form'
 gem 'pg'
 gem 'chronic'
+gem 'devise'
+
 
 group :development do
     gem 'hirb'
