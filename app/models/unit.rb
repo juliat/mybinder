@@ -8,7 +8,7 @@ class Unit < ActiveRecord::Base
 
     # Validations
     # =================================================================================
-    validates_presence_of :name, :start_date, :days
+    # validates_presence_of :name, :start_date, :days
 
     attr_accessible :course_id, :number, :name, :start_date, :days, :notes
 
@@ -30,16 +30,5 @@ class Unit < ActiveRecord::Base
     
     # Methods
     # ==================================================================================
-    def readfile
-        file = File.open("public/data/curric/physics_unit_1.txt", "r")
-        file.each do |line|
-            if self.number.nil?
-                u_indx = line.index("Unit")
-                stop = line.index(":")
-                u_num = line.slice(uindx + 4, stop)
-                self.number = u_num
-                puts u_num
-            end
-        end
-    end
+   
 end

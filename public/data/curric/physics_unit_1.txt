@@ -1,4 +1,4 @@
-Unit 1: one dimensional motion – 22 days – Sept 1 through Oct 4
+Unit 1: one dimensional motion # 22 days # Sept 1 through Oct 4
 * Module 1 (10 days)
 o Holt pp 1-47
 o Hewitt pp 1-50
@@ -38,7 +38,7 @@ Using Numbers to Describe Reality
 2. Know the SI units for measuring time (seconds, minutes, hours)
 3. Know the SI units for measuring distance and describing position
 4. Know some of the basic conversion factors within the SI system and between the SI system and the English system
-5. Recognize rates as an amount over time in multiple contexts – distance covered/time, water flow/time, money earned/time, and so on.
+5. Recognize rates as an amount over time in multiple contexts # distance covered/time, water flow/time, money earned/time, and so on.
 6. Convert units from one to another, given a conversion factor
 7. Express numbers in scientific notation
 8. Use numbers written in scientific notation in calculations
@@ -50,7 +50,7 @@ Distance and Displacement
 13. Measure time accurately in SI units
 Motion: Speed and Velocity
 14. Know that an observer perceives an object as moving if it changes location with respect to him/her and therefore motion is perceived differently by different observers
-15. Define speed as a particular rate – the rate at which position changes
+15. Define speed as a particular rate # the rate at which position changes
 16. Measure the speed of an object, using appropriate tools
 17. Use the definition of average speed to calculate speed, distance covered or elapsed time
 
@@ -185,12 +185,12 @@ Computational problems
 Differentiation for PSP
 * Holt p.71 #37, 40
 
-Unit 1 – Module 1
+Unit 1 # Module 1
 
 Measuring walking speed (Berated activity)
 
 RATIONALE
-At the beginning of a physics course, the most important idea to communicate is that we will be modeling physical situations using numbers and mathematical relationships in order to be able to make predictions about the future.  Students will need to practice imagining the physical situations described, ascribing numbers to physical quantities and relying on algebra and common sense to make predictions.  Nominally, this lab is to develop the student’s ability to measure their own walking speed, but its placement in the course confers on it other responsibilities, as well – the teacher can use this experience to get to know students (the material is not overly difficult), show that the activity objective dictates the actions in the lab, and to work with students individually to assess mathematical capabilities, reactions to challenges, and attention to detail.  The data is very easy to gather, which means that there is enough time to allow students to make mistakes early on in the lab, discover their errors as they process the data, and then go back and fix their problems before the end of the class period.  Most importantly, because students already know what “faster” and “slower” mean, this activity can be used to demonstrate the way in which the mathematics of the situation mirror reality at a very obvious and intuitive level.  
+At the beginning of a physics course, the most important idea to communicate is that we will be modeling physical situations using numbers and mathematical relationships in order to be able to make predictions about the future.  Students will need to practice imagining the physical situations described, ascribing numbers to physical quantities and relying on algebra and common sense to make predictions.  Nominally, this lab is to develop the student’s ability to measure their own walking speed, but its placement in the course confers on it other responsibilities, as well # the teacher can use this experience to get to know students (the material is not overly difficult), show that the activity objective dictates the actions in the lab, and to work with students individually to assess mathematical capabilities, reactions to challenges, and attention to detail.  The data is very easy to gather, which means that there is enough time to allow students to make mistakes early on in the lab, discover their errors as they process the data, and then go back and fix their problems before the end of the class period.  Most importantly, because students already know what “faster” and “slower” mean, this activity can be used to demonstrate the way in which the mathematics of the situation mirror reality at a very obvious and intuitive level.  
 
 The lab sheet provided should be carefully scrutinized by the teacher and modified to suit the level and number of students participating in the activity.  Some teachers may decide that a blank data table needs to be provided for the students, or that there should be more structure for the students to describe their data gathering process, or that the additional questions need to be more complex or subtle.  As with all instructional materials, those modifications should be made at the discretion of the teacher based on his or her judgment.
 
@@ -207,8 +207,8 @@ PRIOR KNOWLEDGE AND SKILLS
 
 CE’s AND PE’s
 
-5. Recognize rates as an amount over time in multiple contexts – distance covered/time, water flow/time, money earned/time, and so on.
-* speed is a type of rate – one where the quantity involved is distance, or change in position
+5. Recognize rates as an amount over time in multiple contexts # distance covered/time, water flow/time, money earned/time, and so on.
+* speed is a type of rate # one where the quantity involved is distance, or change in position
 * a rate is a ratio between quantities, so the magnitudes of the 2 quantities involved may be very different, yet yield the same rate
 * a full description of motion requires direction as part of the vector quantities of displacement and velocity
 * constant speed is the ratio of equal distances over equal times which results in a linear equation typically written as distance as a function of time, the slope of which is the constant speed (constant velocity requires the additional qualification of in the same direction)
@@ -221,7 +221,7 @@ CE’s AND PE’s
 13. Measure time accurately in SI units
 * a change in time can be measured with simple tools like a clock, stopwatch, or metronome
 * how to use a stopwatch to make time measurements in SI units
-15. Define speed as a particular rate – the rate at which position changes
+15. Define speed as a particular rate # the rate at which position changes
 16. Measure the speed of an object, using appropriate tools
 17. Use the definition of average speed to calculate speed, distance covered or elapsed time
 
@@ -246,9 +246,9 @@ FOR EACH STUDENT
 -pen/pencil
 
 TIMELINE (about 40 minutes)
-5-10 minutes – lecture to relate rate to speed, outline objectives for the activity
-3-5 minutes – get into groups/gather materials/find appropriate locations to gather data
-25-30 minutes – data gathering and processing
+5-10 minutes # lecture to relate rate to speed, outline objectives for the activity
+3-5 minutes # get into groups/gather materials/find appropriate locations to gather data
+25-30 minutes # data gathering and processing
 	-lay out measured distance (optional)
 	-perform walking trials
 	-gather time (or distance) data
@@ -314,7 +314,7 @@ Use the personal walking data to calculate some relevant facts:
 -if it takes ________ to walk home, how far away do you live?
 -How long would it take to walk to New York
 
-Unit 1 – Module 1
+Unit 1 # Module 1
 
 A constant speed activity which leads to graphing motion data
 
@@ -330,7 +330,7 @@ CE’s AND PE’s
 
 11. Measure distance accurately in SI units
 13. Measure time accurately in SI units
-15. Define speed as a particular rate – the rate at which position changes
+15. Define speed as a particular rate # the rate at which position changes
 a. For an unambiguous description of motion there needs to be
 i. An object for reference
 ii. A coordinate axes that are tied to the object of reference above
@@ -343,7 +343,7 @@ PHYSICS CONVENTIONS
 
       
 
-Unit 1 – Module 2
+Unit 1 # Module 2
 
 Interpreting motion graphs activity (Walk the Line Activity)
 
@@ -352,7 +352,7 @@ Students should be able to look at a x(t) graph and visualize the motion indicat
 
 The activity is presented here as something for the entire class to view as a whole.  The expectation is that the teacher selects students according to their abilities and personalities so that every student will be at once challenged and successful as they interpret the graphs.  Incorrect interpretations are often more instructive than successful attempts, so the teacher must remain aware of teaching moments as they arise from the class’ comments and the participating students actions.
 
-As an activity that is “performed” in front of the class, there are numerous pedagogical facets that a teacher should be aware of, beyond the basic physics.  Many students are reluctant to do anything in front of peers, particularly when there is the possibility of being wrong or of looking silly or ignorant.  The teacher should make sure that the challenge level of the task is appropriate to the level of the student – slightly trickier than they think they can solve, but comprehensible once they have made a few attempts.
+As an activity that is “performed” in front of the class, there are numerous pedagogical facets that a teacher should be aware of, beyond the basic physics.  Many students are reluctant to do anything in front of peers, particularly when there is the possibility of being wrong or of looking silly or ignorant.  The teacher should make sure that the challenge level of the task is appropriate to the level of the student # slightly trickier than they think they can solve, but comprehensible once they have made a few attempts.
 
 PRIOR KNOWLEDGE AND SKILLS
 * how to make position vs. time graphs for objects moving at a constant velocity, based on data tables
@@ -393,8 +393,8 @@ Space for students to see the screen/board as well as space to walk and run in a
 
 
 TIMELINE (about 35 minutes)
-2-3 minutes – lecture, recalling the fact that the movement of an object can be captured in a variety of ways, including graphs of an object’s position as time goes on.
-20-30 minutes – individual students called to replicate the motion represented by various graphs.  As the complexity of the graphs increases, different aspects of x(t) graphs become significant.
+2-3 minutes # lecture, recalling the fact that the movement of an object can be captured in a variety of ways, including graphs of an object’s position as time goes on.
+20-30 minutes # individual students called to replicate the motion represented by various graphs.  As the complexity of the graphs increases, different aspects of x(t) graphs become significant.
 
 • The teacher should show the set of axis, (the first powerpoint slide, if LCD is available) and point out that it is identical to the axis used when making graphs of position and time for the ticker-timer activity (or equivalent graphing experience).  If no LCD is available, then a crude set of axis can be made on the chalkboard with 2 pieces of masking tape.  This will allow rapid erasing of past graphs, and the quick introduction of new graphs while encouraging students to imagine that there is no scale change from one graph to the next.  The x-axis should be placed at mid-height on the board, to give space for action in the negative region of the graph and the axis should be clearly labeled.
 • Display the first graph (graph A) and ask a student to come to the front of the room and recreate the motion indicated by the graph.  The slides have letter titles so that the teacher can keep track of what graphs will be upcoming and call an appropriate student for the challenge.
@@ -411,7 +411,7 @@ Because the graph shows what happens at various instances in time, the graph is 
 Graph DStart at a location in the positive space, then move at a constant walking speed in the positive directionwalk into the positive region and then continue in the positive directionPossible teacher responses:
 Can point out the need for students to indicate when t=0 is taking place.  Although there is no graph in the negative TIME region, it does not mean that the object did not exist, it simply indicates that we, as physics students, are not interested in the object during that time.  It will be increasingly important for students to recognize WHEN mathematical or graphical modeling begins or ends in order to use the models accurately and effectively.  It may be useful for students to say “start” and “end” when they are recreating the graphs.Graph EStand in the positive regionmovePossible teacher responses:
 Read the graph at specific points in time to locate the object and note that the location does not change as time goes on.  There is a strong inclination to say that whenever the graph is “straight” then the object is standing still.  Point out that ALL of the graphs we have looked at so far are straight, the difference is that this one is straight and HORIZONTAL.Graph FStudent should start at the origin and move into the negative regionWalk into the positive region, backwardsPossible teacher responses:
-In most cases, the rest of the class will point out the correct motion, and the active student will then recreate the graph by walking backwards from the origin, which is correct.  There may be some students who recognize that the way the object is facing is not relevant, in which case they should demonstrate to the class another way to recreate the graph – by walking forwards into the negative region of space.Graph GStart in negative, walk/run quickly in negative directionPossible teacher responses:
+In most cases, the rest of the class will point out the correct motion, and the active student will then recreate the graph by walking backwards from the origin, which is correct.  There may be some students who recognize that the way the object is facing is not relevant, in which case they should demonstrate to the class another way to recreate the graph # by walking forwards into the negative region of space.Graph GStart in negative, walk/run quickly in negative directionPossible teacher responses:
 Students by now have managed to catch on and this graph merely puts together many of the aspects of x(t) graph discussed previously.  If desired, other graphs with similar variations (linear, uniform motion) can be created to re-enforce concepts so that all students can participate.Graph HStudent should walk/run away from the origin, then return past the originContinue moving in the positive direction, merely changing their speedPossible teacher responses:
 Point out that more complex motions can be represented on the same graph, although there are difficulties.  What is the slope of the graph?  Where all previous examples showed a single slope and therefore a single speed, this one is not uniform, though it is linear in certain parts.  Simple questions like “how far will you go in 3 seconds?” become more difficult because we are no longer analyzing a single, straight line.  It will become increasingly important that students recognize when to break up complex motion into simpler pieces for numerical analysis.
 Graph IStart in positive region, move into negative, pause, then run into positive regionPossible teacher responses:
@@ -431,7 +431,7 @@ As much as possible, point out that many of the graph analysis tools acquired in
 
 
 
-Unit 2 – Module 2
+Unit 2 # Module 2
 
 An accelerated motion activity which leads to graphing motion data
 
