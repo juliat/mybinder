@@ -7,5 +7,4 @@ class Course < ActiveRecord::Base
 
     # Relationships
     has_many :units
-
 end

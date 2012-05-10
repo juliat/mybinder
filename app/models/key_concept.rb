@@ -1,14 +1,13 @@
-class Activity < ActiveRecord::Base
+class KeyConcept < ActiveRecord::Base
+    attr_accessible :number, :statement
     
-    attr_accessible :name, :prior_knowledge, :rationale, :topic_id
-   
     # Validations
     # =================================================================================
-    validates_presence_of :name, :rationale
-    
-    
+    validates_presence_of :statement
+
+
     # Relationships
     # =================================================================================
-    belongs_to :topic
-  
+    belongs_to :unit
+
 end

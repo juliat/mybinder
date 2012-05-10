@@ -4,11 +4,13 @@ class Goal < ActiveRecord::Base
     # Validations
     # =================================================================================
     validates_presence_of :statement
-    
-    
+
+
     # Relationships
     # =================================================================================
     belongs_to :topic
+    belongs_to :goal_type
+    has_many :standard_goal_mappings
     # has a type id
 
     # Scopes

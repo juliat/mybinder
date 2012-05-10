@@ -1,14 +1,13 @@
-class Activity < ActiveRecord::Base
+class GoalType < ActiveRecord::Base
+    attr_accessible :description, :name
     
-    attr_accessible :name, :prior_knowledge, :rationale, :topic_id
-   
     # Validations
     # =================================================================================
-    validates_presence_of :name, :rationale
+    validates_presence_of :name
     
     
     # Relationships
     # =================================================================================
-    belongs_to :topic
-  
+    has_many :goals
+    
 end

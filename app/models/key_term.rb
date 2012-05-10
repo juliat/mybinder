@@ -1,14 +1,13 @@
-class Activity < ActiveRecord::Base
-    
-    attr_accessible :name, :prior_knowledge, :rationale, :topic_id
+class KeyTerm < ActiveRecord::Base
    
+    attr_accessible :term, :unit_id
     # Validations
     # =================================================================================
-    validates_presence_of :name, :rationale
-    
-    
+    validates_presence_of :term
+
+
     # Relationships
     # =================================================================================
-    belongs_to :topic
-  
+    belongs_to :unit
+
 end

@@ -5,6 +5,8 @@ class Topic < ActiveRecord::Base
     # ==============================================================================
     belongs_to :mod
     has_many :goals
+    has_many :standard_goal_mappings, :through => :goals
+    has_many :standards, :through => :standard_goal_mappings
     has_many :misconceptions
     # has_many standards
     has_many :activities

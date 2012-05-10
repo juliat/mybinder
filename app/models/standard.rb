@@ -1,14 +1,15 @@
-class Activity < ActiveRecord::Base
-    
-    attr_accessible :name, :prior_knowledge, :rationale, :topic_id
+class Standard < ActiveRecord::Base
    
+    attr_accessible :author_org_id, :author_org_code, :statement
+
     # Validations
     # =================================================================================
-    validates_presence_of :name, :rationale
-    
-    
+    validates_presence_of :statement
+
+
     # Relationships
     # =================================================================================
-    belongs_to :topic
-  
+    has_many :standard_goal_mappings
+    belongs_to :author_org
+    
 end
