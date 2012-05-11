@@ -1,12 +1,39 @@
-<%= simple_form_for @unit, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.association :course, :prompt => "Select a course" %>
-  <%= f.input :name %>
-  <%= f.input :start_date %>
-  <%= f.input :days %>
-  <%= f.input :notes %>
-  <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                units_path, :class => 'btn' %>
-  </div>
+<%= simple_nested_form_for @unit, :html => { :class => 'form' } do |unit_form| %>
+<div>
+
+    <fieldset>               
+        <%= render :partial => 'unit_fields', :locals => {:f => unit_form} %>
+    </fieldset>
+        
+
+    <div id="unit_key_concepts" class="well">
+        <legend>Key Concepts</legend>
+        <%= unit_form.simple_fields_for :key_concepts do |key_concept_form| %>
+            <%= render :partial => 'key_concept_fields', :locals => {:f => key_concept_form} %>
+        <% end %> 
+        <p>
+            <br />
+            <%= unit_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add key concept"), :key_concepts, :class => 'btn btn-mini btn-primary') %>
+        </p>
+    </div> 
+    
+    <div id="unit_key_terms" class="well">
+        <legend>Key Terms</legend>
+        <%= unit_form.simple_fields_for :key_terms do |key_term_form| %>
+            <%= key_term_form.input :term, :label => false %>
+        <% end %> 
+        <p>
+            <br />
+            <%= unit_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add key term"), :key_terms, :class => 'btn btn-mini btn-primary') %>
+        </p>
+    </div> 
+    
+    
+
+    <div class="form-actions">
+      <%= unit_form.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', units_path, :class => 'btn' %>
+    </div>
+</div>
 <% end %>
+

@@ -1,28 +1,33 @@
-<%= nested_form_for @activity, :html=>{:multipart => true } do |f| %>
-  <%# f.error_messages %>
-  <p>
-  <%= f.label :name %><br />
-  <%= f.text_field :name %>
-  </p>
-  <p>
-  <%= f.label :rationale %><br />
-  <%= f.text_area :rationale %>
-  </p>
-  
-  <%= f.fields_for :documents do |document_form|  %>
-  <div class="well">
-    <p>
-    <%= document_form.label :file %><br />
-    <%= document_form.file_field :file %>
-    </p>
-    <p>
-    <%= document_form.label :description %><br />
-    <%= document_form.text_area :description %>
-    </p>
-    <%= document_form.link_to_remove "Remove this document" %>
-  </div>
-  <% end %>
+<%= simple_nested_form_for @activity, :html => { :class => 'form-horizontal' } do |activity_form| %>
+<div>
 
-  <%= f.link_to_add "Add document", :documents %>
-  <p><%= f.submit %></p>
- <% end %>
+    <fieldset>
+        <legend><%= controller.action_name.capitalize %> Activities</legend>
+                
+        <%= render :partial => 'activity_fields', :locals => {:f => activity_form} %>
+
+    </fieldset>
+        
+
+    <div id="activities_documents">
+        
+        <%= activity_form.simple_fields_for :documents do |document_form| %>
+            
+        <!-- partial for documents field -->
+        <%= render :partial => 'document_fields', :locals => {:f => document_form} %>
+            
+        <% end %> 
+        <p>
+            <br />
+            <%= activity_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add document"), :documents, :class => 'btn btn-mini btn-primary') %>
+        </p>
+        
+    </div> 
+
+    <div class="form-actions">
+      <%= activity_form.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', activities_path, :class => 'btn' %>
+    </div>
+</div>
+<% end %>
+

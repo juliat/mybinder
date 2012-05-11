@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<p>
+  <b>Topic:</b>
+  <%= @activity.topic_id %>
+</p>
+
 
 <p>
   <b>Rationale:</b>
@@ -11,8 +15,13 @@
 </p>
 
 <p>
-  <b>Topic:</b>
-  <%= @activity.topic_id %>
+  <b>Documents:</b>
+  <ul>
+    <% @activity.documents.each do |doc|  %>
+        <li><%= doc.description %></li>
+        <li><%= link_to "Download", "#{doc.file}" %> </li>
+    <% end %>
+  </ul>  
 </p>
 
 

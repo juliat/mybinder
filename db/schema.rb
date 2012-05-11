@@ -36,8 +36,10 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
   end
 
   create_table "documents", :force => true do |t|
+    t.string   "name"
     t.text     "description"
     t.string   "file"
+    t.integer  "user_id"
     t.integer  "documentable_id"
     t.string   "documentable_type"
     t.datetime "created_at",        :null => false

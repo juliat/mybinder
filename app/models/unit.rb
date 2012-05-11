@@ -10,7 +10,8 @@ class Unit < ActiveRecord::Base
     # =================================================================================
     # validates_presence_of :name, :start_date, :days
 
-    attr_accessible :course_id, :number, :name, :start_date, :days, :notes
+    attr_accessible :course_id, :number, :name, :start_date, :days, :notes,
+                    :key_concepts_attributes, :key_terms_attributes
 
 
     # Relationships
@@ -21,6 +22,13 @@ class Unit < ActiveRecord::Base
     has_many :mods
     has_many :topics, :through => :mods
     has_many :goals, :through => :topics
+    # has_many :standards
+    # has_many :misconceptions
+    
+    # accepts_nested_attributes_for :standards, :allow_destroy => true
+    accepts_nested_attributes_for :key_concepts, :allow_destroy => true
+    accepts_nested_attributes_for :key_terms, :allow_destroy => true
+    # accepts_nested_attributes_for :misconceptions, :allow_destroy => true
   
     # Scopes
     # =================================================================================

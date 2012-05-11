@@ -1,0 +1,5 @@
+  <%= f.association :course, :prompt => "Select a course" %>
+  <%= f.input :name %>
+  <%= f.input :start_date, :order => [:month, :day, :year], :input_html => { :class => 'span1' } %>
+  <%= f.input :days, :as => "string" %>
+  <%= f.input :notes %>
