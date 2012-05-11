@@ -13,24 +13,23 @@ class Ability
                      AuthorOrg, Goals, GoalType, Misconceptions, 
                      KeyConcept, KeyTerm, StandardGoalMapping,
                      Activity]
-       can [:show, :update, :destroy] User do |a_user|
+       can [:show, :update, :destroy], User do |a_user|
             user.id == a_user.id
        end
        
     elsif
         user.role == "teacher"
         can :read, [Course, Unit, Topic, Module]
-        can [:read, :create, :update] Activity
+        can [:read, :create, :update], Activity
         
-        can [:show, :update, :destroy] User do |a_user|
+        can [:show, :update, :destroy], User do |a_user|
             user.id == a_user.id
         end
-        can [:show, :update] Teacher do |teacher|
+        can [:show, :update], Teacher do |teacher|
             user.id == teacher.user_id
         end
-    end
     else
-       can :show Course
+       can :show, Course
     end
 
 

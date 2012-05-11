@@ -1,4 +1,9 @@
 class ModsController < ApplicationController
+  
+  before_filter :authenticate_user!
+  load_and_authorize_resource
+
+
   # GET /mods
   # GET /mods.json
   def index

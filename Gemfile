@@ -15,6 +15,8 @@ gem 'pg'
 
 gem 'chronic'
 
+gem 'carrierwave', '>= 0.5.3'
+
 
 group :development do
     gem 'hirb'
