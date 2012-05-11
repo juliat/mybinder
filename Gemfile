@@ -6,16 +6,35 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'simple_form'
-gem 'pg'
-gem 'chronic'
+# use latest github copy of nested_form so that it's compatible with simple_form
+gem "nested_form", :git => 'git://github.com/ryanb/nested_form.git'
+gem 'cancan'
 gem 'devise'
+
+gem 'pg'
+
+gem 'chronic'
 
 
 group :development do
     gem 'hirb'
 end
 
-
+# Gems used only in testing
+group :test do
+    gem 'shoulda'
+    gem 'shoulda-matchers'
+    gem 'factory_girl_rails'
+    gem 'mocha'
+    gem 'cucumber-rails', :require => false
+    gem 'capybara'
+    gem 'database_cleaner'
+    gem 'launchy'
+    gem 'email_spec'
+    gem 'nokogiri'
+    gem 'simplecov'
+    gem 'tconsole', '1.1.1'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
