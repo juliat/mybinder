@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     
     # Validations (beyond devise's)
     # =================================================================================
-    validates_inclusion_of :role, :in => %w[admin, teacher, contributor], :message => "is not an option"
+    validates_inclusion_of :role, :in => %w[admin teacher contributor], :message => "is not an option"
     
     
     # Relationships
