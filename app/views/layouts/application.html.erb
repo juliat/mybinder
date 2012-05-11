@@ -22,6 +22,11 @@
             <li><%= link_to "Modules", mods_path %></li>
             <li><%= link_to "Topics", topics_path %></li>
             <li><%= link_to "Goals", goals_path %></li>
+            <% if user_signed_in? %>
+                <li><%= link_to("Logout", destroy_user_session_path, :method => :delete) %></li>
+            <% else %>
+                <li><%# link_to "Sign up", new_user_registration_path %><%= link_to "Sign in", new_user_session_path %></li>
+            <% end %>
           </ul>
         </div>
       </div>

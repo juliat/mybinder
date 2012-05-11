@@ -1,5 +1,7 @@
 Mybinder::Application.routes.draw do
   
+  devise_for :users
+
   resources :courses
   resources :units
   resources :mods

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120430183716) do
+ActiveRecord::Schema.define(:version => 20120511000114) do
 
   create_table "activities", :force => true do |t|
     t.string   "name"
@@ -22,7 +22,20 @@ ActiveRecord::Schema.define(:version => 20120430183716) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "author_orgs", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "courses", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "goal_types", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.datetime "created_at",  :null => false
@@ -37,6 +50,21 @@ ActiveRecord::Schema.define(:version => 20120430183716) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "key_concepts", :force => true do |t|
+    t.integer  "unit_id"
+    t.integer  "number"
+    t.string   "statement"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "key_terms", :force => true do |t|
+    t.integer  "unit_id"
+    t.string   "term"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "misconceptions", :force => true do |t|
     t.string   "statement"
     t.integer  "topic_id"
@@ -49,6 +77,21 @@ ActiveRecord::Schema.define(:version => 20120430183716) do
     t.integer  "unit_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "standard_goal_mappings", :force => true do |t|
+    t.integer  "standard_id"
+    t.integer  "goal_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "standards", :force => true do |t|
+    t.string   "author_org_id"
+    t.string   "author_org_code"
+    t.string   "statement"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "topics", :force => true do |t|
@@ -68,5 +111,23 @@ ActiveRecord::Schema.define(:version => 20120430183716) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
