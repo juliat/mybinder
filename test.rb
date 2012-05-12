@@ -28,7 +28,7 @@ end
 
 #~ File.open("#{Rails.root}/public/data/curric/course_descr.txt") do |f|
   
-file = File.new("./public/data/curric/physics_unit_1.txt", "r")
+file = File.new("./public/data/curric/physics_unit_2.txt", "r")
 
 inUnitMeta = true # always true initially b/c always the first line
 
@@ -38,7 +38,7 @@ inModuleName = false
 moduleNotesRegex = /o (Holt|Hewitt) pp \d{1,2}-\d{1,2}/
 inModuleNotes =false
 
-unitNotesRegex = /^Note:(\w)?$/
+unitNotesRegex = /Note:/
 inUnitNotes = false
 
 eligibleContentRegex = /^Eligible Content:(\s)?$/
@@ -51,10 +51,10 @@ inKeyConcepts = false
 goalsRegex = /Content Expectations and Performance Expectations/
 inGoals = false
 
-moduleTitleRegex = /^Module (?<module_num>\d)$/
+moduleTitleRegex = /^(\s)?Module (?<module_num>\d)$/
 current_mod = ""
 
-topicRegex = /^[A-Z][\w\s]{1,}$/
+topicRegex = /^(\s{1,})?[A-Z][\w\s]{1,}$/
 inTopic = false
 
 olRegex = /^(?<number>\d{1,2}). (?<statement>[\w\s,\(\)\.\-\/#\+]{1,})$/
@@ -64,6 +64,7 @@ inPSPGoals = false
 
 keyTermsRegex = /Key Terms/
 inKeyTerms = false
+inPSPterms = false
 
 keyTermRegex = /^\* (?<term>[\w\s]{1,})$/
 
@@ -81,6 +82,8 @@ problem_type = ""
 thresholdProblemRegex =/\* (Holt|Hewitt) (pp|p\.)[#\d\s,-]{1,}(\w)?/
 
 thresholdModuleRegex = /^Module (?<mod_num>\d)(\s)?$/
+
+whitespaceRegex = /^[\s]{1,}$/
 
 unit = {}
 # will have number, name, start date, end date, and days
@@ -101,7 +104,7 @@ misconceptions = []
 threshold_problems = []
 
 file.each_line do |line|
-	if line != "" && line != "\n"&& line != "\r"
+	unless whitespaceRegex.match(line)
 		if inUnitMeta
 			# parse unit metadata and save to unit hash
 			unit = parseUnitData(line)
@@ -150,10 +153,10 @@ file.each_line do |line|
 			inSummary = false
 			inThresholdProblems = true
 		
-		elsif inGoals && moduleTitleRegex.match(line)
+		elsif moduleTitleRegex.match(line)
 			current_mod = moduleTitleRegex.match(line)["module_num"]
 		
-		elsif inGoals && topicRegex.match(line)
+		elsif inGoals && topicRegex.match(line) && thresholdModuleRegex.match(line).nil?
 			if pspRegex.match(line).nil?
 				inPSPGoals = false
 				inTopic = true
@@ -167,7 +170,7 @@ file.each_line do |line|
 			end
 			
 		elsif current_mod != "" && moduleNotesRegex.match(line)
-			modules[current_mod]["notes"] << line
+			modules[current_mod]["notes"] << line[2..line.size].strip
 			
 		elsif inUnitNotes
 			unit["notes"] << line[2..line.size].strip
@@ -188,16 +191,24 @@ file.each_line do |line|
 				goal["PSP"] = false
 			end
 			goals << goal
-			
+		
+		elsif inKeyTerms && pspRegex.match(line)
+			inPSPterms = true
+		
 		elsif inKeyTerms && keyTermRegex.match(line)
 			term = createMatchDataHash(keyTermRegex.match(line))
-			key_terms << term["term"]
+			if inPSPterms
+				term["PSP"] = true
+			else
+				term["PSP"] = false
+			end
+			key_terms << term
 		
 		elsif inMisconceptions
 			misconceptions << line[2..line.size].strip
 		
 		elsif thresholdModuleRegex.match(line)
-			thresh_mod_num = createMatchDataHash(thresholdModuleRegex.match(line))["mod_num"]
+			current_mod = createMatchDataHash(thresholdModuleRegex.match(line))["mod_num"]
 		
 		elsif inThresholdProblems && topicRegex.match(line)
 			if pspRegex.match(line).nil?
@@ -214,7 +225,7 @@ file.each_line do |line|
 			problem = {}
 			problem["text"] = line[2..line.size].strip
 			problem["type"] = problem_type
-			problem["module"] = thresh_mod_num
+			problem["module"] = current_mod	
 			if inPSPproblems
 				problem["PSP"] = true
 			else
@@ -227,20 +238,20 @@ end
 
 br = " ============================================================================= "
 
-puts unit
-puts br
-puts modules
-puts br
-puts standards
-puts br
-puts key_concepts
-puts br
-puts topics
-puts br
-puts goals
-puts br
-puts key_terms
-puts br
-puts misconceptions
-puts br
-puts threshold_problems
+#~ puts unit
+#~ puts br
+#~ puts modules
+#~ puts br
+#~ puts standards
+#~ puts br
+#~ puts key_concepts
+#~ puts br
+#~ puts topics
+#~ puts br
+#~ puts goals
+#~ puts br
+#~ puts key_terms
+#~ puts br
+#~ puts misconceptions
+#~ puts br
+#~ puts threshold_problems
