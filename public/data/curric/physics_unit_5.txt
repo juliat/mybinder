@@ -1,0 +1,245 @@
+Unit 5: circular motion ? 14 days ? Jan 9 through Jan 27
+* Module 1 (9 days)
+o Holt pp 232-239
+o Hewitt pp 170-187
+* Module 2 (5 days)
+o Holt pp 252-253 (weightlessness)
+o Hewitt pp 223-225
+Note:
+* Unit 5 is to be finished by the end of the second quarter
+* The last instructional day in the second quarter is Friday, Jan 27, 2012
+
+Eligible Content:
+* S11.A.1.1.5  Analyze or compare the use of both direct and indirect observation as means to study the world and the universe (e.g., behavior of atoms, functions of cells, birth of stars).
+* S11.A.3.2.1  Compare the accuracy of predictions represented in a model to actual observations and behavior.
+* S11.A.3.3.3  Analyze physical patterns of motion to make predictions or draw conclusions (e.g., solar system, tectonic plates, weather systems, atomic motion, waves).
+* S11.C.3.1.3  Describe the motion of an object using variables (i.e., acceleration, velocity, displacement).
+
+Key Concepts:
+1. In physics we convert observations and ideas into numbers and models.
+2. In physics we represent physical events or scenarios in a variety of ways, including verbally, pictorially, graphically, and mathematically.
+3. There are a variety of forces between objects, all of which stem from four fundamental forces.
+4. For uniform circular motion to occur there must be a nonzero net force directed radially toward the center of the circle which defines the path of the object.
+5. Due to the nonzero net force mentioned above, an object in uniform circular motion object accelerates radially towards the center of the circle.
+
+
+Content Expectations and Performance Expectations (in italics) by module/topic:
+
+Module 1
+
+Uniform circular motion
+1. Know that velocity is a vector, meaning it has both a magnitude and a direction
+2. Know that any change in the velocity (including a change in direction) indicates a nonzero net force (unbalanced forces)
+3. Know that a curved path indicates a nonzero net force (unbalanced forces)
+4. Know that a curved path indicates the object is accelerating (as a result of a nonzero net force acting on it)
+5. Know that objects that move at a constant speed along a circular path (or a part of a circular path) are said to be in uniform circular motion
+6. Know that objects that move in uniform circular motion have a nonzero net force directed towards the center of the circle
+
+Calculations regarding objects in uniform circular motion
+7. Identify the period as the amount of time it takes for an object to complete one cycle of motion that repeats itself (In circular motion it is the time to go around a circular path once)
+8. Know the circumference of a circle is 2*pi*r
+9. Calculate the speed (distance divided by time) of an object in uniform circular motion from the radius and the period (circumference divided by period)
+10. Calculate the acceleration of an object in uniform circular motion from the speed and the radius of the circular path (Unresolved Question: Are there activities to bring this point home, or is it just a formula we give students?)
+11. Recall Newton?s 2nd Law in the context of uniform circular motion: the magnitude of the net force exerted on an object in uniform circular motion is the acceleration multiplied by its mass; the direction of the net force is towards the center of the circle
+12. Calculate the net force exerted on an object in uniform circular motion from other forces such as tension and/or weight and/or a normal force
+Differentiation for PSP
+13. Equate the net force exerted on an object in uniform circular motion with other forces (tension, force of friction, weight) to determine other physical characteristics  (coefficient of friction, mass of object)
+
+
+Module 2
+
+Perception of motion from a rotating reference frame
+14. Demonstrate that in a non-accelerating reference frame (inertial) in a gravitational field a perceiver regarding him/herself at rest recognizes weight due to any contact forces that act in opposition to the field force of gravity
+15. Demonstrate that in a rotating reference frame a perceiver regarding him/herself at rest with respect to the reference frame will perceive weight due to any contact forces that provide the net force causing the rotational motion.
+16. Reconcile the dynamics of circular motion with the feeling of "being thrown outward" when a car moves around a curved road.
+17. Demonstrate that in cases where the only force exerted on a perceiver in circular motion is provided by a gravitational field force, the perceiver will sense no weight
+
+Problem Solving Competency - ForcesProblem solving in physics
+(from The Active Physics Learning Guide, van Heuvelen & Etkina, 2006)
+* Picture:
+o Sketch the situation described in the problem
+o Identify givens and unknowns
+o Choose a system object and make a list of the objects that interact with the system
+o Indicate the direction of acceleration, if known
+* Simplify
+o Consider the system as a particle
+o Decide if you can ignore any interactions of the environment with the system
+* Represent physically
+o Draw a free body diagram for the system
+o Label the forces
+o Include axes
+o Indicate acceleration (if known)
+* Represent mathematically
+o Apply Newton?s second law in the component form to the situation represented by the free body diagram
+o Add kinematics equations if necessary
+* Solve and Evaluate
+o Solve the equations for an unknown quantity
+o Evaluate the answer to see if it is reasonable
+* Magnitude
+* Units
+* Limiting cases
+
+
+Key Terms* Period
+* Circumference* Uniform circular motion
+* Weightlessness* Rotating reference frame
+
+Misconceptions:
+* www.physics.montana.edu/physed/misconceptions/
+
+
+
+
+
+
+Summary of Unit 5 activities:
+
+Module 1
+
+	Circular motion introductory activity
+This activity is designed to force students to the realization that the direction of the net force exerted on an object in circular motion is directed INWARDS, towards the center of the circle defining the path (not outwards or in the direction of the velocity).
+      Threshold equations:
+      	None
+      Threshold problems:
+      Conceptual problems
+* Hewitt p. 182 #8 and #9
+* Hewitt p. 186 #42
+
+Circular motion with washers activity
+In this activity students see how uniform circular motion is maintained (radius of 80 cm kept constant) using a variety of different weights.  The key here is that the tension is directed inward to the center of the circle.  Also as the tension increases so too does the number of revolutions per unit time.
+      It is important to note that students analyze the steady state of uniform circular motion and often forget that as they begin to twirl the rubber stopper, it is not in uniform circular motion.  The initial motion provides an ?initial velocity? for the steady state.
+      This activity can be performed with a variety of materials depending on what is available in each classroom.
+	Threshold equations:
+* C = 2?r
+* v=2?r/T
+* ac=v2/r
+* ?Fradial=mac
+Threshold problems:
+Conceptual problems
+* Hewitt p. 182 #15 and 16
+* Hewitt p. 186 #38-41
+Computational problems
+* Holt p. 236 Practice A
+* Holt p. 238 Practice B
+* Holt p. 263 #8 and 9
+Differentiation for PSP
+* Holt p. 263 #10
+* Holt p. 267 #53
+
+
+Module 2
+
+Space station with artificial gravity activity
+From Hewitt (p. 223): Today we live on the outer surface of our spherical planet, held here by gravity. Earth has been the cradle of humankind. But we will not stay in the cradle forever. We are on our way to becoming a spacefaring people. In the years ahead many people will likely live in huge lazily rotating space stations where simulated gravity will be provided so the people can function normally.
+      Threshold equations:
+      	None
+Threshold problems:
+      	None other than the problems presented in the activity itself
+
+Unit 5 ? Module 1
+
+Circular motion introductory activity
+
+RATIONALE
+A student?s ability to use formulas to describe physical phenomena is one of the primary objectives of a physics teacher.  However, it is not the only objective.  In some cases a firm qualitative understanding of a situation is more valuable than a numerical one, and the introduction to a topic can help to eliminate conceptual errors that might impede further development.
+
+The following activity is designed to force students to the realization that the direction of the net force exerted on an object in circular motion is directed INWARDS, towards the center of the circle defining the path (not outwards or in the direction of the velocity).
+
+Students are first asked to make guesses about the way that you would have to push a marble to get it to behave certain ways: remain at rest, move at a constant speed in a straight line, or accelerate in a straight line.  This part of the activity should force them to recall some fundamental properties of objects and motion, but should also introduce them to the specific nature of marbles, friction, rulers and the directions associated with these manipulations, as well as how those quantities can be represented and visualized.  After students recognize the extent of the role that friction will play in the motion of the marble (small, but potentially significant), as well as the direction of the force exerted on a marble when it is pushed by a ruler (perpendicular to the ruler, normal to the marble surface ? radially inward to the sphere), students are asked to make guesses about how the ruler must be used to make a marble KEEP GOING IN A CIRCLE AT A CONSTANT SPEED.  Students will invariably guess that the direction that must be exerted on the marble should be in a direction that is tangent to the circular path (roughly the same direction as the velocity) or angled very slightly inwards from that direction.  Very few, if any, will guess that the direction of the force must be directed inward, towards the center of the circle (or very slightly off from it, depending on how significant friction is to your set-up).  When students try to actually push the marble as described in their guesses (using the large circles printed on the tabletop as a guide), they will end up with the marble flying off in uncontrollable directions.  Given enough time, insight and dexterity, there may be some students that are able to get the marble moving, then ?corral? it as it moves, pushing it radially inwards with the ruler.  Depending on the students present, it may be required that the teacher demonstrate the proper technique.  Students should be given an opportunity to re-try the task, but with a modified understanding of the direction that the force should be exerted on the object radially inwards towards the center of rotation.  Many students find that they are able to accomplish the task, provided that they abandon their previous conceptions about the force direction required for circular motion.
+
+
+PRIOR KNOWLEDGE AND SKILLS
+* A force is a push or a pull
+* An object that experiences a nonzero net force will accelerate in the direction of the force
+* Any object that is accelerating is experiencing unbalanced forces
+* Friction is a force that can act to oppose relative motion, and must be considered in almost any real-world scenario
+* Vectors quantities can be represented with an arrow, which will indicate the magnitude and direction of the quantity shown
+
+CE?s AND PE?s
+5.	Know that objects that move at a constant speed along a circular path (or a part of a circular path) are said to be in uniform circular motion
+6. Know that objects that move in uniform circular motion have a nonzero net force directed towards the center of the circle
+
+PHYSICS CONVENTIONS
+* Friction, while present in many circumstances, can be removed from consideration in some cases, to examine other aspects of a phenomena in isolation
+* For any given physical set-up, drawings might be made ?from the side? or ?from the top,? which may aid in understanding the problem by eliminating some aspects of the problem and emphasizing others.
+* When physicists casually talk about an object that ?wants to? do something (as in Newton?s 1st law), this does not indicate an object?s consciousness or choice. Rather it is shorthand for ?will behave in a manner as described by the patterns previously observed to occur in nature.?
+
+STUDENT GROUPING
+Students can work independently, though it is more productive if they work in groups of 2-3.  Materials are simple enough that there can be many groups and everyone should have the opportunity to attempt the task.
+
+MATERIALS
+   FOR EACH GROUP
+* Marble or steel ball bearing
+* Short ruler (or any other object of similar physical characteristics ? the rulers will not be used for measuring)
+* OPTIONAL: large circles (approx. 20 cm radius) drawn on the tables (taped down poster paper works well)
+* Large flat, horizontal surface (lab tabletop, tile floor, etc.  Tilted desktops, carpets, etc., will not suffice)
+   FOR EACH STUDENT
+* pen/pencil
+
+
+TIMELINE (about 40-50 minutes)
+3-5 minutes ?introduction: indicate that the first questions review some basic phenomena relating to forces and motion.  It is important to do the introductory activities so that students have the experiential vocabulary to properly interpret results from the second task.  (The large circles are not used during this first activity and should be ignored or not revealed)
+1-2 minutes ? linear guesses: students make guesses on their own handouts (straight line motion)
+1-2 minutes ? transition: get into groups/gather materials/find appropriate locations to gather data
+8-10 minutes ? linear activity: students work on the first task to verify/disprove their guesses
+5-8 minutes ? terms and techniques: re-convene as a class to discuss findings and compare results from first activity.  Discuss physics conventions used, establish technique for manipulating the marble, define terms and relate results to previous units on forces.
+3-5 minutes ? circular guesses: introduce the second activity, and students make guesses on their own sheets (circular motion) about the direction the force that the ruler must exert on the marble so that the marble moves in a circular path at a constant speed
+8-10 minutes ? circular activity: students attempt to verify/disprove their guesses
+5-10 minutes ? summary: student demonstrations of results, discussion of implications and generalization about circular motion
+
+Stage of activityWhat the students should doStudent mistakesPossible teacher responsesLinear guessesMake guesses by drawing arrows and lines on their sheetsWaiting for correct answers to emerge (unwillingness to make mistakes, ?mess up? their paper, commit to certain conceptions)Emphasize that as an introductory activity, grades will be assessed based on engagement and demonstration of contemplation, rather than on correct responsesLinear activityActually try pushing the marble aroundWatching, not doingEnsure enough materials and space for every groupLinear activityWhen applying a force, applying the force in a direction parallel to the table top, continuously.Applying a force to the marble with the ruler in a direction that is not parallel to the plane of the tabletop (crushing downwards)Make sure students understand the perspective represented in the drawingsLinear activityWhen applying a force, applying the force in a direction parallel to the table top, continuously.Students flick or hit the marbleAsk students at what exact moment they are representing in their drawing.  If there is a force exerted on the marble by the ruler, when is that force exerted? (only while in contact)  What is the direction of the force exerted one the marble? (perpendicular to the ruler, normal to the marble surface)Linear activityExploring the questions posedPlaying hockey with the marbles and rulersKeep the time for exploration relatively short (as it should be review).  Gather students around a single table for summary/demonstrations (reducing their access to playing surfaces during group discussions)Terms and techniquesReflect on the activity and make connections between actions in the lab and representations on paperConsider drawings and physical objects as two completely separate entities with no connectionsRecall the use of free-body diagrams to analyze physical situationsTerms and techniquesKnow the direction of forces exerted on marbles when pushed by a rulerConsider the interaction between the ruler and marble to be something other than a force interactionDemonstrate in front of the class, making explicit connections between the physical actions, the physical objects and the representations of the forces and objects in the drawingsCircular guessesMake guesses by drawing arrows and lines on their sheetsWaiting for correct answers to emerge (unwillingness to make mistakes, ?mess up? their paper, commit to certain conceptions)Emphasize that as an introductory activity, grades will be assessed based on engagement and demonstration of contemplation, rather than on correct responsesCircular guessesDraw a single force vector for a particular instant in time Draw multiple arrows, attempting to indicate a changing direction will be required for different points along the circular pathRemind that the ruler only pushes in ONE direction at a time, so their guess should show the direction for only the one instant shown on the sheetCircular guessesDraw a single force vector for a particular instant in timeState that there is no answer possible, because the direction of the force must be constantly changing as the marble goes around in a circleEmphasize that the instant pictured is just one moment as the marble goes in a circle, so for a different moment you can imagine rotating your drawing to match up with a different momentCircular guessesDraw a single force vector for a particular instant in timeDraw a curved line with an arrow head at one endLook back at the force vectors drawn for the first activity and point out that the forces exerted by the ruler can only be in ONE direction at any one moment.  Make sure that they are only thinking about the one instant pictured in the diagram, not including a few moments before or after what is representedCircular activityWhen applying a force, applying the force in a direction parallel to the table top, continuously.Applying a force to the marble with the ruler in a direction that is not parallel to the plane of the tabletop (crushing downwards)Make sure students understand the perspective represented in the drawings.  Recall the rules described for the linear activityCircular activityMoving the marble in a circle at a moderate speedMoving the marble in a circle very, very slowlyRecall the roll of friction in the activity.  Ask them to attempt to get circular motion with an arbitrary speed (1 m/s, for example)Circular activityMoving the marble in a continuous circleMoving the marble in a curved path for a portion of the circle, but not able to make even a single complete rotationAsk for at least one complete circle at a constant speed.  Whenever possible, students should experience the tendency of the marble to move linearly, and recognize the need to exert SOME lateral force in order to get it to change its direction.summaryReporting their own experiences, frustrations, successesWaiting for the correct answerInitially, encourage and reinforce any observations, being careful to separate the students? OBSERVATIONS of phenomena form their EXPLANATIONS of those phenomena.  The first part of the discussion should focus on a consensus about what students observed.  Unclear or inaccurate observations can often be corrected by asking if the class as a whole agrees or disagrees with the statements providedsummaryExamine the conditions where the marble has a constant speedConsider the conditions when the marble has a changing speed (the initial starting push required)Recall results from the linear activity to explain how to get the marble up to speed, but then re-ask the question about when the marble is maintaining a constant speed
+
+POST ACTIVITY DISCUSSION PROMPTS
+
+Why might it be important to talk about speed in this activity, rather than velocity?
+
+If you built a curved wall with a series of many rulers, would those exert inwards forces, as described in the summary?  (Frisbee and marble can demonstrate this easily)
+
+What happens to an object that was moving in circular motion, but the centrally directed force is no longer applied?
+
+It is useful to then list a variety of objects that move in circles and identify what is providing the centrally directed force (amusement park rides, cars on a racetrack, whistles at the end of ropes, planets in orbit, etc.)
+
+Be sure to distinguish between the direction of the force that is exerted on the object and what an object might be ?feeling? if it is in the rotating reference frame.  The perceptions of a person in the rotating reference frame should be addressed separately and dealt with care and deliberation.
+
+Unit 5 ? Module 1
+
+Circular motion with washers activity
+
+RATIONALE
+This activity explicitly connects the experience of circular motion to a force acting radially inward by way of the washers and the string.  Students learn firsthand that the greater the speed at which they twirl the rubber stopper, the greater the number of washers required to maintain uniform circular motion.
+
+The lab sheet which is in the appendix to this unit describes the activity though many slight variations are possible.
+
+CE?s AND PE?s
+6. Know that objects that move in uniform circular motion have a nonzero net force directed towards the center of the circle
+7. Identify the period as the amount of time it takes for an object to complete one cycle of motion that repeats itself (In circular motion it is the time to go around a circular path once)
+8. Know the circumference of a circle is 2*pi*r
+9. Calculate the speed (distance divided by time) of an object in uniform circular motion from the radius and the period (circumference divided by period)
+10. Calculate the acceleration of an object in uniform circular motion from the speed and the radius of the circular path (Unresolved Question: Are there activities to bring this point home, or is it just a formula we give students?)
+11. Recall Newton?s 2nd Law in the context of uniform circular motion: the magnitude of the net force exerted on an object in uniform circular motion is the acceleration multiplied by its mass; the direction of the net force is towards the center of the circle
+12. Calculate the net force exerted on an object in uniform circular motion from other forces such as tension and/or weight and/or a normal force
+Differentiation for PSP
+13. Equate the net force exerted on an object in uniform circular motion with other forces (tension, force of friction, weight) to determine other physical characteristics  (coefficient of friction, mass of object)
+
+
+Unit 5 ? Module 2
+
+Space station with artificial gravity activity
+
+RATIONALE
+Conceptualizing a space station with artificial gravity allows students to compare and contrast the perception of gravity on the surface of the Earth with the perception due to being in a rotating system.  
+
+The lab sheet which is in the appendix to this unit describes the activity though many slight variations are possible.
+
+CE?s AND PE?s
+14. Demonstrate that in a non-accelerating reference frame (inertial) in a gravitational field a perceiver regarding him/herself at rest recognizes weight due to any contact forces that act in opposition to the field force of gravity
+15. Demonstrate that in a rotating reference frame a perceiver regarding him/herself at rest with respect to the reference frame will perceive weight due to any contact forces that provide the net force causing the rotational motion.
+16. Reconcile the dynamics of circular motion with the feeling of "being thrown outward" when a car moves around a curved road.
+17. Demonstrate that in cases where the only force exerted on a perceiver in circular motion is provided by a gravitational field force, the perceiver will sense no weight
+2
+
+Physics Core Curriculum 2011-2012
+Unit 5
+
+1
+

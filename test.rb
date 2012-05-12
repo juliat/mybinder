@@ -9,7 +9,7 @@ def createMatchDataHash(match_data)
 end
 
 def parseUnitData(line)
-	unit_metadata_regex = /Unit\W(?<unit_num>\d):\W(?<unit_name>[\w\s]{1,})#\s(?<unit_days>\d{1,2})\sdays\s#\s(?<start_date>\w{1,}\s\d{1,2}) through (?<end_date>\w{1,}\s\d{1,2})/
+	unit_metadata_regex = /Unit\W(?<unit_num>\d):\W(?<unit_name>[\w\s]{1,})\?\s(?<unit_days>\d{1,2})\sdays\s\?\s(?<start_date>\w{1,}\s\d{1,2}) through (?<end_date>\w{1,}\s\d{1,2})/
 	match_data = line.match(unit_metadata_regex)
 	return createMatchDataHash(match_data)
 end
@@ -59,7 +59,7 @@ inTopic = false
 
 olRegex = /^(?<number>\d{1,2}). (?<statement>[\w\s,\(\)\.\-\/#\+]{1,})$/
 
-pspRegex = /^Differentiation for PSP$/
+pspRegex = /Differentiation for PSP/
 inPSPGoals = false
 
 keyTermsRegex = /Key Terms/
@@ -73,10 +73,14 @@ inMisconceptions = false
 summaryRegex = /Summary of Unit/
 inSummary = false
 
-thresholdRegex = /^Threshold problems:(\s)?$/
+thresholdRegex = /Threshold problems:/
 inThresholdProblems = false
 inPSPproblems = false
 problem_type = ""
+
+thresholdProblemRegex =/\* (Holt|Hewitt) (pp|p\.)[#\d\s,-]{1,}(\w)?/
+
+thresholdModuleRegex = /^Module (?<mod_num>\d)(\s)?$/
 
 unit = {}
 # will have number, name, start date, end date, and days
@@ -84,6 +88,8 @@ unit = {}
 modules = {}
 # each mod will have number and number of days, also an array of notes
 current_mod = ""
+
+thresh_mod_num = ""
 
 standards = []
 key_concepts = []
@@ -95,7 +101,7 @@ misconceptions = []
 threshold_problems = []
 
 file.each_line do |line|
-	if line != "" && line != "\n"
+	if line != "" && line != "\n"&& line != "\r"
 		if inUnitMeta
 			# parse unit metadata and save to unit hash
 			unit = parseUnitData(line)
@@ -190,17 +196,25 @@ file.each_line do |line|
 		elsif inMisconceptions
 			misconceptions << line[2..line.size].strip
 		
+		elsif thresholdModuleRegex.match(line)
+			thresh_mod_num = createMatchDataHash(thresholdModuleRegex.match(line))["mod_num"]
+		
 		elsif inThresholdProblems && topicRegex.match(line)
 			if pspRegex.match(line).nil?
 				problem_type = line.strip
+				inPSPproblems = false
+				if problem_type.include?("problems")
+					problem_type = line.split(" ")[0]
+				end
 			else
 				inPSPproblems = true
 			end
 		
-		elsif inThresholdProblems
+		elsif inThresholdProblems && thresholdProblemRegex.match(line)
 			problem = {}
 			problem["text"] = line[2..line.size].strip
 			problem["type"] = problem_type
+			problem["module"] = thresh_mod_num
 			if inPSPproblems
 				problem["PSP"] = true
 			else
@@ -208,9 +222,6 @@ file.each_line do |line|
 			end
 			threshold_problems << problem
 		end
-			 
-	else
-		inThresholdProblems = false
 	end
 end
 

@@ -1,0 +1,673 @@
+Unit 3: forces ? 27 days ? Nov 14 through Dec 22
+* Module 1 (9 days)
+o Holt pp 118-132
+o Hewitt pp 86-105
+* Module 2 (18 days)
+o Holt pp 132-157
+o Hewitt pp 106-123
+
+Note:
+* Unit 3 is to be finished before winter break
+* The last instructional day before break is Dec 22, 2011
+
+Eligible Content:
+* S11.A.1.1.5  Analyze or compare the use of both direct and indirect observation as means to study the world and the universe (e.g., behavior of atoms, functions of cells, birth of stars).
+* S11.A.1.3.1  Use appropriate quantitative data to describe or interpret change in systems (e.g., biological indices, electrical circuit data, automobile diagnostic systems data).
+* S11.A.3.2.1  Compare the accuracy of predictions represented in a model to actual observations and behavior.
+* S11.A.3.3.3  Analyze physical patterns of motion to make predictions or draw conclusions (e.g., solar system, tectonic plates, weather systems, atomic motion, waves).
+* S11.C.3.1.2  Design or evaluate simple technological or natural systems that incorporate the principles of force and motion (e.g., simple machines, compound machines).
+* S11.C.3.1.3  Describe the motion of an object using variables (i.e., acceleration, velocity, displacement).
+
+Key Concepts:
+1. In physics we convert observations and ideas into numbers and models.
+2. In physics we represent physical events or scenarios in a variety of ways, including verbally, pictorially, graphically, and mathematically.
+3. A net force on an object causes a change in motion, where a change in motion means either a change in speed, a change in direction, or a change in both.  In such a case the object is accelerating, where the acceleration can be found from the net force using Newton?s Second Law.
+4. There are a variety of forces between objects, all of which stem from four fundamental forces.  An object can have a variety of forces acting on it; the sum of all of the forces acting on an object is called the net force.
+5.  In solving force problems there is a consistent protocol that is followed.  The protocol helps to simplify complicated problems which at first glance seem intractable.
+
+Content Expectations and Performance Expectations (in italics) by module/topic:
+
+Module 1
+
+Constant Motion (Newton?s 1st Law)
+
+1. Describe and recognize situations involving constant velocity
+2. Define force and introduce SI unit
+3. Define equilibrium
+4. Separate a scenario into the system and surroundings 
+5. Designate a system and surroundings when solving problems
+
+Accelerated Motion (Newton?s 2nd Law)
+
+6. Define net force
+7. Define mass and SI unit
+8. Define inertia
+9. Know that the acceleration of an object is directly proportional to the net force and inversely proportional to the mass
+10. Recognize that a net force will result in an accelerated motion
+
+
+Transition between Module 1 and Module 2
+
+Representing Forces
+
+11. Know that in a free body diagram that the object is represented by a point and the forces are represent by a vector arrow
+12. Translate the sketch of a scenario into a free body diagram
+13. Analyze a free body diagram to find the net force
+14. Use the problem solving steps outlined in this Unit for solving force problems
+Differentiation for PSP
+15. Be able to resolve vectors to their components
+16. Add non-orthogonal vectors
+17. Analyze the forces acting on objects on inclined planes
+
+
+Problem Solving Competency - ForcesProblem solving in physics
+(from The Active Physics Learning Guide, van Heuvelen & Etkina, 2006)
+* Picture:
+o Sketch the situation described in the problem
+o Identify givens and unknowns
+o Choose a system object and make a list of the objects that interact with the system
+o Indicate the direction of acceleration, if known
+* Simplify
+o Consider the system as a particle
+o Decide if you can ignore any interactions of the environment with the system
+* Represent physically
+o Draw a free body diagram for the system
+o Label the forces
+o Include axes
+o Indicate acceleration (if known)
+* Represent mathematically
+o Apply Newton?s second law in the component form to the situation represented by the free body diagram
+o Add kinematics equations if necessary
+* Solve and Evaluate
+o Solve the equations for an unknown quantity
+o Evaluate the answer to see if it is reasonable
+* Magnitude
+* Units
+* Limiting cases
+Module 2
+
+Forces Come in Pairs (Newton?s 3rd Law)
+
+18. Know that the forces in a force pair are exerted on different objects.  
+19. Know that the forces in a force pair are equal in magnitude and opposite in direction
+
+Types of Forces
+
+20. Know the mathematical relationship between force of gravity, mass and g
+21. Define Fg 
+22. Define normal force
+23. Discuss weight in relationship to gravitational force
+24. Differentiate between field and contact forces 
+25. Define the force of friction
+26. Know the four fundamental forces
+Differentiation for PSP
+27. Define static and kinetic friction
+28. Utilize coefficients of friction to calculate the force of static or kinetic friction 
+29. Define the force of tension
+
+
+Key Terms* Force		
+* Inertia
+* Friction 
+* Normal force
+* External force
+* Internal force* Equilibrium
+* Net force	
+* Weight 
+* Mass
+* Contact forces
+* Field forcesDifferentiation for PSP
+* Coefficient of friction
+* Static friction
+* Kinetic friction
+
+Misconceptions:
+* the literature on misconceptions regarding forces and motion is the most extensive body of work on science misconceptions
+* a great place to start is the Force Concept Inventory.
+* http://www.physics.montana.edu/physed/misconceptions/
+* http://phys.udallas.edu/C3P/Preconceptions.pdf
+* http://www.physics.ohio-state.edu/~jossem/ICPE/C1.html
+* the floor ?gets in the way? of a person but doesn?t provide a force
+* gravity ?makes things fall? but is not a force
+* if there is no force an object will come to rest
+* gravity, weight and mass are the same or equivalent
+* there is no motion when an objects is at equilibrium
+
+Summary of Unit 3 activities:
+
+Module 1
+
+Hands-on exploration of forces (Everyday Forces Activity)
+A common set of experiences is essential to connecting new material with prior student experience.  The main goal of this activity is to allow the student to explore a variety of circumstances that deals with gravity, mass, forces, weight, inertia and equilibrium.  These experiences can be drawn upon later in class discussions.
+
+The student should recognize the role of mass/inertia in motion changes; specifically, the more massive an object, the greater the net force that is required to cause it to accelerate.  (See the comment on inertia below.) The relationship between mass and inertia in this course is that the inertia of an object is measured by its mass.
+
+Also the student should start to recognize that at this stage in learning physics a specific object is usually the focus of attention and therefore designated as the ?system.?  This is a misleading term when compared to everyday language because the system in this case is just a lone object.  Everything else in the universe is designated as the surroundings.  It is crucial to explicitly define the system because it drives the labeling of the forces and other objects.  Free body diagrams are an important representational tool which also require the explicit designation of the system.
+
+The connection between equilibrium (and non-equilibrium) and motion is important.  Objects in equilibrium have no net force acting on them, and show constant motion (including not moving).
+
+Finally, one of the most confusing ideas in the topic of ?forces? is the relationship between mass, gravity, force and weight. 
+
+	Representing net force activity
+The concept of net force, the sum of all of the real physical forces acting on an object, is investigated in this activity.  Calculating the net force by adding a variety of forces acting on an object is a part of this activity.  Also a force table may be very instructive in this activity.  The net force is used to explain why an object is moving at a constant velocity (including at rest) or moving with an accelerated velocity.  Previous motion activities can be explained.  The state of motion can be determined and experimentally confirmed.  Problem solving, data collection and confirming calculations through experimentation should be emphasized. The following equipment could be utilized in this activity: carts, ticker tapes, ramps, photo gates, accelerometers, and so on.
+      Threshold equations:
+      Fnet = ma 
+
+      Threshold problems:
+      Conceptual problems
+* Holt p. 145 #5-6, 17-19
+      Computational problems
+* Holt p. 145 #1-4
+* Holt p. 145 #7-9, 10, 11
+* Holt p. 146 #13-15
+
+
+
+Transition ? representing forces and problem solving
+
+Students should solve all force problems in Unit 3 and future units using the steps outlined above.
+
+
+Module 2
+
+	Types of forces activity
+There are many forces that can act on an object.  The students should be exposed to as many forces as possible.  Use a hands-on activity that gives experience dealing with several of the following forces; weight, normal force, frictional force, tension force, compression thrust force, air drag, water drag, and so on.
+
+Problem solving, data collection and confirming theoretical calculations through experimentation should be emphasized.  The following equipment could be utilized in developing this activity: carts, ticker tapes, photo gates, accelerometers, and so on.
+
+	Net force and equilibrium activity (Carts and Masses Activity)
+Conditions of equilibrium and non-equilibrium are emphasized in this activity.  Net force and its relationship to acceleration are also investigated.  The students will see how the force due to gravity and friction interact by way of string in tension. A lab write up will be required as will individual web-based research. 
+
+Problem solving, data collection and confirming theoretical calculations through experimentation are emphasized.
+
+      Threshold equations:
+      
+      Differentiation for PSP
+      
+      
+      
+      Threshold problems:
+      Conceptual problems
+* Holt p. 145 #30-34
+      Computational problems
+* Holt p. 146 #16
+   Differentiation for PSP
+* Holt p. 146 #21-29
+* Holt p. 147 #35-39
+
+Unit 3 ? Module 1
+
+Hands-on exploration of forces (Everyday Forces Activity)
+
+TEACHER NOTE: It is understood that not all teachers will have the all the supplies or time to perform the following activity in full.  Teachers should modify the activity/handouts to best suit his/her needs and supplies.  The full activity as presented will take 2 to 3 days.
+
+RATIONALE
+Physics is rife with words that are used in common everyday language but take on very specific unfamiliar meanings.  Inertia, force, weight and equilibrium are four such words.  For most students it is not enough to simply redefine such words.  The words and more importantly the concepts associated with them need to be experienced by the students.  This introductory activity is meant to allow the student to investigate his/her own understanding of forces.  It is hoped that with the own student?s investigation and teacher facilitation that a new understanding about force is developed clarifying concepts and correcting misconceptions.
+
+One problem teachers often face in a physics class is one of students not having shared relevant experiences.  The activities presented here are designed to give shared experiences that can be drawn upon later in the unit and provide a basis for discussion or a reference for another situation that appearing different is just another example of the same phenomena. It is intended to be a two to three day introductory activity.
+
+The idea of this activity is to run the students through a series of preset activity stations at which the students will explore particular phenomenon and develop a sense of how to test and critically evaluate a situation.  Each station should take about 5 to 10 minutes to investigate.  It does not matter which station they start at just that they get through all stations.  They will be asked to make predictions before they perform the task, then discuss with group members and answer written prompts on the handout.  
+
+Once the activities have been completed and prompts answered the students are asked to read several sections from the Conceptual Physics Textbook, this should take around 20 to 30 minutes. You may want to assign the reading to be outlined for homework between day 1 and day 2.  (Don?t outline in class, it would take well over 20 minutes)  It is important that students learn how to ?dig into? a technical text and incorporate its meaning into their physics conceptual framework. The active part of this activity is intended to provide a framework that would make the text more relevant and easy to comprehend.
+
+After the reading is completed the groups discuss how they might alter their previous answers.  Then with a ?green pen? go back and amend their answers where necessary.  This allows the individual to gain clarity about the phenomena from the group.
+The Elaboration and Evaluation portion can be assigned individually or as a group.  It requires the students to use what they have just learned to analyze completely new situations. The teacher may use it as either a formative or summative assessment.  This portion could also be incorporated into future homework or given later in the unit. 
+
+After the activity is complete a post activity class discussion is appropriate to go over the activity.  The students should have the handouts in their hands as you discuss the activity.
+ 
+The activity handouts provided should be carefully scrutinized by the teacher and modified to suit the level and number of students participating in the activity.  Some teachers may decide that there should be more structure for the students to describe their data gathering process, or that the additional questions need to be more complex or subtle.  As with all instructional materials, those modifications should be made at the discretion of the teacher based on his or her judgment.
+
+The most effective instruction will probably take place as the teacher circulates amongst the activity groups, asking them to describe what they are doing, why they are doing it and what would it mean if certain things changed.  Also, this is an opportunity to give immediate feedback, allowing the teacher to reiterate or explain some of the conventions used when showing work in a physics class. The activity class discussion can also be an effective way to strengthen conceptual relationships and highlight significant ideas present in the activity (the CE and PE items).
+
+PRIOR KNOWLEDGE AND SKILLS
+* key concepts from Units 1 and 2 relating to velocity and acceleration
+
+CE?s AND PE?s
+
+1. Describe and recognize situations involving constant velocity
+* If an object is accelerating (non constant velocity) then it is not in equilibrium
+* Students will be asked to move objects at with acceleration and at constant velocity to experience the feel of these types of motion
+3. Define equilibrium
+* This concept is essential to understanding what is going on in a force problem. It should be the first question asked by the student dealing with a situation.
+* It can be identified by discerning if an object is accelerating or not.
+* The concept of net force is needed to explain equilibrium and non-equilibrium scenarios.
+4. Separate a scenario into the system and its surroundings
+* Students need to draw pictures of the scenarios they are considering and indicate on the picture which objects are in the system and which are in the surroundings.
+8. Define inertia
+* The term ?inertia? has always been confusing to me (Stephen Pellathy). I use two ideas to explain the concept, but avoid use of the actual word.
+o Newton?s 1st law: ?An object moves in a straight line and at constant speed (including not moving at all) except to the extent that it interacts with other objects.?
+o And the second piece: ?If two object have the same velocity (including not moving at all) but one is more massive than the other, it is more difficult to change the heavy object?s speed and/or direction.?
+11. Know that in a free body diagram that the object is represented by a point and the forces are represented by a vector arrow.
+* The  student must first identify the ?system? which typically at this stage of the course is a single object
+* Students are required to follow the problems solving steps given in this unit.
+* Vectors studied Unit 2 are the foundation for this
+12. Translate the sketch of a scenario into a free body diagram
+
+PHYSICS CONVENTIONS
+* The system is chosen by the person analyzing the scenario. Typically the system is chosen as the object under consideration, and the rest of the objects in the universe are labeled the ?surroundings? or something similar. The system does not include the forces acting on it because the system is made of an object or of objects. Forces are the interactions between objects. So considering a ball on the Earth?s surface, the ball can be called the system, the Earth is the only relevant object in the surroundings, and the interaction between the system and the surrounding, the ball and the Earth, is gravity. Gravity is considered an external force on the ball because the Earth is not part of the system.
+* objects in this class will be treated as point particles, despite the fact that they are in fact extended objects
+* the frame of reference may change depending on what object you are exploring
+
+STUDENT GROUPING
+Students can work independently, though it is more productive if they work in groups of 2-3.  Groups that are too large will have too much down time while other group members are gathering data.
+
+MATERIALS
+Varies ? see each station setup described below
+
+FOR EACH STUDENT
+Copy of handout
+Pencil, green pen
+
+TIMELINE (about 2-3 days, and the potential for homework)
+5 minutes ? outline objectives for the activity
+3 minutes ? get into groups / go to stations pre arranged 
+40 minutes ? work through each station
+20minutes ? read from text (could assign as homework)
+15 minutes ? amend answers with green pen
+20 minutes ? answer Elaboration and Evaluation section (homework or later date)
+20 minutes ? post activity discussion
+
+SIX (6) STATIONS
+Teacher note:
+* students are  to follow prompts on handouts as teacher circulates around the room facilitating the activity
+* depending on the number of students there could be multiple setups of the same station
+
+The 6 stations are as follows:
+
+Station # 1  
+
+Materials:
+* sledge hammer
+* large ballpin hammer
+* small hammer
+* several pieces of 2x4 pine wood
+* 8 penny common nails
+* safety goggles
+
+Summary:	Each student should try all 3 hammers 
+
+Intent:	To explore forces and inertia/mass through the use of hammers of different masses to drive a nail of the same mass.  The relationship between mass and inertia in this course is that the inertia of an object is measured by its mass. Try to keep velocity of the hammers the same in order to isolate mass. 
+
+Student take-aways:
+* It may seem boring or unnecessary, but physics talk is very precise as demonstrated by the following bullet point.  It is not true to just say that the more massive an object is the greater the force it imparts.  There need to be some very explicit conditions or assumptions placed on such a statement.
+* The more massive object imparts the greater force, but under two crucial assumptions:
+o the three hammers move at the same speed, and
+o then come to rest in the same time interval
+* A more massive object (hammer) has more inertia as evidenced by the nail?s ability (or inability) to change the hammer?s motion.
+
+
+Station # 2  
+
+Materials:
+* three identical shoe boxes, the same at first glance but set up differently:
+o one stuffed with newspaper
+o one with a 3 kg of weights wrapped in newspaper
+o ones stuffed with newspaper with a thin piece of rubber glued to the bottom
+* a 1kg pendulum
+o let it go from the same height
+o strike each box identically
+
+Summary:	Students from each new group must not touch the boxes before hitting them. Have a place on the lab bench marked so that each group can set it up for the next group. Also make sure pendulum strikes at base of boxes.
+
+Intent:  	To explore forces and inertia/mass using the different outcomes from hitting the three boxes with the same pendulum.  The key is to keep the pendulum swing constant.  Since in this case the moving object should always strike with the same impact (discussions of impulse may arise) the focus is on 1) the differences in the boxes? masses, and 2) friction between the table and the box/rubber.
+
+	Student take-aways:
+* When comparing the two boxes without the rubber on the bottom, the box that weighs more is moved less by the pendulum.  The same force (from the pendulum) causes a different acceleration one each box due to the difference in masses.
+* When comparing newspaper only boxes with and without rubber on the bottom, students note that the rubber increases the friction with the table.  
+Station # 3  
+
+Materials:
+* small paper/plastic cups,
+* a heavy block (wood, concrete?)
+o select the weight of block so that it can just barely be supported by 4 cups
+* claw hammer
+
+Summary:	The students will try to get the block to be supported by the fewest cups. Strike the supported block with hammer to see that the large mass of the block results in such little acceleration from the force of the hammer that the cups continue to hold up the block. And also see what happens when the block is dropped by just a few inches onto the cups.
+Warning: Use very weak cups so you can use a smaller (less) heavy block to make the point. Keep block under 5 kg.
+Intent:  	To explore how inertia/mass must be taken into consideration while placing the block.  When struck by the hammer at rest, the block?s acceleration is quite small because of its large mass.  The blow of a hammer would surely crush an individual cup.  When the block is dropped, however, even from a very small height, the force it imparts easily crushed the cups.
+
+	Student-takeaways:
+* The mass of an object determines its acceleration when it experiences a net force.  (In this case the hammer imparts a force on a very massive block, so that the block?s acceleration is minimal.)
+
+Station # 4  (the explanation of this phenomenon is quite sophisticated even though the materials and the actual event could not be more mundane)
+
+Materials:
+* a roll of toilet paper
+* a ring stand with a horizontal rod attached which holds the roll of toilet paper
+
+Summary: 	Students attempt and then describe various ways of tearing off two (2) full sheets of toilet paper.
+      
+Intent:  	To explore what parts force, time, and mass/inertia play in an activity the students do every day.  Note: it is often hard to tear a few sheets from a thin roll.
+
+	Student-takeaways:
+* The analysis of this scenario is quite sophisticated because time is a very explicit factor in describing what happens.  (In describing events at the other stations, the role of time is implicit or not explicitly highlighted.)
+* If students tear the two sheets off very quickly, the roll does not move.
+o The large force applied for a short time (the ?tearing?) surpasses the breaking stress of the perforated junction.
+o Since the tear occurs the force of the tearing is not transmitted to the massive roll.  The two loose sheet are much less massive than the larger roll and the hand doing the tearing, and therefore are accelerated rapidly.
+* If students try to tear the two sheets off very slowly, it is impossible, and the roll unravels.
+o The small force applied over a longer time does not surpass the breaking stress of the perforated junction and the roll unravels
+
+
+Station # 5  
+Materials:
+* 500g mass
+* (1) 10-Newton spring scale
+
+Summary:	Students hang the 500g mass on a spring scale to find its weight. Next, accelerate the weight upward while noting the reading the reading on the scale. Then accelerate the weight downward while noting the reading.
+
+Intent:  	To explore the connection between the acceleration due to gravity, mass, and the motion of the scale and mass.
+
+	Student-takeaways:
+* The weight and the mass of an object are not the same.
+* If the scale is acceleration upward with the mass on it, the reading will be greater than 500g.  This scenario can be visualized using a free body diagram, which will show the force of gravity acting downward on the mass while the spring (spring force) is acting upward.
+* If the scale is in freefall with the mass, there is not force on the spring so it will read zero.
+
+Station # 6  
+Materials:
+* masses: 100g, 200g, 300g, 400g, 500g, 600g, 700g, 800g, 900g, 1000g
+* (1) 10-Newton spring scale
+
+Summary:	Students find out the weight in Newtons of each mass.  Plot weight in ?Newtons? versus mass in ?kilograms?.  Find slope of line.
+
+Intent:  	To provide a concrete experience relating weight and mass through the acceleration due to gravity (which causes weight). Also to relate the slope of line with the acceleration due to gravity. Graphing skills are emphasized.
+
+	Student-takeaways:
+* The weight and the mass of an object are not the same.
+* The acceleration due to gravity, g, on objects near the surface of the Earth is the same and has a nominal value of 9.8 m/s/s.
+
+
+
+Stage of activityWhat the students should doStudent mistakesActivity introduction (teacher lecture)Recognize activity broken into stationsExpect handout with explicit instructionsPossible teacher responses:
+- Encourage students to read prompts for each station and decide as a group how to proceed before performing activity
+-Reiterate the rationale for the activity as well as the CE?s and PE?sStation #1All students to try various hammers - drop sledge hammer on toe or other delicate object
+- flying nails 
+- students may not have much skill at hammer use
+- can?t start a nail
+-inconsistent hammer swingPossible teacher responses:
+-WARN STUDENTS TO WEAR SAFETY GLASSES
+- tell students to handle sledge hammer with care
+- keep Station #1 away from others and have students wear eye protection
+- help students start the nails 
+- advise students to swing each hammer from similar heights.
+- advise students to ?feel? the difference the hammer ?mass? makes not the force from their arm swingStation #2- drop pendulum from same height for each box
+-not touch the boxes before they use pendulum- try to reorient boxes (thereby by getting a ?feel? for the weight of each)
+- not positioning the pendulum correctly
+- inconsistent pendulum heightsPossible teacher responses:
+- remind students not to touch boxes
+- make sure to place boxes in starting position for each new group
+- question students about why (why not) it is important to be consistent with pendulum dropsStation #3After several attempts the students should be able to get the block to stand and after smash the cups by allowing the block to drop- student could drop on finger, toes
+- cups keep collapsing Possible teacher responses:
+ - advise the students to be careful and never lift the block higher that 2 cm above the cups.
+- ask probing questions about centering the block on the cups and lowering block so that pressure is even.
+Station #4- most students will know what to do intuitively- use two hands
+- pull too slowly and have the paper unroll.
+Possible teacher responses:
+- remind students to use only 1 hand
+- discuss how you get paper towels off the roll or how to break a thread from clothesStation # 5 - zero scale
+- place mass on spring scale
+- experiment scale reading under different circumstances- don?t know how to ?zero? scale
+- inconsistent movementsPossible teacher responses:
+- ask probing questions about how accurate readings can be taken
+- discuss how to achieve smooth accelerationStation #6- weigh the masses
+-plot data, best fit line, slope- improper slope calculationPossible teacher responses:
+- discuss rise over run to find slope
+Text reading- read book (take notes if required)- confusion about inertia and mass
+- confusion about weight vs mass
+-not understanding gravity is a force
+- not comprehending that normal force is a force Possible teacher responses:
+Circulate around students and discuss terms and meanings as requiredAmending Station Prompts- take information from readings and amend their responses- confusion about terms and conceptsPossible teacher responses:
+- circulate around students and discuss terms and meanings as they relate to their station activitiesElaboration and Evaluation- apply the physics concepts and terms appropriately to new situations - confusion about applying terms and conceptsPossible teacher responses:
+- circulate around students and discuss terms and meanings as they relate to the new situations
+
+POST ACTIVITY DISCUSSION PROMPTS
+* A car being hit by a tractor-trailer.  How is mass/inertia involved?  What force does each experience?  What acceleration?
+* If gravity is a force give examples of things that are in equilibrium but are under its influence.  Describe the forces involved.  What are the agents (the objects that cause the forces) of the forces?
+* Why is weight given in ?Newtons? not ?grams? ?
+* How would you find the mass of a 10kg mass that on a planet that had a gravitational acceleration 3 times that of Earth?  How would you find the weight?
+* Two baseball players are arguing. One says the bat should be lighter than the ball so that he can have a quicker swing and thereby hit more pitches.  The other player says the bat should be more massive than the ball or the ball will not go far.  Discuss the merits of each position.
+
+
+Unit 3 ? Module 1
+
+Representing net force activity
+
+RATIONALE
+The concept of net force is crucial to understanding forces.  Objects typically have multiple forces acting on them ? it is the net force (or the sum of the forces) that determines the acceleration of the object.  In this activity a variety of forces are used ? all the forces acting on an object need to be added together to find the net force.  A force table may be very helpful in this situation.  A free body diagram is a very helpful representation for understanding net force.
+
+PRIOR KNOWLEDGE AND SKILLS
+* adding vectors
+* experiences with multiple forces acting on everyday objects
+
+CE?s AND PE?s
+
+2. Define force and introduce SI unit
+4. Separate a scenario into the system and surroundings 
+5. Designate a system and surroundings when solving problems
+6. Define net force
+* The net force is the sum of all of the forces acting on an object.  It is itself not a physical force but an abstract representation of the sum of all the forces.  Net force is the left side of F=ma.  The F in the equation is not a physical force, but the net force on an object of mass m.
+9. Know that the acceleration of an object is directly proportional to the net force and inversely proportional to the mass
+* This is a restatement of Newton?s Second Law
+10. Recognize that a net force will result in an accelerated motion
+* This is also a  restatement of Newton?s Second Law
+
+      Representing Forces
+
+11. Know that in a free body diagram that the object is represented by a point and the forces are represent by a vector arrow
+12. Translate the sketch of a scenario into a free body diagram
+13. Analyze a free body diagram to find the net force
+14. Use the problem solving steps outlined in this Unit for solving force problems
+* All students are required to use all of these steps each time they solve a force problem for the rest of the course
+
+PHYSICS CONVENTIONS
+* The system must be identified ? there is no right or wrong way to identify the system, though some ways are more convenient than others.
+* In free body diagrams the object is represented by a dot while forces are arrows
+Unit 3 ? Module 2
+
+Types of forces activity
+
+RATIONALE
+The students should be exposed to as many forces as possible.  Use a hands-on activity that gives experience dealing with several of the following forces; weight, normal force, frictional force, tension force, compression thrust force, air drag, water drag, and so on.
+
+PRIOR KNOWLEDGE
+* experiences with forces ? the challenge is to formalize students? experiences since ?force? is a technical term/concept in physics that requires precise description
+
+CE?s AND PE?s
+
+21. Define Fg 
+22. Define normal force
+* The normal force is often not thought of as a force.  It is possible that students think an object just ?blocks? the motion or path of another object.
+* See http://www2.fiu.edu/~obrieng/82PhysTchMinstrellAtRestCond.pdf  
+23. Discuss weight in relationship to gravitational force
+24. Differentiate between field and contact forces
+* At this stage the field force is gravity. The key is that objects interacting through gravity need not be touching.
+25. Define the force of friction
+26. Know the four fundamental forces
+Differentiation for PSP
+27. Define static and kinetic friction
+28. Utilize coefficients of friction to calculate the force of static or kinetic friction 29. Define the force of tension
+
+PHYSICS CONVENTIONS
+* a single object is typically designated as the system
+
+
+MATERIALS
+* Newton scales
+
+Unit 3 ? Module 2
+
+Net force and equilibrium activity (Carts and Masses Activity)
+
+TEACHER NOTE:  It is understood that not all teachers will have the all the supplies or time to perform the following activity in full.  Teachers should modify the activity/handouts to best suit his/her needs and supplies.  The full activity as presented will take 2 to 3 days.
+
+RATIONALE
+At this point in the course the students should understand the concepts of constant velocity, accelerated motion, and that net force is related to acceleration.  The main thrust of this activity is to let the students explore the conditions of equilibrium and non-equilibrium.   Before engaging in this activity the students should be well acquainted with force problems where the motion resulting from zero net force and nonzero net force.
+
+The activity is broken into four (4) parts.  The first part asks the student for definitions and FBD?s for the three conditions being explored.  Since the students should be familiar with these topics this part helps to provide a framework for the hands-on activities that follow.
+
+In Part II the students explore the two possible states of motion, uniform including rest and non-uniform.  By using pulleys, string, carts, spring scales and masses the students can investigate directly how changing forces (and thereby the net force) will affect an object?s motion.  
+
+Part III focuses on a system not in equilibrium.  Most students find this type of force problem the most challenging.  By engaging the students in the direct physical experimentation of this situation, they can have a concrete experience to integrate with the theoretical framework the have been developing.  A nonzero net force will be applied to a cart and this will cause it to accelerate. (See the set up in the handout.)   Students will have to grapple with the relationships between applied forces, net force, and non-equilibrium.  The students will be asked to develop a testing procedure and use graphical techniques to analyze the situation.
+
+Part IV, Elaboration and Evaluation, can be assigned individually or as a group.  It requires the students to use what they have just learned in a hands-on activity to analyze completely new situations.  Internet resources such as ?How Stuff Works.com? will be needed as a research tool.  The teacher may use it as either a formative or summative assessment.  This portion could also be incorporated into future homework or given at a time later on in the unit.
+
+The four parts of this activity could be completed as a whole or broken up to be done at different times.  They build in complexity and should be performed in order.  After all parts are complete a post activity class discussion is appropriate to go over the activity.  The activity handouts provided should be carefully scrutinized by the teacher and modified to suit the level and number of students participating in the activity.  Some teachers may decide that there should be more structure for the students to describe their data gathering process, or that the additional questions need to be more complex or subtle.  As with all instructional materials, those modifications should be made at the discretion of the teacher based on his or her professional judgment.
+
+The most effective instruction will probably take place as the teacher circulates amongst the activity groups, asking them to describe what they are doing, why they are doing it and what would it mean if certain things changed.  Also, this is an opportunity to give immediate feedback, allowing the teacher to reiterate or explain some of the conventions used when showing work in a physics class. The activity class discussion can also be an effective way to strengthen conceptual relationships and highlight significant ideas present in the activity (the CE and PE items).
+
+The students should have the handouts in their hands as you discuss the activity.  The entire activity should take 2-4 days complete.
+
+PRIOR KNOWLEDGE AND SKILLS
+* knowledge from Units 1, 2  and 3
+* ability to calculate the net force on an object
+* experience in solving force problems and FBD
+
+CE?s AND PE?s
+9. Know that the acceleration of an object is directly proportional to the net forces and inversely proportional to the mass
+11. Know that in a free body diagram (FBD) that the object is represented by a point and the forces are represented by arrows 
+* Only forces acting on the object should be shown
+13. Analyze a free body diagram to find the net force
+* Multiple applied forces should be shown acting on a point (if applicable)
+* The net force must be found through proper addition of the force vectors
+1. Know that the forces in a force pair are equal in magnitude and opposite in direction
+* In the activities the string will be transferring the force. The spring scales placed in line with the strings should make the concept clearer.
+Know the mathematical relationship between force of gravity, mass and g.
+* It comes from Fnet = ma in the case where gravity is the only force being considered.
+* Emphasize that g changes with the distance from the center of the Earth, or in other words with the distance between the two objects (location).
+* Mass does not change with location.
+23. Discuss weight in relationship to gravitational force
+* Make sure the students understand that the strength of gravity depends on the height above the Earth?s surface (radial distance from the center of the Earth).
+* Gravity always points to the center of the Earth.
+* Usually the convention is to assume objects are on the ?surface of the Earth? so that the value of g remains constant, even if the object is moving vertically.
+PHYSICS CONVENTIONS
+* Objects in this part of the course will be treated as point particles, despite the fact that they are extended objects.  Objects will need to be treated as extended objects when discussing rotation, since rotation of a point particle does not make sense.
+* The frame of reference may change depending on what object you are exploring
+* A FBD consists of a point representing an object and vector arrows indicating the direction of all the forces acting on the object.
+* Choosing the system
+o The system is chosen by the person analyzing the scenario. Typically the system is chosen as the object under consideration, and the rest of the objects in the universe are labeled the ?surroundings? or something similar. The system does not include the forces acting on it because the system is made of an object or of objects. Forces are the interactions between objects. So considering a ball on the Earth?s surface, the ball can be called the system, the Earth is the only relevant object in the surroundings, and the interaction between the system (ball) and the surroundings (Earth) is gravity. Gravity is considered an external force on the ball because the Earth is not part of the system.
+
+MISCONCEPTIONS     
+* If there is no force an object will come to rest
+* Gravity, weight and mass are equivalent
+* There is never motion when an object is at equilibrium
+
+STUDENT GROUPING
+Students should work in groups of 2-4.  Groups that are too large will have too much down time while other group members are gathering data.
+* Students follow prompts on handouts as teacher circulates around the room facilitating the activity
+* Depending on the number of students there could be multiple setups of the same station
+
+
+MATERIALS
+Varies ? see each part below
+
+FOR EACH STUDENT
+* copy of handout
+* pencil
+* lined paper
+* graph paper
+
+
+TIMELINE (about 2 ? 4 days)
+10 minutes ? Introduction
+20 minutes ? Part I
+30 minutes ? Part II 
+40 minutes ? Part III
+40 minutes ? Part IV
+20 minutes ? Post activity discussion
+
+FOUR (4) PARTS
+
+Part I  
+
+Materials:
+* handout 
+
+Summary:	Each student should try to answer the prompts on his/her own.  The prompts dealing with equilibrium and FBD?s should be recognizable as the students have been solving problems in class.
+
+Intent:	To explore the forces acting on objects in hypothetical situations.  The concept of net force is critical and should be emphasized by the facilitator.
+
+
+Part II  
+
+Materials:
+* cart
+* masses
+* spring scales
+* string
+* pulleys
+
+Summary:	A cart resting on a table is attached via strings and pulleys to two hanging masses, each in the opposite directions. (See the sketch in the handout) The students are to set up the cart as shown in the sketch.  By following the prompts the students should be able to explore the two conditions of motion: constant motion (including rest) and accelerated motion.  Some help will be required during setup as many students have no experience with pulleys.  This is a ?qualitative? exercise.  The students should ?eyeball? the constant velocity and accelerated motion as best they can. 
+
+Intent:  	The intent of this part is to explore and experience situations involving equilibrium and non-equilibrium established with two hanging masses.  Explaining the cart?s constant motion (velocity) may be ?tricky? as friction complicates the discussion.  Establishing accelerated motion can be done by increasing one of the masses incrementally.
+Part III
+
+Materials:
+* cart
+* masses
+* spring scales
+* string, pulleys
+* meter sticks
+* timers
+
+Summary:	The students will develop a procedure to explore the relationship between increasing the hanging mass and the net force (and thereby acceleration).  The basic kinematics equation for displacement under constant acceleration can be rearranged to solve for acceleration. This may be a stretch for some students.  For a direct measure of acceleration photo gates, force sensors or motion sensors can be used.
+
+Intent:  	This part will to allow the students to develop a quasi-formal lab write-up independently with a focus on graphing data to see a pattern. The main focus will be on exploring nonzero net force and non-equilibrium conditions.
+
+Part IV   Elaboration and Evaluation (see below)
+ 
+
+Stage of activityWhat the students should doStudent mistakesActivity introduction (teacher lecture)Recognize activity broken into four partsExpect handout with explicit instructionsPossible teacher responses:
+- Encourage students to read prompts for each station and decide as a group how to proceed before performing activity
+- Reiterate the rationale for the activity as well as the CE?s and PE?sPart IRead and answer prompts- FBD arrow incorrectly drawn
+- can?t remember or formulate definitions
+
+Possible teacher responses:
+- discuss with students the attributes of a FBD
+- discuss the concepts surrounding equilibrium, perhaps discuss a similar situation
+
+Part II- set up apparatus
+- various trials while changing the masses
+- read and answer prompts
+- can?t make cart move at constant velocity
+- spring scale do not indicate the same values at rest
+- can?t assemble apparatus from sketch
+- student could drop masses on finger or toesPossible teacher responses:
+- friction in the cart bearing may be a problem, try another cart
+- scale may need to be ?zeroed?
+- a sample setup could be built by the teacher prior to the students lab so they could see what the apparatus looks like
+- advise the students to be careful when lifting blocksPart III- setup apparatus
+- various trials while changing the masses
+- read and answer prompts
+- write lab report and graph data- can?t make cart move at constant velocity
+- spring scale do not indicate the same values at rest
+- can?t assemble apparatus from sketch
+- student could drop masses on finger or toesPossible teacher responses:
+- friction in the cart bearing may be a problem, try another cart
+- scale may need to be ?zeroed?
+- a sample setup could be built by the teacher prior to the students lab so they could see what the apparatus looks like
+- discuss proper graphing techniquesElaboration and Evaluation- search the internet 
+- apply the physics concepts and terms appropriately to new situations
+ - confusion about applying terms and conceptsPossible teacher responses:
+Circulate around students and discuss terms and meanings as they relate to the new situations
+
+ELABORATION AND EVALUATION
+(POST ACTIVITY DISCUSSION AND WRITING PROMPTS)
+
+The following mechanical equipment provides examples of concepts such as force, gravity, friction, equilibrium, net force, acceleration, and so on, which we have been studying.  You may not know much about the equipment, but you soon will.  You are to research each piece of equipment on the Internet and find out how it works.  Next you should make a simplified sketch of each with labels for the main components.  Lastly, you are to discuss with your group using the understanding you have gained from the activities in class to explain how and when concepts like force, gravity, equilibrium, friction, net force, acceleration, and so on, are demonstrated when using the equipment.  Explain you responses in detail using appropriate physics terminology.  Write responses on separate lined paper.
+
+1. The Mount Washington Incline has been in use for many years.  It would take a lot of force to lift just one car with a motor and cable.  Consider when it accelerates, decelerates, moves at constant velocity and stands still. Address what happens when the one car is full and one is empty.
+
+2. A cable-operated elevator demonstrates forces and the concepts of equilibrium and non-equilibrium while in operation.  Consider when it accelerates, decelerates, moves at constant velocity and stands still.  When is it in equilibrium?
+
+3. An aircraft carrier catapult system launches planes.  Consider when it accelerates, decelerates, moves at constant velocity and stands still.  Explain its use with the concepts of net force and equilibrium.
+
+4. An aircraft carrier arrester cable system stops planes when they land.  Consider when it accelerates, decelerates, moves at constant velocity and stands still.  Explain its use with the concepts of net force and equilibrium.
+
+
+
+2
+
+Physics Core Curriculum 2011-2012
+Unit 3
+
+1
+
