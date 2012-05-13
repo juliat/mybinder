@@ -4,6 +4,7 @@ class ThresholdProblem < ActiveRecord::Base
     # Relationships
     # =================================================================================  
     belongs_to :mod
+    belongs_to :problem_type
     has_one :text_reference, :as => :textbookable, :dependent => :destroy
     
     accepts_nested_attributes_for :text_reference, :allow_destroy => true
@@ -16,7 +17,6 @@ class ThresholdProblem < ActiveRecord::Base
     # Methods
     # =================================================================================   
     def problem
-        puts self.id
         return "#{self.text_reference.as_string}"
     end
 end

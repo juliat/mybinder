@@ -1,10 +1,8 @@
 <%= simple_nested_form_for @unit, :html => { :class => 'form' } do |unit_form| %>
 <div>
-
     <fieldset>               
         <%= render :partial => 'unit_fields', :locals => {:f => unit_form} %>
     </fieldset>
-        
 
     <div id="unit_key_concepts" class="well">
         <legend>Key Concepts</legend>
@@ -28,8 +26,6 @@
         </p>
     </div> 
     
-    
-
     <div class="form-actions">
       <%= unit_form.submit nil, :class => 'btn btn-primary' %>
       <%= link_to 'Cancel', units_path, :class => 'btn' %>

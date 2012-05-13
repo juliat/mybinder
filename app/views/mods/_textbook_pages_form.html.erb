@@ -1,0 +1,6 @@
+<% unless inThreshProb %>
+	<%= f.link_to_remove "Remove" %>
+<% end %>
+<%= f.input :book, :collection => TextReference::BOOKS_LIST %>
+<%= f.input :location, :as => "string" %>
+<hr>

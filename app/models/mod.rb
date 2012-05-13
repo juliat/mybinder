@@ -1,11 +1,12 @@
 class Mod < ActiveRecord::Base
 
-    attr_accessible :number, :days, :unit_id, :threshold_problems_attributes, :text_references_attributes
+    attr_accessible :number, :days, :unit_id, :threshold_problems_attributes, :text_references_attributes, :equations_attributes
 
   
     # Relationships
     # =================================================================================
     has_many :threshold_problems
+    has_many :equations
     has_many :text_references, :as => :textbookable, :dependent => :destroy
     belongs_to :unit
     has_many :topics
@@ -15,6 +16,7 @@ class Mod < ActiveRecord::Base
     
     accepts_nested_attributes_for :text_references, :allow_destroy => true
     accepts_nested_attributes_for :threshold_problems, :allow_destroy => true
+    accepts_nested_attributes_for :equations, :allow_destroy => true
     
     # Scopes
     # =================================================================================

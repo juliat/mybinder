@@ -1,9 +1,35 @@
-<%= simple_form_for @mod, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.association :unit %>
-  <%= f.input :days, :as => "string" %>
-  <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                mods_path, :class => 'btn' %>
-  </div>
+<%= simple_nested_form_for @mod, :html => { :class => 'form' } do |mod_form| %>
+<div>
+
+    <fieldset>               
+        <%= render :partial => 'mod_fields', :locals => {:f => mod_form} %>
+    </fieldset>
+
+    <div id="mod_txt_pages" class="well">
+        <legend>Textbook Pages</legend>
+        <%= mod_form.simple_fields_for :text_references do |text_ref_form| %>
+            <%= render :partial => 'textbook_pages_form', :locals => {:f => text_ref_form, :inThreshProb => false} %>
+        <% end %> 
+        <p>
+            <br />
+            <%= mod_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add textbook pages"), :text_references, :class => 'btn btn-mini btn-primary') %>
+        </p>
+    </div> 
+    
+    <div id="thresh_probs" class="well">
+        <legend>Threshold Problems</legend>
+        <%= mod_form.simple_fields_for :threshold_problems do |thresh_prob_form| %>
+            <%= render :partial => 'thresh_prob_form', :locals => {:f => thresh_prob_form} %>
+        <% end %> 
+        <p>
+            <br />
+            <%= mod_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add threshold problem"), :threshold_problems, :class => 'btn btn-mini btn-primary') %>
+        </p>
+    </div> 
+    
+    <div class="form-actions">
+      <%= mod_form.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', units_path, :class => 'btn' %>
+    </div>
+</div>
 <% end %>

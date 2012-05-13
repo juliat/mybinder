@@ -1,0 +1,5 @@
+<%= f.link_to_remove "Remove" %>
+<%= f.association :problem_type %>
+<%= f.simple_fields_for :text_references do |text_ref_form| %>
+	<%= render :partial => 'textbook_pages_form', :locals => {:f => text_ref_form, :inThreshProb => true} %>
+<% end %> 
