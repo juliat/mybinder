@@ -7,7 +7,7 @@
   <tbody>
     <% @units.each do |unit| %>
       <tr>
-        <td><%= link_to(unit.name, unit_path(unit)) %></td>
+        <td><%= link_to("Unit #{unit.number}: #{unit.name}", unit_path(unit)) %></td>
       </tr>
     <% end %>
   </tbody>

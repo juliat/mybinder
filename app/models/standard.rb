@@ -11,5 +11,4 @@ class Standard < ActiveRecord::Base
     # =================================================================================
     has_many :standard_goal_mappings
     belongs_to :author_org
-    
 end

@@ -1,6 +1,6 @@
 class Mod < ActiveRecord::Base
 
-    attr_accessible :days, :unit_id
+    attr_accessible :number, :days, :unit_id, :notes
 
   
     # Relationships

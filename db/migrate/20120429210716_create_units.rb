@@ -5,6 +5,7 @@ class CreateUnits < ActiveRecord::Migration
       t.integer :number
       t.string :name
       t.date :start_date
+      t.date :end_date
       t.integer :days
       t.text :notes
 

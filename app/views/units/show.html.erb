@@ -6,6 +6,10 @@
   <%= humanize_date(@unit.start_date) %>
 </p>
 <p>
+  <strong><%= model_class.human_attribute_name(:end_date) %>:</strong><br>
+  <%= humanize_date(@unit.end_date) %>
+</p>
+<p>
   <strong><%= model_class.human_attribute_name(:days) %>:</strong><br>
   <%= @unit.days %>
 </p>

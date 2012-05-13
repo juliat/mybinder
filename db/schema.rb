@@ -84,8 +84,10 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
   end
 
   create_table "mods", :force => true do |t|
+    t.integer  "number"
     t.integer  "days"
     t.integer  "unit_id"
+    t.text     "notes"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -125,6 +127,7 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
     t.integer  "number"
     t.string   "name"
     t.date     "start_date"
+    t.date     "end_date"
     t.integer  "days"
     t.text     "notes"
     t.datetime "created_at", :null => false

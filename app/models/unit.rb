@@ -1,8 +1,10 @@
 class Unit < ActiveRecord::Base
 
     #~ t.integer :course_id
+    #~ t.integer :number
     #~ t.string :name
     #~ t.date :start_date
+    #~ t.date :end_date
     #~ t.integer :days
     #~ t.text :notes
 
@@ -10,7 +12,7 @@ class Unit < ActiveRecord::Base
     # =================================================================================
     # validates_presence_of :name, :start_date, :days
 
-    attr_accessible :course_id, :number, :name, :start_date, :days, :notes,
+    attr_accessible :course_id, :number, :name, :start_date, :end_date, :days, :notes,
                     :key_concepts_attributes, :key_terms_attributes
 
 
@@ -33,6 +35,7 @@ class Unit < ActiveRecord::Base
     # Scopes
     # =================================================================================
     scope :for_course, lambda {|course_id| where("course_id = ?", course_id) }
+    scope :in_sequence, order("number")
     
     
     

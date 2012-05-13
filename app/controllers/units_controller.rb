@@ -2,7 +2,7 @@ class UnitsController < ApplicationController
   # GET /units
   # GET /units.json
   def index
-    @units = Unit.all
+    @units = Unit.in_sequence.all
 
     respond_to do |format|
       format.html # index.html.erb
