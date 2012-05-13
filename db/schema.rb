@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
   create_table "key_concepts", :force => true do |t|
     t.integer  "unit_id"
     t.integer  "number"
-    t.string   "statement"
+    t.text     "statement"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
   create_table "misconceptions", :force => true do |t|
     t.string   "statement"
     t.integer  "topic_id"
+    t.integer  "unit_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -100,6 +101,7 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
   end
 
   create_table "standards", :force => true do |t|
+    t.integer  "unit_id"
     t.string   "author_org_id"
     t.string   "author_org_code"
     t.string   "statement"

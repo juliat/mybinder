@@ -3,7 +3,7 @@ class CreateKeyConcepts < ActiveRecord::Migration
     create_table :key_concepts do |t|
       t.integer :unit_id
       t.integer :number
-      t.string :statement
+      t.text :statement
 
       t.timestamps
     end

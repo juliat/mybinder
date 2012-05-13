@@ -24,8 +24,8 @@ class Unit < ActiveRecord::Base
     has_many :mods
     has_many :topics, :through => :mods
     has_many :goals, :through => :topics
-    # has_many :standards
-    # has_many :misconceptions
+    has_many :standards # temporary until standards are mapped to goals
+    has_many :misconceptions
     
     # accepts_nested_attributes_for :standards, :allow_destroy => true
     accepts_nested_attributes_for :key_concepts, :allow_destroy => true

@@ -47,6 +47,7 @@ def saveData(data_hash)
 	# save standards
 	data_hash["standards"].each do |standard|
 		@standard = Standard.new()
+		@standard.unit_id = @unit.id
 		@standard.author_org_id = @standards_author.id
 		@standard.author_org_code = standard["code"]
 		@standard.statement = standard["statement"]
@@ -54,7 +55,6 @@ def saveData(data_hash)
 	end
 	
 	# modules
-	puts data_hash["modules"]
 	modules = data_hash["modules"]
 	modules.each do |mod_num, mod|
 		@mod = Mod.new()
@@ -64,6 +64,48 @@ def saveData(data_hash)
 		@mod.notes = mod["notes"]
 		@mod.save!
 	end
+	
+	# topics
+	topics = data_hash["topics"]
+	topics.each do |topic|
+		@topic = Topic.new()
+		module_num = topic["mod"]
+		@mod = Mod.where("unit_id = ?", @unit.id).where("number = ?", module_num).first
+		@topic.mod_id = @mod.id
+		@topic.name = topic["name"]
+		@topic.save!
+	end
+	
+	# key_concepts
+	key_concepts = data_hash["key_concepts"]
+	key_concepts.each do |concept|
+		@concept = KeyConcept.new()
+		@concept.unit_id = @unit.id
+		@concept.number = concept["number"].to_i
+		@concept.statement = concept["statement"]
+		@concept.save!
+	end
+	
+	# key terms
+	key_terms = data_hash["key_terms"]
+	key_terms.each do |term|
+		@term = KeyTerm.new()
+		@term.unit_id = @unit.id
+		@term.term = term["term"]
+		# differentiated for psp -- field?
+		@term.save!
+	end
+	
+	# misconceptions
+	misconceptions = data_hash["misconceptions"]
+	misconceptions.each do |miscon|
+		@miscon = Misconception.new()
+		@miscon.statement = miscon
+		@miscon.unit_id = @unit.id
+		@miscon.save!
+	end
+	
+	
 		
 end
    
@@ -129,7 +171,7 @@ Dir.foreach('./public/data/curric') do |file|
 		moduleTitleRegex = /^(\s)?Module (?<module_num>\d)$/
 		current_mod = ""
 
-		topicRegex = /^(\s{1,})?[A-Z][\w\s\?\(\)]{1,}$/
+		topicRegex = /^(\s{1,})?[A-Z][\w\s\?\(\):]{1,}$/
 		inTopic = false
 
 		olRegex = /^(?<number>\d{1,2}).(\s){1,}(?<statement>[\w\s,\(\)\.\-\/#;\?\+]{1,})$/

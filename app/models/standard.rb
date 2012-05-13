@@ -1,6 +1,6 @@
 class Standard < ActiveRecord::Base
    
-    attr_accessible :author_org_id, :author_org_code, :statement
+    attr_accessible :author_org_id, :author_org_code, :statement, :unit_id
 
     # Validations
     # =================================================================================
@@ -11,4 +11,5 @@ class Standard < ActiveRecord::Base
     # =================================================================================
     has_many :standard_goal_mappings
     belongs_to :author_org
+    belongs_to :unit # temporary until standards are mapped to goals
 end

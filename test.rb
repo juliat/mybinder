@@ -248,18 +248,18 @@ Dir.foreach('./public/data/curric') do |file|
 		puts br
 		puts modules
 		puts br
-		#~ puts standards
-		#~ puts br
-		#~ puts key_concepts
-		#~ puts br
+		puts standards
+		puts br
+		puts key_concepts
+		puts br
 		puts topics
 		puts br
-		#~ puts goals
-		#~ puts br
-		#~ puts key_terms
-		#~ puts br
-		#~ puts misconceptions
-		#~ puts br
-		#~ puts threshold_problems
+		puts goals
+		puts br
+		puts key_terms
+		puts br
+		puts misconceptions
+		puts br
+		puts threshold_problems
 	end
 end

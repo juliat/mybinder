@@ -3,6 +3,7 @@ class CreateMisconceptions < ActiveRecord::Migration
     create_table :misconceptions do |t|
       t.string :statement
       t.integer :topic_id
+      t.integer :unit_id
       t.timestamps
     end
   end
