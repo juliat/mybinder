@@ -89,7 +89,6 @@ ActiveRecord::Schema.define(:version => 20120513070932) do
     t.integer  "number"
     t.integer  "days"
     t.integer  "unit_id"
-    t.text     "notes"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -135,6 +134,7 @@ ActiveRecord::Schema.define(:version => 20120513070932) do
 
   create_table "threshold_problems", :force => true do |t|
     t.integer  "problem_type_id"
+    t.integer  "mod_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end

@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-[User, Course, Unit, Mod, Topic, Goal, Misconception, ThresholdProblem].each(&:delete_all)
+[User, Course, Unit, Mod, Topic, Goal, Misconception, ProblemType, ThresholdProblem, TextReference].each(&:delete_all)
 
 # create admin
 @user = User.new()
@@ -27,6 +27,14 @@ descr_file = File.new("#{Rails.root}/public/data/curric/course_descr.txt", "r")
 @standards_author = AuthorOrg.new()
 @standards_author.name = "Pennsylvania Assessment Anchor Content Standards"
 @standards_author.save!
+
+# problem types
+prob_types = ["Conceptual", "Computational"]
+for type in prob_types
+	@type = ProblemType.new()
+	@type.name = type
+	@type.save!
+end
 
 
 def setDateYear(datestr, date)
@@ -68,11 +76,14 @@ def saveData(data_hash)
 		@mod = Mod.new()
 		@mod.days = mod["num_days"]
 		@mod.number = mod["module_num"].to_i
-		@mod.unit_id = Unit.find_by_name(mod["unit"]).id
-		@mod.notes.each do |note|
+		@mod.unit_id = @unit.id
+		@mod.save!
+		mod["notes"].each do |note|
 			@textRef = TextReference.new()
 			@textRef.book = note["textbook"]
 			@textRef.location = note["location"]
+			@textRef.textbookable_id = @mod.id
+			@textRef.textbookable_type = "Mod"
 			@textRef.save!
 		end
 		@mod.save!
@@ -123,13 +134,34 @@ def saveData(data_hash)
 	misconceptions = data_hash["misconceptions"]
 	misconceptions.each do |miscon|
 		@miscon = Misconception.new()
-		@miscon.statement = miscon
+		@miscon.statement = miscon.gsub(/\?/, "'").capitalize
 		@miscon.unit_id = @unit.id
 		@miscon.save!
-	end
+	end	
 	
-	
+	# threshold problems
+	threshold_problems = data_hash["threshold_problems"]
+	threshold_problems.each do |problem|
+		@prob = ThresholdProblem.new()
 		
+		problem_type_id = ProblemType.find_by_name(problem["type"]).id
+		@prob.problem_type_id = problem_type_id
+		
+		# set module relationship
+		module_num = problem["module"]
+		@prob_mod = Mod.where("unit_id = ?", @unit.id).where("number = ?", module_num).first	
+		
+		@prob.mod_id = @prob_mod.id
+		
+		@prob.save!
+		
+		@textR = TextReference.new()
+		@textR.book = problem["text"]["textbook"]
+		@textR.location = problem["text"]["location"]
+		@textR.textbookable_id = @prob.id
+		@textR.textbookable_type = "ThresholdProblem"
+		@textR.save!
+	end
 end
    
 
@@ -165,8 +197,7 @@ def parseStandard(line)
 end
 
 def parseTextbookRef(line)
-	txtRefRegex = /(?<textbook>(Holt|Hewitt)) (?<location>((pp|(p\.(\s)?(\d){1,3}))\s? #?(\d){1,3}((-(\d){1,3})|[\s\d\w,]{1,})))/
-	puts line
+	txtRefRegex = /(?<textbook>(Holt|Hewitt)) (?<location>.{1,})/
 	match_data = line.match(txtRefRegex)
 	return createMatchDataHash(match_data)
 end

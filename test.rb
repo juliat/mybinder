@@ -1,3 +1,11 @@
+def setDateYear(datestr, date)
+	if date.month >= 9
+		return datestr + " 2011"
+	else
+		return datestr + " 2012"
+	end
+end
+ 
 def createMatchDataHash(match_data)
 	data_names = match_data.names
 	data_values = match_data.captures
@@ -28,7 +36,12 @@ def parseStandard(line)
 	return createMatchDataHash(match_data)
 end
 
-#~ File.open("#{Rails.root}/public/data/curric/course_descr.txt") do |f|
+def parseTextbookRef(line)
+	txtRefRegex = /(?<textbook>(Holt|Hewitt)) (?<location>.{1,})/
+	match_data = line.match(txtRefRegex)
+	return createMatchDataHash(match_data)
+end
+
 Dir.foreach('./public/data/curric') do |file|
 	puts file
 	if file.match(/physics_unit_\d.txt$/)
@@ -59,7 +72,7 @@ Dir.foreach('./public/data/curric') do |file|
 		moduleTitleRegex = /^(\s)?Module (?<module_num>\d)$/
 		current_mod = ""
 
-		topicRegex = /^(\s{1,})?[A-Z][\w\s\?\(\)]{1,}$/
+		topicRegex = /^(\s{1,})?[A-Z][\w\s\?\(\):]{1,}$/
 		inTopic = false
 
 		olRegex = /^(?<number>\d{1,2}).(\s){1,}(?<statement>[\w\s,\(\)\.\-\/#;\?\+]{1,})$/
@@ -119,7 +132,7 @@ Dir.foreach('./public/data/curric') do |file|
 				elsif moduleRegex.match(line)
 					inModuleName = true
 					mod = parseModuleData(line)
-					mod["unit_id"] = unit["unit_num"]
+					mod["unit"] = unit["unit_name"]
 					mod["notes"] = []
 					modules[mod["module_num"]] = mod
 					current_mod = mod["module_num"]
@@ -174,8 +187,9 @@ Dir.foreach('./public/data/curric') do |file|
 						inPSPGoals = true
 					end
 					
+				# in Module Notes	
 				elsif current_mod != "" && moduleNotesRegex.match(line)
-					modules[current_mod]["notes"] << line[2..line.size].strip
+					modules[current_mod]["notes"] << parseTextbookRef(line)
 					
 				elsif inUnitNotes
 					unit["notes"] << line[2..line.size].strip
@@ -211,7 +225,7 @@ Dir.foreach('./public/data/curric') do |file|
 					key_terms << term
 				
 				elsif inMisconceptions
-					misconceptions << line[2..line.size].strip
+					misconceptions << line[2..line.size].strip.gsub(/\?/, "'").capitalize
 				
 				elsif thresholdModuleRegex.match(line)
 					current_mod = createMatchDataHash(thresholdModuleRegex.match(line))["mod_num"]
@@ -229,7 +243,8 @@ Dir.foreach('./public/data/curric') do |file|
 				
 				elsif inThresholdProblems && thresholdProblemRegex.match(line)
 					problem = {}
-					problem["text"] = line[2..line.size].strip
+					problemLine = line[2..line.size].strip
+					problem["text"] = parseTextbookRef(problemLine)
 					problem["type"] = problem_type
 					problem["module"] = current_mod	
 					if inPSPproblems
@@ -241,6 +256,7 @@ Dir.foreach('./public/data/curric') do |file|
 				end
 			end
 		end
+
 
 		br = " ============================================================================= "
 

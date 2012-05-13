@@ -4,7 +4,6 @@ class CreateMods < ActiveRecord::Migration
       t.integer :number
       t.integer :days
       t.integer :unit_id
-      t.text :notes
       t.timestamps
     end
   end

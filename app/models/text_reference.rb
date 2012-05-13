@@ -9,4 +9,10 @@ class TextReference < ActiveRecord::Base
     # Constants
     # =================================================================================
     BOOKS_LIST = ['Holt', 'Hewitt']  
+    
+    # Methods
+    # =================================================================================  
+    def as_string
+        return "#{self.book} #{self.location}"
+    end
 end
