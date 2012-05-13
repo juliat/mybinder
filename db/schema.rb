@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120511025015) do
+ActiveRecord::Schema.define(:version => 20120513070932) do
 
   create_table "activities", :force => true do |t|
     t.string   "name"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
 
   create_table "goals", :force => true do |t|
     t.string   "statement"
+    t.integer  "number"
     t.integer  "goal_type_id"
     t.integer  "topic_id"
     t.datetime "created_at",   :null => false
@@ -93,6 +94,12 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "problem_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "standard_goal_mappings", :force => true do |t|
     t.integer  "standard_id"
     t.integer  "goal_id"
@@ -115,6 +122,21 @@ ActiveRecord::Schema.define(:version => 20120511025015) do
     t.string   "school"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "text_references", :force => true do |t|
+    t.string   "book"
+    t.string   "location"
+    t.integer  "textbookable_id"
+    t.string   "textbookable_type"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "threshold_problems", :force => true do |t|
+    t.integer  "problem_type_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "topics", :force => true do |t|

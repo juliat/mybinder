@@ -6,7 +6,15 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-[Course, Unit, Mod, Topic, Goal, Misconception].each(&:delete_all)
+[User, Course, Unit, Mod, Topic, Goal, Misconception, ThresholdProblem].each(&:delete_all)
+
+# create admin
+@user = User.new()
+@user.email = "julialt@gmail.com"
+@user.password = "secret"
+@user.password_confirmation = "secret"
+@user.role = "admin"
+@user.save!
 
 # Create course
 @course = Course.new()
@@ -61,7 +69,12 @@ def saveData(data_hash)
 		@mod.days = mod["num_days"]
 		@mod.number = mod["module_num"].to_i
 		@mod.unit_id = Unit.find_by_name(mod["unit"]).id
-		@mod.notes = mod["notes"]
+		@mod.notes.each do |note|
+			@textRef = TextReference.new()
+			@textRef.book = note["textbook"]
+			@textRef.location = note["location"]
+			@textRef.save!
+		end
 		@mod.save!
 	end
 	
@@ -74,6 +87,16 @@ def saveData(data_hash)
 		@topic.mod_id = @mod.id
 		@topic.name = topic["name"]
 		@topic.save!
+	end
+	
+	# goals
+	goals = data_hash["goals"]
+	goals.each do |goal|
+		@goal = Goal.new()
+		@goal.topic_id = Topic.find_by_name(goal["topic"]).id
+		@goal.number = goal["number"]
+		@goal.statement = goal["statement"]
+		@goal.save!
 	end
 	
 	# key_concepts
@@ -141,8 +164,15 @@ def parseStandard(line)
 	return createMatchDataHash(match_data)
 end
 
+def parseTextbookRef(line)
+	txtRefRegex = /(?<textbook>(Holt|Hewitt)) (?<location>((pp|(p\.(\s)?(\d){1,3}))\s? #?(\d){1,3}((-(\d){1,3})|[\s\d\w,]{1,})))/
+	puts line
+	match_data = line.match(txtRefRegex)
+	return createMatchDataHash(match_data)
+end
+
 Dir.foreach('./public/data/curric') do |file|
-	# puts file
+	puts file
 	if file.match(/physics_unit_\d.txt$/)
 		file = File.new("./public/data/curric/" + file, "r")
 		# file = File.new("./public/data/curric/physics_unit_3.txt", "r")
@@ -286,8 +316,9 @@ Dir.foreach('./public/data/curric') do |file|
 						inPSPGoals = true
 					end
 					
+				# in Module Notes	
 				elsif current_mod != "" && moduleNotesRegex.match(line)
-					modules[current_mod]["notes"] << line[2..line.size].strip
+					modules[current_mod]["notes"] << parseTextbookRef(line)
 					
 				elsif inUnitNotes
 					unit["notes"] << line[2..line.size].strip
@@ -341,7 +372,8 @@ Dir.foreach('./public/data/curric') do |file|
 				
 				elsif inThresholdProblems && thresholdProblemRegex.match(line)
 					problem = {}
-					problem["text"] = line[2..line.size].strip
+					problemLine = line[2..line.size].strip
+					problem["text"] = parseTextbookRef(problemLine)
 					problem["type"] = problem_type
 					problem["module"] = current_mod	
 					if inPSPproblems

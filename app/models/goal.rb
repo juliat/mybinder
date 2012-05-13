@@ -1,5 +1,5 @@
 class Goal < ActiveRecord::Base
-    attr_accessible :goal_type_id, :statement, :topic_id
+    attr_accessible :goal_type_id, :statement, :topic_id, :number
 
     # Validations
     # =================================================================================
