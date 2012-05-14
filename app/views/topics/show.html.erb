@@ -2,11 +2,11 @@
 <h1><%=t '.title', :default => @topic.name %></h1>
 
 <h2>Goals</h2>
-<ul>
+<ol>
     <% for goal in @goals %>
         <li><%= goal.statement %></li>
     <% end %>
-</ul>
+</ol>
 
 <!--
 <div class="form-actions">
