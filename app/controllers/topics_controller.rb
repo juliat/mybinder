@@ -1,9 +1,13 @@
 class TopicsController < ApplicationController
   
-  before_filter :authenticate_user!
-  load_and_authorize_resource :except => [:update_attribute_on_the_spot, :get_attribute_on_the_spot]
-  
-  can_edit_on_the_spot
+    before_filter :authenticate_user!
+    load_and_authorize_resource :except => [:update_attribute_on_the_spot, :get_attribute_on_the_spot]
+
+    can_edit_on_the_spot :check_access
+
+    def check_access(object, field)
+        authorize! :edit, object
+    end
   
   # GET /topics
   # GET /topics.json

@@ -1,5 +1,5 @@
 class Topic < ActiveRecord::Base
-    attr_accessible :mod_id, :name
+    attr_accessible :mod_id, :name, :number
 
     # Relationships
     # ==============================================================================
