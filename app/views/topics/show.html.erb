@@ -1,10 +1,10 @@
 <%- model_class = @topic.class -%>
-<h1><%=t '.title', :default => @topic.name %></h1>
+<h1><%= on_the_spot_edit @topic, :name %></h1>
 
 <h2>Goals</h2>
 <ol>
     <% for goal in @goals %>
-        <li><%= goal.statement %></li>
+        <li><%= on_the_spot_edit goal, :statement %></li>
     <% end %>
 </ol>
 

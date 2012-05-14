@@ -16,5 +16,6 @@ class Goal < ActiveRecord::Base
     # Scopes
     # =================================================================================
     scope :for_topic, lambda {|topic_id| where("topic_id = ?", topic_id) }
+    scope :in_order, order("number")
 
 end

@@ -1,7 +1,9 @@
 class TopicsController < ApplicationController
   
   before_filter :authenticate_user!
-  load_and_authorize_resource
+  load_and_authorize_resource :except => [:update_attribute_on_the_spot, :get_attribute_on_the_spot]
+  
+  can_edit_on_the_spot
   
   # GET /topics
   # GET /topics.json
@@ -18,7 +20,7 @@ class TopicsController < ApplicationController
   # GET /topics/1.json
   def show
     @topic = Topic.find(params[:id])
-    @goals = Goal.for_topic(@topic.id)
+    @goals = Goal.for_topic(@topic.id).in_order
 
     respond_to do |format|
       format.html # show.html.erb
@@ -67,9 +69,11 @@ class TopicsController < ApplicationController
       if @topic.update_attributes(params[:topic])
         format.html { redirect_to @topic, notice: 'Topic was successfully updated.' }
         format.json { head :no_content }
+        format.xml  { head :ok }
       else
         format.html { render action: "edit" }
         format.json { render json: @topic.errors, status: :unprocessable_entity }
+        format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
       end
     end
   end
