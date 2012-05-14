@@ -16,9 +16,5 @@
 //= require nested_form
 //= require equation_editor/eq_config
 //= require equation_editor/eq_editor-lite-11
-//= require jquery.jeditable
+//= require on_the_spot
 //= require_tree .
-
-$('.editable').live('change', function() {
-  $(this).parents('form:first').submit();
-});

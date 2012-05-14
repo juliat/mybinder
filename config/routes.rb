@@ -1,16 +1,30 @@
 Mybinder::Application.routes.draw do
   
-  devise_for :users
+    devise_for :users
 
-  resources :courses
-  resources :units
-  resources :mods
-  resources :topics
-  resources :goals
-  resources :activities
-  resources :equations
+    resources :courses
+    resources :units
+    resources :mods
+    resources :activities
+    resources :equations
+    resources :online_resources
   
-  root :to => 'courses#index'
+    # allow for use of on_the_spot with routes
+    resources :topics do
+      collection do
+        put :update_attribute_on_the_spot
+        get :get_attribute_on_the_spot
+      end
+    end
+    resources :goals do
+      collection do
+        put :update_attribute_on_the_spot
+        get :get_attribute_on_the_spot
+      end
+    end
+  
+  
+    root :to => 'courses#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

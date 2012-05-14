@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120513215553) do
+ActiveRecord::Schema.define(:version => 20120514073113) do
 
   create_table "activities", :force => true do |t|
     t.string   "name"
@@ -102,6 +102,17 @@ ActiveRecord::Schema.define(:version => 20120513215553) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "online_resources", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "description"
+    t.integer  "user_id"
+    t.integer  "resourceable_id"
+    t.string   "resourceable_type"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
   create_table "problem_types", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -150,6 +161,7 @@ ActiveRecord::Schema.define(:version => 20120513215553) do
 
   create_table "topics", :force => true do |t|
     t.integer  "mod_id"
+    t.integer  "number"
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

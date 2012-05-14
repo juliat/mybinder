@@ -1,0 +1,13 @@
+<% @online_resource	= OnlineResource.new() %>
+<%= simple_form_for @online_resource, :html => { :class => 'form-horizontal' } do |f| %>
+	
+	<%# @online_resource.resourceable_type = model.class %>
+	<%# @online_resource.resourceable_id = whatever the object on the page is %>
+	
+	<%= f.input :name %>
+	<%= f.input :url %>
+	<%= f.input :description %>
+
+	<%= f.button :submit, :class => 'btn-primary' %>
+	<%= link_to "Cancel", "#" %>
+<% end %>

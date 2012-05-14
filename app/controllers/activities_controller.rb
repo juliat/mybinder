@@ -25,7 +25,8 @@ class ActivitiesController < ApplicationController
   # GET /activities/new.json
   def new
     @activity = Activity.new
-
+    @assignment.topic_id = params[:topic_id] unless params[:topic_id].nil?
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @activity }
