@@ -7,6 +7,7 @@ Mybinder::Application.routes.draw do
     resources :mods
     resources :activities
     resources :equations
+    resources :online_resources
   
     # allow for use of on_the_spot with routes
     resources :topics do

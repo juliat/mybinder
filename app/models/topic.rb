@@ -14,5 +14,6 @@ class Topic < ActiveRecord::Base
     # Scopes
     # ==============================================================================
     scope :for_mod, lambda {|mod_id| where("mod_id = ?", mod_id) }
+    scope :in_order, order("number")
     
 end

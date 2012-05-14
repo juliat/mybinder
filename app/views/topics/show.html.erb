@@ -1,12 +1,28 @@
 <%- model_class = @topic.class -%>
-<h1><%= on_the_spot_edit @topic, :name %></h1>
+<h1><%# on_the_spot_edit @topic, :name %> <%= @topic.name %></h1>
+
 
 <h2>Goals</h2>
 <ol>
-    <% for goal in @goals %>
-        <li><%= on_the_spot_edit goal, :statement %></li>
+<% unless @topic.goals.empty? %>
+    <% for goal in @topic.goals.in_order %>
+        <li><%# on_the_spot_edit goal, :statement %> <%= goal.statement %></li>
     <% end %>
 </ol>
+<% else %>
+    <p>There aren't any goals for this topic.</p>
+<% end %>
+
+<h2>Activities</h2>
+<% unless @topic.activities.empty? %>
+<ol>
+    <% for activity in @topic.activities %>
+        <li><%= activity.name %></li>
+    <% end %>
+</ol>
+<% else %>
+    <p>There aren't any activities for this topic. <%= link_to "Add one!", new_activity_path(:topic_id => @topic.id ) %></p>
+<% end %>
 
 <!--
 <div class="form-actions">

@@ -24,7 +24,6 @@ class TopicsController < ApplicationController
   # GET /topics/1.json
   def show
     @topic = Topic.find(params[:id])
-    @goals = Goal.for_topic(@topic.id).in_order
 
     respond_to do |format|
       format.html # show.html.erb
