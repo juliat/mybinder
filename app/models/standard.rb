@@ -10,6 +10,7 @@ class Standard < ActiveRecord::Base
     # Relationships
     # =================================================================================
     has_many :standard_goal_mappings
+    has_many :goals, :through => :standard_goal_mappings
     belongs_to :author_org
     belongs_to :unit # temporary until standards are mapped to goals
 end

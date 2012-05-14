@@ -1,0 +1,11 @@
+<%= simple_form_for @equation, :html => {:multipart => true} do |f| %>
+
+	<%= f.input :image_file %>
+	<%= f.input :remote_image_url %>
+		
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', units_path, :class => 'btn' %>
+    </div>
+</div>
+<% end %>

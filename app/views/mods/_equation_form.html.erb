@@ -1,0 +1,9 @@
+<div id="equation_editor"></div>
+<%= f.input :latex, :as => "text", :input_html => {:id => "eq_editor_box"} %>
+<textarea id="eq_editor_box" rows="3" cols="40"></textarea>
+<!--
+	// initialize codecogs equation editor
+	EqEditor.embed('equation_editor','','mini','en-us');
+	var a=new EqTextArea('equation', 'eq_editor_box');
+	EqEditor.add(a,false); 
+-->

@@ -15,7 +15,7 @@
             <%= mod_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add textbook pages"), :text_references, :class => 'btn btn-mini btn-primary') %>
         </p>
     </div> 
-    
+    <!-- commented out until nultilevel nested form works better
     <div id="thresh_probs" class="well">
         <legend>Threshold Problems</legend>
         <%= mod_form.simple_fields_for :threshold_problems do |thresh_prob_form| %>
@@ -26,7 +26,19 @@
             <%= mod_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add threshold problem"), :threshold_problems, :class => 'btn btn-mini btn-primary') %>
         </p>
     </div> 
-    
+    -->
+    <!-- commented out until equation editor works
+    <div id="thresh_eqs" class="well">
+        <legend>Threshold Equations</legend>
+        <%= mod_form.simple_fields_for :equations do |equation_form| %>
+            <%= render :partial => 'equation_form', :locals => {:f => equation_form} %>
+        <% end %>
+        <p>
+            <br />
+            <%= mod_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add equation"), :equations, :class => 'btn btn-mini btn-primary') %>
+        </p>
+    </div>
+    -->
     <div class="form-actions">
       <%= mod_form.submit nil, :class => 'btn btn-primary' %>
       <%= link_to 'Cancel', units_path, :class => 'btn' %>

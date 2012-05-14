@@ -1,5 +1,6 @@
 class ThresholdProblem < ActiveRecord::Base
-    attr_accessible :problem_type_id, :text_reference_attributes, :mod_id
+   
+    attr_accessible :problem_type_id, :text_reference_attributes, :text_references_attributes, :mod_id
   
     # Relationships
     # =================================================================================  

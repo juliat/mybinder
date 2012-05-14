@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120513070932) do
+ActiveRecord::Schema.define(:version => 20120513215553) do
 
   create_table "activities", :force => true do |t|
     t.string   "name"
@@ -44,6 +44,15 @@ ActiveRecord::Schema.define(:version => 20120513070932) do
     t.string   "documentable_type"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+  end
+
+  create_table "equations", :force => true do |t|
+    t.string   "latex"
+    t.string   "image_file"
+    t.string   "remote_image_url"
+    t.integer  "mod_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "goal_types", :force => true do |t|

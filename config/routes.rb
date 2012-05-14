@@ -8,6 +8,7 @@ Mybinder::Application.routes.draw do
   resources :topics
   resources :goals
   resources :activities
+  resources :equations
   
   root :to => 'courses#index'
 

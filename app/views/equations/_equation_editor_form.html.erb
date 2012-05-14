@@ -1,0 +1,23 @@
+<form accept-charset="UTF-8" action="/equations/<%= @equation.id %>" class="form-horizontal" id="edit_equation<%= @equation.id %>" method="post">	
+	<div id="equation_editor"></div>
+	<textarea id="eq_editor_box" name="equation[latex]" rows="3" cols="40"></textarea>
+	<img id="equation"></img>
+	    <%= f.text_field :remote_image_url %>
+
+	<!-- 
+	though each page has a limit of one toolbar, 
+	this can be moved dynamically to any location. 
+	This is particularly useful for a long page. 
+	The following code illustrates how you might 
+	add a second <textarea> which, when selected, 
+	moves the toolbar above it:
+	<div id="editor2"></div>
+	<textarea id="testbox2" rows="3" cols="40" onclick="EqEditor.moveto(editor2)"></textarea>
+	-->
+	<script>
+		// initialize codecogs equation editor
+		EqEditor.embed('equation_editor','','mini','en-us');
+		var a=new EqTextArea('equation', 'eq_editor_box');
+		EqEditor.add(a,false); 
+	</script>
+</form>

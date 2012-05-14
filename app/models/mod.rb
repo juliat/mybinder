@@ -5,8 +5,8 @@ class Mod < ActiveRecord::Base
   
     # Relationships
     # =================================================================================
-    has_many :threshold_problems
     has_many :equations
+    has_many :threshold_problems
     has_many :text_references, :as => :textbookable, :dependent => :destroy
     belongs_to :unit
     has_many :topics
