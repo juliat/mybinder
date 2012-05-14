@@ -91,13 +91,16 @@ def saveData(data_hash)
 	
 	# topics
 	topics = data_hash["topics"]
+	count = 1
 	topics.each do |topic|
 		@topic = Topic.new()
 		module_num = topic["mod"]
 		@mod = Mod.where("unit_id = ?", @unit.id).where("number = ?", module_num).first
 		@topic.mod_id = @mod.id
+		@topic.number = count
 		@topic.name = topic["name"]
 		@topic.save!
+		count = count + 1
 	end
 	
 	# goals
