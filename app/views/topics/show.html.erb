@@ -1,5 +1,5 @@
 <%- model_class = @topic.class -%>
-<h1 class="edit_textfield"><%= @topic.name %></h1>
+<h1><%= editable_field @topic, :name %></h1>
 
 <h2>Goals</h2>
 <ol>
@@ -7,17 +7,3 @@
         <li><%= goal.statement %></li>
     <% end %>
 </ol>
-
-<!--
-<div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
-              topics_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_topic_path(@topic), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              topic_path(@topic),
-              :method => 'delete',
-              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
-              :class => 'btn btn-danger' %>
-</div>
--->

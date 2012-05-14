@@ -18,3 +18,7 @@
 //= require equation_editor/eq_editor-lite-11
 //= require jquery.jeditable
 //= require_tree .
+
+$('.editable').live('change', function() {
+  $(this).parents('form:first').submit();
+});

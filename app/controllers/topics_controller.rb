@@ -65,10 +65,10 @@ class TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.update_attributes(params[:topic])
-        format.html { redirect_to @topic, notice: 'Topic was successfully updated.' }
+        format.html { render :text => params[:user].values.first }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render :text => params[:user].values.first }
         format.json { render json: @topic.errors, status: :unprocessable_entity }
       end
     end
