@@ -1,22 +1,28 @@
 <%- model_class = @unit.class -%>
 <h1><%= link_to(@unit.course.name, course_path(@unit.course)) %> > <%=t '.title', :default => @unit.name %></h1>
 
-<p>
-  <strong><%= model_class.human_attribute_name(:start_date) %>:</strong><br>
-  <%= humanize_date(@unit.start_date) %>
-</p>
-<p>
-  <strong><%= model_class.human_attribute_name(:end_date) %>:</strong><br>
-  <%= humanize_date(@unit.end_date) %>
-</p>
-<p>
-  <strong><%= model_class.human_attribute_name(:days) %>:</strong><br>
-  <%= @unit.days %>
-</p>
-<p>
-  <strong><%= model_class.human_attribute_name(:notes) %>:</strong><br>
-  <%= @unit.notes %>
-</p>
+<div class="row">
+    <hr>
+    <p class="span2">
+      <strong><%= model_class.human_attribute_name(:start_date) %>:</strong>
+      <%= humanize_date(@unit.start_date) %>
+    </p>
+    <p class="span2">
+      <strong><%= model_class.human_attribute_name(:end_date) %>:</strong>
+      <%= humanize_date(@unit.end_date) %>
+    </p>
+    <p class="span3">
+      <strong><%= model_class.human_attribute_name(:days) %>:</strong>
+      <%= @unit.days %>
+    </p>
+</div>
+
+<div class="row">
+    <p class="span9">
+      <strong><%= model_class.human_attribute_name(:notes) %>:</strong><br>
+      <%= @unit.notes %>
+    </p>
+</div>
 
 <!-- accordion -->
 <%= render :partial => "unit_things" %>

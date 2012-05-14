@@ -7,9 +7,11 @@
               </div>
               <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
                 <div class="accordion-inner">
+                    <ul class="unstyled">
                     <% @unit.standards.each do |std| %>
-                        <li><%= std.statement %></li>
+                        <li><a href="#" rel="tooltip" title="<%= "#{std.author_org.name} : #{std.author_org_code}" %>"><i class="icon-check"></i></a><%= std.statement %></li>
                     <% end %>
+                    </ul>
                 </div>
               </div>
             </div>
