@@ -44,7 +44,7 @@ class OnlineResourcesController < ApplicationController
 
     respond_to do |format|
       if @online_resource.save
-        format.html { redirect_to @online_resource, notice: 'OnlineResource was successfully created.' }
+        format.html { head :no_content }
         format.json { render json: @online_resource, status: :created, location: @online_resource }
       else
         format.html { render action: "new" }
@@ -60,11 +60,13 @@ class OnlineResourcesController < ApplicationController
 
     respond_to do |format|
       if @online_resource.update_attributes(params[:online_resource])
-        format.html { redirect_to @online_resource, notice: 'OnlineResource was successfully updated.' }
+        format.html { head :no_content }
         format.json { head :no_content }
+        format.xml  { head :ok }
       else
-        format.html { render action: "edit" }
+        format.html { head :no_content }
         format.json { render json: @online_resource.errors, status: :unprocessable_entity }
+        format.xml  { render :xml => @online_resource.errors, :status => :unprocessable_entity }
       end
     end
   end

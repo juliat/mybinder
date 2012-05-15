@@ -1,5 +1,5 @@
 class OnlineResource < ActiveRecord::Base
-    attr_accessible :description, :name, :url, :user_id
+    attr_accessible :description, :name, :url, :user_id, :resourceable_type, :resourceable_id
   
     # Relationships
     # =================================================================================

@@ -70,13 +70,13 @@ class TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.update_attributes(params[:topic])
-        format.html { render :text => params[:user].values.first }
+        format.html { render :text => params[:topic].values.first }
         format.json { head :no_content }
         format.xml  { head :ok }
       else
-        format.html { render :text => params[:user].values.first }
+        format.html { render :text => params[:topic].values.first }
         format.json { render json: @topic.errors, status: :unprocessable_entity }
-        format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @topic.errors, :status => :unprocessable_entity }
       end
     end
   end

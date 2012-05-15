@@ -2,9 +2,10 @@
 	<% @online_resources.each do |resource| %>
 		<div class="resource">
 			<hr>
-			<h6>Resource Name</h6>
-			<p>Description of resource. Description of resource. Description of resource.</p>
+			<h6><%= resource.name %></h6>
+			<p><%= resource.description %></p>
 		</div>
 	<% end %>
 <% end %>	
+<hr>
 <%= render :partial => "partials/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>

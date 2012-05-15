@@ -1,10 +1,20 @@
 <%- model_class = @topic.class -%>
-<h1><%# on_the_spot_edit @topic, :name %> <%= @topic.name %></h1>
+<h1>
+    <% if current_user.role == "admin" %>
+        <%= on_the_spot_edit @topic, :name %>
+    <% else %>
+        <%= @topic.name %>
+    <% end %>
+ </h1>
 <h2>Goals</h2>
 <ol>
 <% unless @topic.goals.empty? %>
     <% for goal in @topic.goals.in_order %>
-        <li><%# on_the_spot_edit goal, :statement %> <%= goal.statement %></li>
+        <% if current_user.role == "admin" %>
+            <li><%= on_the_spot_edit goal, :statement %></li>
+        <% else %>
+            <li><%= goal.statement %></li>
+        <% end %>
     <% end %>
 </ol>
 <% else %>
