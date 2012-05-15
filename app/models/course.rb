@@ -1,5 +1,5 @@
 class Course < ActiveRecord::Base
-    attr_accessible :description, :name #, :notes
+    attr_accessible :description, :name 
 
     # Validations
     # =================================================================================
@@ -7,4 +7,5 @@ class Course < ActiveRecord::Base
 
     # Relationships
     has_many :units
+    has_many :online_resources, :as => :resourceable
 end

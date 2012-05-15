@@ -1,11 +1,8 @@
 <%= simple_nested_form_for @activity, :html => { :class => 'form-horizontal' } do |activity_form| %>
 <div>
 
-    <fieldset>
-        <legend><%= controller.action_name.capitalize %> Activities</legend>
-                
+    <fieldset>                
         <%= render :partial => 'activity_fields', :locals => {:f => activity_form} %>
-
     </fieldset>
         
 

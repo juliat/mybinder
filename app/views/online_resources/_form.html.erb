@@ -1,7 +1,8 @@
-<% @online_resource	= OnlineResource.new() %>
 <%= simple_form_for @online_resource, :remote => true, :html => { :class => 'form-horizontal' } do |f| %>
+	
 	<% @online_resource.resourceable_type = controller_name.classify %>
 	<%#	 @online_resource.resourceable_id = @#{controller_name.classify}.id %>
+	<p><%= :id %></p>
 	<%= f.input :name %>
 	<%= f.input :url %>
 	<%= f.input :description %>

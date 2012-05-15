@@ -18,7 +18,10 @@ class CoursesController < ApplicationController
   def show
     @course = Course.find(params[:id])
     @units = Unit.for_course(@course.id).in_sequence
-
+    
+    @resourceable_id = @course.id
+    @online_resources = @course.online_resources
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @course }

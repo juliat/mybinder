@@ -1,8 +1,10 @@
-<% 5.times do%>	
-	<div class="resource">
-		<hr>
-		<h6>Resource Name</h6>
-		<p>Description of resource. Description of resource. Description of resource.</p>
-	</div>
-<% end %>
-<%= render :partial => "partials/contribute_resource" %>
+<% unless @online_resources.nil? %>
+	<% @online_resources.each do |resource| %>
+		<div class="resource">
+			<hr>
+			<h6>Resource Name</h6>
+			<p>Description of resource. Description of resource. Description of resource.</p>
+		</div>
+	<% end %>
+<% end %>	
+<%= render :partial => "partials/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>
