@@ -4,8 +4,9 @@ class Activity < ActiveRecord::Base
       
     # Validations
     # =================================================================================
-    validates_presence_of :name, :rationale
+    validates_presence_of :name, :rationale, :prior_knowledge
     
+    # no validations for format
     
     # Relationships
     # =================================================================================

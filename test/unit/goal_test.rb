@@ -1,7 +1,18 @@
 require 'test_helper'
 
 class GoalTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+    # Validations
+    should validate_presence_of(:statement)
+    
+    # Relationships
+    should belong_to(:topic)
+    should belong_to(:goal_type)
+    should have_many(:goals)
+    should have_many(:standards).through(:goals)
+    
+    # @TODO
+    # test scope :for_topic
+    
+    # @TODO
+    # test scope :in_order
 end

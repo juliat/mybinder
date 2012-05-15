@@ -11,6 +11,7 @@ class Goal < ActiveRecord::Base
     belongs_to :topic
     belongs_to :goal_type
     has_many :standard_goal_mappings
+    has_many :standards, :through => :standard_goal_mappings
     # has a type id
 
     # Scopes

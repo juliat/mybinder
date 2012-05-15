@@ -1,13 +1,19 @@
 class Mod < ActiveRecord::Base
 
     attr_accessible :number, :days, :unit_id, :threshold_problems_attributes, :text_references_attributes, :equations_attributes
-
+    
+    # Validations
+    # =================================================================================
+    validates_numericality_of :number
+    validates_numericality_of :days
+    
   
     # Relationships
     # =================================================================================
     has_many :equations
     has_many :threshold_problems
     has_many :text_references, :as => :textbookable, :dependent => :destroy
+   
     belongs_to :unit
     has_many :topics
     has_many :goals, :through =>  :topics
@@ -36,8 +42,6 @@ class Mod < ActiveRecord::Base
             types_problems = []
             problems_for_type = self.threshold_problems.for_type(type)
             problems_for_type.each do |prob|
-                puts "==================="
-                puts prob.problem
                 types_problems << prob.problem
             end
             # then make a key in the problems hash that maps to the array or problems

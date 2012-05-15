@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class KeyTermTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+    # Validations
+    should validate_presence_of(:term)
+    
+    # Relationships
+    should belong_to(:unit)
 end

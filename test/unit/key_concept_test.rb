@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class KeyConceptTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+    # Validations
+    should validate_presence_of(:statement)
+    
+    # Relationships
+    should belong_to(:unit)
 end

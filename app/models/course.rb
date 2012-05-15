@@ -7,5 +7,7 @@ class Course < ActiveRecord::Base
 
     # Relationships
     has_many :units
+    has_many :modules, :through => :units
+    has_many :topics, :through => :modules
     has_many :online_resources, :as => :resourceable
 end
