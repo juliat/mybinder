@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  mod_id: MyString
-  name: MyString
-
-two:
-  mod_id: MyString
-  name: MyString
