@@ -7,6 +7,7 @@ class Misconception < ActiveRecord::Base
     # validate that topic belongs to unit (unit relation is technically temporary, so we
     # want to make sure that misconceptions eventually get mapped to topics that are
     # within the unit they are currently in
+    validates_presence_of :statement
     validate :topic_belongs_to_unit, :on => :save
     
     # Relationships

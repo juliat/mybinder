@@ -18,6 +18,6 @@ class ThresholdProblem < ActiveRecord::Base
     # Methods
     # =================================================================================   
     def problem
-        return "#{self.text_reference.as_string}"
+        return self.text_reference.as_string
     end
 end

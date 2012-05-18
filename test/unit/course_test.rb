@@ -9,5 +9,5 @@ class CourseTest < ActiveSupport::TestCase
     should have_many(:units)
     should have_many(:modules).through(:units)
     should have_many(:topics).through(:modules)
-    should have_many(:resourceable)
+    should have_many(:online_resources) # as resourceable
 end

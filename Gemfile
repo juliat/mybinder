@@ -38,6 +38,7 @@ group :test do
     gem 'nokogiri'
     gem 'simplecov'
     gem 'tconsole', '1.1.1'
+    gem 'validates_timeliness'
 end
 
 # Gems used only for assets and not required

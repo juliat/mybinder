@@ -27,6 +27,7 @@ class Mod < ActiveRecord::Base
     # Scopes
     # =================================================================================
     scope :for_unit, lambda {|unit_id| where("unit_id = ?", unit_id) }
+    scope :in_order, order('number')
     
     
     # Methods

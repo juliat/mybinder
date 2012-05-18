@@ -7,8 +7,8 @@ class GoalTest < ActiveSupport::TestCase
     # Relationships
     should belong_to(:topic)
     should belong_to(:goal_type)
-    should have_many(:goals)
-    should have_many(:standards).through(:goals)
+    should have_many(:standard_goal_mappings)
+    should have_many(:standards).through(:standard_goal_mappings)
     
     # @TODO
     # test scope :for_topic
