@@ -89,7 +89,7 @@ FactoryGirl.define do
 	end
 	
 	factory :text_reference do
-		book "Holr"
+		book "Holt"
 		location "p. 42"
 		# association :textbookable
 	end
