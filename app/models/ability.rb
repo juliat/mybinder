@@ -29,7 +29,7 @@ class Ability
             user.id == teacher.user_id
         end
     else
-       can :read, Course
+       can :read, [Course, Unit, Topic, Mod, Activity]
     end
 
 

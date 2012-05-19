@@ -8,4 +8,5 @@
 	<% end %>
 <% end %>	
 <hr>
-<%= render :partial => "partials/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>
+<%= link_to "Contribute a Resource", new_online_resource_path %>
+<%# render :partial => "partials/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>

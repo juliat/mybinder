@@ -25,7 +25,7 @@
 <% unless @topic.activities.empty? %>
 <ol>
     <% for activity in @topic.activities %>
-        <li><%= activity.name %></li>
+        <li><%= link_to activity.name, activity_path(activity) %></li>
     <% end %>
 </ol>
 <% else %>
