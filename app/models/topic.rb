@@ -10,6 +10,10 @@ class Topic < ActiveRecord::Base
     has_many :misconceptions
     # has_many standards
     has_many :activities
+    
+    # make resourceable
+    has_many :online_resources, :as => :resourceable
+    accepts_nested_attributes_for :online_resources, :allow_destroy => true
 
     # Scopes
     # ==============================================================================

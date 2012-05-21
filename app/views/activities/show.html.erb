@@ -1,30 +1,41 @@
-<p>
-  <b>Topic:</b>
-  <%= @activity.topic.name %>
-</p>
+<h1>Activity: <%= @activity.name %></h1>
 
+<div class="rationale">
+    <h2>Rationale</h2>
+    <%= @activity.rationale %>
+</div>
 
-<p>
-  <b>Rationale:</b>
-  <%= @activity.rationale %>
-</p>
+<div class="prior_knowledge">
+    <h2>Prior Knowledge</h2>
+    <%= @activity.prior_knowledge %>
+</div>
 
-<p>
-  <b>Prior knowledge:</b>
-  <%= @activity.prior_knowledge %>
-</p>
-
-<p>
-  <b>Documents:</b>
-  <ul>
-    <% @activity.documents.each do |doc|  %>
-        <li><%= doc.description %></li>
-        <li><%= link_to "Download", "#{doc.file}" %> </li>
-    <% end %>
+<div class="documents">
+    <h2>Activity Documents</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Contributed By</th>
+                <th>File</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <% @activity.documents.each do |doc|  %>
+                <td><%= doc.name %></td>
+                <td><%= doc.description %></td>
+                <td><%= doc.user.email %></td>  
+                <td><%= link_to "Download", "#{doc.file}" %></td>
+                <% end %>
+            </tr>
+        </tbody>
+    </table>
   </ul>  
-</p>
+</div>
 
-<% if current_user.role == "admin" %>
+<% if can? :update, @activity %>
     <%= link_to 'Edit', edit_activity_path(@activity) %> |
 <% end %>
-<%= link_to 'Back', activities_path %>
+<%= link_to 'Back', topic_path(@activity.topic) %>

@@ -1,13 +1,9 @@
 <h4>Online Resources <%= "for this #{controller.controller_name.singularize.capitalize}" %></h4>
-<% unless @online_resources.nil? %>
-	<% @online_resources.each do |resource| %>
-		<div class="resource">
-			<hr>
-			<h6><%= resource.name %></h6>
-			<p><%= resource.description %></p>
-		</div>
-	<% end %>
-<% end %>	
+<ul id="online_resources">
 <hr>
-<%= link_to "Contribute a Resource", new_online_resource_path %>
-<%# render :partial => "partials/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>
+<% unless @online_resources.nil? %>
+	<%= render :partial => @online_resources %>
+<% end %>	
+</ul>
+<%# link_to "Contribute a Resource", new_online_resource_path %>
+<%= render :partial => "online_resources/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>

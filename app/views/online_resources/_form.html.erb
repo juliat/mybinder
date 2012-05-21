@@ -1,12 +1,16 @@
+<!--
+
+see contribute resource form
+
 <%= simple_form_for @online_resource, :remote => true, :html => { :class => 'form-horizontal' } do |f| %>
 	
-	<% @online_resource.resourceable_type = controller_name.classify %>
-	<%#	 @online_resource.resourceable_id = @#{controller_name.classify}.id %>
-	<p><%= :id %></p>
+	<%= f.input :resourceable_type, :as => :hidden, :input_html => { :value => "#{controller_name.classify}" }%>
+	<%= f.input :resourceable_id, :as => :hidden, :input_html => { :value => "#{@resourceable_id}" }%>
 	<%= f.input :name %>
 	<%= f.input :url %>
 	<%= f.input :description %>
 
-	<%= f.button :submit, :class => 'btn-primary' %>
+	<%= f.submit, :class => 'btn-primary' %>
 	<%= link_to "Cancel", "#" %>
 <% end %>
+-->

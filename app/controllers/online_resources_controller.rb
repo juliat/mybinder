@@ -44,8 +44,9 @@ class OnlineResourcesController < ApplicationController
 
     respond_to do |format|
       if @online_resource.save
-        format.html { head :no_content }
+        format.html { redirect_to url_for(@online_resource.resourceable) }
         format.json { render json: @online_resource, status: :created, location: @online_resource }
+        format.js  #added
       else
         format.html { render action: "new" }
         format.json { render json: @online_resource.errors, status: :unprocessable_entity }
