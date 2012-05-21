@@ -1,10 +1,8 @@
 <%- model_class = @course.class -%>
 <h1><%= @course.name %> Curriculum</h1>
 
-<p>
-  <strong><%= model_class.human_attribute_name(:description) %>:</strong><br>
-  <%= @course.description %>
-</p>
+<h2>Description</h2>
+<p><%= @course.description %></p>
 
 <!--
 <div class="form-actions">
