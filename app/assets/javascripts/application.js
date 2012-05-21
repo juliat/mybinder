@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.effects.core
+//= require jquery.effects.fade
+//= require jquery.effects.highlight
 //= require twitter/bootstrap
 //= require nested_form
 //= require equation_editor/eq_config
