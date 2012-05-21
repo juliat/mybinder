@@ -1,4 +1,6 @@
 class UnitsController < ApplicationController
+  layout 'with_sidebar', :except => [:index, :new, :edit]
+  
   # GET /units
   # GET /units.json
   def index

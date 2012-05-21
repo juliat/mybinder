@@ -1,7 +1,15 @@
 <%= simple_form_for @equation, :html => {:multipart => true} do |f| %>
 
-	<%= f.input :image_file %>
-	<%= f.input :remote_image_url %>
+	<%= f.association :mod, 
+			  :label => "Module",
+			  :label_method => lambda{|mod| "Unit #{mod.unit.number} Module #{mod.number}"},
+			  :prompt => "Select a module..." %>
+	<%= f.input :latex,
+		    :placeholder => "Enter the equation in latex syntax..."%>
+	<%= f.input :image_file, 
+		    :hint => "Use an image from your own computer" %>
+	<%= f.input :remote_image_url,
+		    :hint => "Use an image from somewhere on the web" %>
 		
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-primary' %>

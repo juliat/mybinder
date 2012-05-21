@@ -1,5 +1,6 @@
 class TopicsController < ApplicationController
-  
+    layout 'with_sidebar', :except => [:index, :new, :edit]
+    
     before_filter :authenticate_user!
     load_and_authorize_resource :except => [:update_attribute_on_the_spot, :get_attribute_on_the_spot]
 

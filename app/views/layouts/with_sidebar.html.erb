@@ -16,8 +16,11 @@
             <%= msg %>
           </div>
         <% end %>
-    <div class="span12">
-        <%= yield %>
+    <div class="span8">
+        <%= content_for?(:content) ? yield(:content) : yield %>
+    </div>
+    <div class="span3 well">
+        <%= render :partial => 'partials/online_resources' %>
     </div>
     <%= render :partial => 'partials/uservoice_js' %>
   </div>

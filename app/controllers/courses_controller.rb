@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+  layout 'with_sidebar', :except => [:index, :new, :edit]
+  
   before_filter :authenticate_user!, :except => [:show, :index]
   load_and_authorize_resource
   

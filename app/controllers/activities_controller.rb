@@ -1,4 +1,7 @@
 class ActivitiesController < ApplicationController
+  
+  layout 'with_sidebar', :except => [:index, :new, :edit]
+  
   # GET /activities
   # GET /activities.json
   def index
