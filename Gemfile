@@ -51,6 +51,8 @@ group :assets do
   
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
+  
+  gem 'google-webfonts'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby

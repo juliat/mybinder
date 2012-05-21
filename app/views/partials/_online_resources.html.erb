@@ -6,4 +6,7 @@
 <% end %>	
 </ul>
 <%# link_to "Contribute a Resource", new_online_resource_path %>
-<%= render :partial => "online_resources/contribute_resource", :locals => {:resourceable_id => @resourceable_id} %>
+<% @online_resource	= OnlineResource.new() %>
+<% if can? :create, @online_resource %>
+	<%= render :partial => "online_resources/contribute_resource", :locals => {:online_resource => @online_resource, :resourceable_id => @resourceable_id} %>
+<% end %>
