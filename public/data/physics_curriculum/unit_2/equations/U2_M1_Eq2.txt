@@ -1,0 +1,1 @@
+sin\theta = \frac{OPP}{HYP}\;\: \textup{and}\;\: \: \theta=sin^{-1}\left ( \frac{OPP}{HYP} \right )

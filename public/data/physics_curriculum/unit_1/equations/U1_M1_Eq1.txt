@@ -1,0 +1,1 @@
+slope = \frac{\Delta x}{\Delta y}=\frac{rise}{run}

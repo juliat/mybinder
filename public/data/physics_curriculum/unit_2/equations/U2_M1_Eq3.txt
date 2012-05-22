@@ -1,0 +1,1 @@
+cos\theta = \frac{ADJ}{HYP}\;\: \textup{and}\;\: \: \theta=cos^{-1}\left ( \frac{ADJ}{HYP} \right )

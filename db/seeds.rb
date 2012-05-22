@@ -6,34 +6,75 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-[User, Course, Unit, Mod, Topic, Goal, Misconception, ProblemType, ThresholdProblem, TextReference].each(&:delete_all)
 
-# create admin
-@user = User.new()
-@user.email = "julialt@gmail.com"
-@user.password = "secret"
-@user.password_confirmation = "secret"
-@user.role = "admin"
-@user.save!
+def createMatchDataHash(match_data)
+	data_names = match_data.names
+	data_values = match_data.captures
+	data_hash = {}
+	data_names.size.times do |i|
+		data_hash[data_names[i]] = data_values[i].strip
+	end 	
+	return data_hash
+end
 
-# Create course
-@course = Course.new()
-@course.name = "Grade 11 Physics"
-descr_file = File.new("#{Rails.root}/public/data/curric/course_descr.txt", "r")
-@course.description = descr_file.read
-@course.save!
+def parseEquationFile(file)
+	puts "Parsing file #{file}"
+	fileRegex = /U(?<unit_num>\d)_M(?<mod_num>\d)_Eq(?<eq_num>\d)(?<file_type>((\.gif)|(\.txt)))/
+	matchData = file.match(fileRegex)
+	if matchData.nil?
+		puts "NO MATCH: #{file}"
+	else
+		puts "MATCH: #{file}"
+		fileInfo = createMatchDataHash(matchData)
+	end
+	return fileInfo
+end
 
-# Create author org
-@standards_author = AuthorOrg.new()
-@standards_author.name = "Pennsylvania Assessment Anchor Content Standards"
-@standards_author.save!
-
-# problem types
-prob_types = ["Conceptual", "Computational"]
-for type in prob_types
-	@type = ProblemType.new()
-	@type.name = type
-	@type.save!
+# takes a module and returns an array of equation objects for it
+# (equation objects have mod_id., img file and latex)
+def getUnitEquations(unit, modules)
+	directory = "./public/data/physics_curriculum/unit_#{unit["unit_num"]}/equations/"
+	
+	unitEquations = Dir.entries(directory).select{|entry| entry.length > 2}
+	puts unitEquations
+	
+	equationsHash = {}
+	unitEquations.each do |e|
+		eFileName = e # save filename
+		
+		# get hash of data about file 
+		e = parseEquationFile(e)
+		# add the full filename to that hash, minus the extension
+		e['file'] = eFileName
+		
+		# now use eFileName variable to store file name with no extension
+		eFileName = eFileName[0, eFileName.length - 4]
+		
+		# if the equationObjects array doesn't already contain an equation  with the same filename (no extension)
+		unless equationsHash.keys.include?(eFileName) 
+			# then create a new equation object that's got that as the filename 
+			equation = Equation.new()
+			equation.mod_id = e['mod_num'] # this is incorrect, just storing mod num here
+			# so we can use it to find the module that we want in saveData and use its id
+			equation.number = e['eq_num']
+		else
+			equation = equationsHash[eFileName]
+		end
+		
+		# depending on the file extension, either save the image_file or latex	
+		if e['file_type'] == ".gif" 
+			equation.image_file = e['file']
+		elsif e['file_type'] == ".txt"
+			equation.latex = File.new(directory + e['file'], 'r').gets()
+		end
+		
+		# then save the updated equation to the equationsHash
+		equationsHash[eFileName] = equation	
+	end
+	# map the equationsHash into an array of equation objects
+	equations = equationsHash.map{|fileName, equationObject| equationObject}
+	
+	return equations
 end
 
 
@@ -86,6 +127,16 @@ def saveData(data_hash)
 			@textRef.textbookable_type = "Mod"
 			@textRef.save!
 		end
+		# equations
+		equations = data_hash["equations"]
+		# equations are already objects: only have to save them
+		equations.each do |eq|
+			if eq.mod_id.to_i == mod_num.to_i
+				eq.mod_id = @mod.id
+				eq.save!
+			end
+		end
+		
 		@mod.save!
 	end
 	
@@ -165,19 +216,9 @@ def saveData(data_hash)
 		@textR.textbookable_type = "ThresholdProblem"
 		@textR.save!
 	end
+	
 end
    
-
-
-def createMatchDataHash(match_data)
-	data_names = match_data.names
-	data_values = match_data.captures
-	data_hash = {}
-	data_names.size.times do |i|
-		data_hash[data_names[i]] = data_values[i].strip
-	end 	
-	return data_hash
-end
 
 def parseUnitData(line)
 	unit_metadata_regex = /Unit\W(?<unit_num>\d):\W(?<unit_name>[\w\s\(\)-]{1,})\?\s(?<unit_days>\d{1,2})\sdays\s\?\s(?<start_date>\w{1,}\s\d{1,2}) through (?<end_date>\w{1,}\s\d{1,2})/
@@ -205,11 +246,45 @@ def parseTextbookRef(line)
 	return createMatchDataHash(match_data)
 end
 
-Dir.foreach('./public/data/curric') do |file|
+# Done defining; now running things
+# =====================================================================================================================
+
+
+[User, Course, Unit, Mod, Topic, Goal, Misconception, ProblemType, ThresholdProblem, TextReference].each(&:delete_all)
+
+# create admin
+@user = User.new()
+@user.email = "julialt@gmail.com"
+@user.password = "secret"
+@user.password_confirmation = "secret"
+@user.role = "admin"
+@user.save!
+
+# Create course
+@course = Course.new()
+@course.name = "Grade 11 Physics"
+descr_file = File.new("#{Rails.root}/public/data/physics_curriculum/txt/course_descr.txt", "r")
+@course.description = descr_file.read
+@course.save!
+
+# Create author org
+@standards_author = AuthorOrg.new()
+@standards_author.name = "Pennsylvania Assessment Anchor Content Standards"
+@standards_author.save!
+
+# problem types
+prob_types = ["Conceptual", "Computational"]
+for type in prob_types
+	@type = ProblemType.new()
+	@type.name = type
+	@type.save!
+end
+
+Dir.foreach('./public/data/physics_curriculum/txt/') do |file|
 	puts file
 	if file.match(/physics_unit_\d.txt$/)
-		file = File.new("./public/data/curric/" + file, "r")
-		# file = File.new("./public/data/curric/physics_unit_3.txt", "r")
+		file = File.new("./public/data/physics_curriculum/txt/" + file, "r")
+		# file = File.new("./public/data/physics_curriculum/txt/physics_unit_3.txt", "r")
 		
 		inUnitMeta = true # always true initially b/c always the first line
 
@@ -419,6 +494,9 @@ Dir.foreach('./public/data/curric') do |file|
 				end
 			end
 		end
+		
+		# now get all the equations for the unit
+		equations = getUnitEquations(unit, modules)
 
 		data_hash = { "unit" => unit,
 					  "modules" => modules,
@@ -428,7 +506,8 @@ Dir.foreach('./public/data/curric') do |file|
 					  "goals" => goals,
 					  "key_terms" => key_terms,
 					  "misconceptions" => misconceptions,
-					  "threshold_problems" => threshold_problems
+					  "threshold_problems" => threshold_problems,
+					  "equations" => equations
 					}
 		saveData(data_hash)
 	end

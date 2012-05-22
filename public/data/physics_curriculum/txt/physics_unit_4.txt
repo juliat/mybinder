@@ -1,0 +1,202 @@
+Unit 4: universal gravitation (mini-unit) ? 4 days ? Jan 3 through Jan 6
+* Module 1 (4 days)
+o Holt pp 240-253 with the associated problems
+o Hewitt pp 232-261
+Note:
+* Unit 4 is a mini-unit; it is 4 lessons long
+* It is to be finished by Friday, Jan 6, 2012
+
+Eligible Content:
+* S11.A.1.1.5  Analyze or compare the use of both direct and indirect observation as means to study the world and the universe (e.g., behavior of atoms, functions of cells, birth of stars).
+* S11.A.3.2.1  Compare the accuracy of predictions represented in a model to actual observations and behavior.
+* S11.A.3.3.3  Analyze physical patterns of motion to make predictions or draw conclusions (e.g., solar system, tectonic plates, weather systems, atomic motion, waves).
+* S11.C.3.1.3  Describe the motion of an object using variables (i.e., acceleration, velocity, displacement).
+
+Key Concepts:
+1. In physics we convert observations and ideas into numbers and models.
+2. In physics we represent physical events or scenarios in a variety of ways, including verbally, pictorially, graphically, and mathematically.
+3. There are a variety of forces between objects, all of which stem from four fundamental forces.  Gravity is a fundamental attractive force that acts on all objects with mass.  In particular gravitational forces define the large scale structure of the universe.
+
+
+Content Expectations and Performance Expectations (in italics) by module/topic:
+
+Module 1
+
+Universal Gravitation
+
+1. Know the relationship between mass and the force of gravity (Fg is directly proportional to the mass of an object)
+2. Understand the inverse relationship between gravitational force and distance (Fg is inversely proportional to the square of the distance)
+3. Solve problems using the law of universal gravitation
+4. Know how gravity explains falling objects, tides, and orbits
+5. Explain the apparent weightlessness of an object in a gravitational field that is undergoing freefall (i.e. an elevator, an astronaut in the space shuttle)
+6. Describe the Cavendish experiment, and explain how it gives a value for  the gravitational constant, G
+7. Describe the gravitational field around a black hole
+
+Problem Solving Competency - ForcesProblem solving in physics
+(from The Active Physics Learning Guide, van Heuvelen & Etkina, 2006)
+* Picture:
+o Sketch the situation described in the problem
+o Identify givens and unknowns
+o Choose a system object and make a list of the objects that interact with the system
+o Indicate the direction of acceleration, if known
+* Simplify
+o Consider the system as a particle
+o Decide if you can ignore any interactions of the environment with the system
+* Represent physically
+o Draw a free body diagram for the system
+o Label the forces
+o Include axes
+o Indicate acceleration (if known)
+* Represent mathematically
+o Apply Newton?s second law in the component form to the situation represented by the free body diagram
+o Add kinematics equations if necessary
+* Solve and Evaluate
+o Solve the equations for an unknown quantity
+o Evaluate the answer to see if it is reasonable
+* Magnitude
+* Units
+* Limiting cases
+
+Key Terms* Law of universal gravitation
+* Universal gravitational constant* Inverse-square law
+* Gravitational field
+* Weightlessness* Tide
+* Black hole
+
+Misconceptions:
+* www.physics.montana.edu/physed/misconceptions/
+
+
+
+
+
+
+Summary of Unit 4 activity:
+
+Module 1
+
+Demonstration and web-based research activity
+Though students might be familiar with the role of gravity in everyday interactions such as objects falling toward the Earth, they may not realize the role of gravity in defining the large scale structure of the universe.  They may also not realize the extent to which our knowledge of gravity and massive objects is still being actively explored by researchers.
+	.
+      Threshold equations:
+      Fg = G(m1m2)/r2 
+
+      Threshold problems:
+      Conceptual problems
+* Holt p. 263 #12-17
+      Computational problems
+* Holt p. 242 #3
+Differentiation for PSP
+* Holt p. 247 #3 a-d
+* Holt p. 264 #19
+ 
+
+
+Unit 4 ? Module 1
+
+Demonstration and web-based research activity
+
+RATIONALE
+
+Students have studied gravity and are aware that it exists on the Earth.  They are probably comfortable with the idea that gravity acts at a distance and that the moon revolves around the Earth as a result of gravitational interactions.  The fact that we revolve around the sun as a result of gravitational forces should also be well known.  However, in this activity the concept of gravity being universal throughout our solar system, our galaxy, and the universe will be explored!  In the spirit of scientific inquiry, students will explore topics to research that will help to support or refute that idea of the universality of gravitational attraction.
+
+PRIOR KNOWLEDGE AND SKILLS
+
+* knowledge of gravity as a force, and the acceleration due to gravity on the surface of the Earth
+* ability to manipulate variables to resolve an inverse square relationship
+* ability to solve force problems using the method detailed in Unit 3, especially drawing force diagrams
+* knowledge that all masses attract one another
+
+CE?s AND PE?s
+
+1.	Know the relationship between mass and the force of gravity (Fg is directly proportional to the mass of an object)
+2. 	Understand the inverse relationship between gravitational force and distance (Fg is inversely proportional to the square of the distance)
+4. 	Know how gravity explains falling objects, tides, and orbits
+7. 	Describe the gravitational field around a black hole
+
+PHYSICS CONVENTIONS
+
+* the distance between two massive objects is the distance between their centers of mass
+* objects are typically treated as spherically symmetric
+
+
+
+STUDENT GROUPING
+
+This activity is presented to be performed in groups of 2 depending on the number of computers available in the computer lab
+
+MATERIALS
+
+* Space and a means to hang the sheet horizontally (well supported) approximately at waist height (between lab tables for example)
+* Long rectangular rubber or cloth sheet (preferably approx 2 meters long and 1 meter wide) 
+* Different size dense balls to be placed in the sheet as central masses to simulate stars
+* Small balls or marbles (to simulate planets)
+* A set of masses that can be hung from under the sheet (to simulate dark matter)
+* Computer lab hopefully with printers
+
+TIMELINE (about 2-3 lessons, and the potential for homework) 
+
+15-20 minute ? demonstration with whole class discussion
+
+Teacher has the sheet hung horizontally with masses in the sheet representing stellar masses.  Underneath the sheet are hung masses that represent dark matter.  The teacher demonstrates rolling significantly smaller masses (marbles) while asking the students what they represent.  The marbles would orbit the ?gravity wells? if given exactly the right initial velocity (neglecting friction).   What are the marbles?  They are much smaller masses.  If captured by a large mass in orbit, they would be planets!  Otherwise they are meteors or comets.  What about the ?dark matter wells??  What do these represent.  It is relevant at this point to discuss the shape of gravity.  The teacher has the option of introducing a variety of concepts, including what a black hole would look like, how prevalent planets are, whether or not there are planets with conditions like the Earth around other stars, what a galaxy is, and how many stars there are in a galaxy.
+
+4-5 minutes ? lecture to give instructions
+    
+The teacher introduces the research project by breaking the students into groups of two, as long as there are enough computers available.  The students can choose or be assigned a topic to be determined by the teacher.  The students will then be given the expectations for the research project.  It is suggested that the teachers require the students to complete 60 minutes of computer internet research on their topic, as well as researching their topic for homework.  The students should individually write a research report of one to two pages typed.  The last part of the project will be to present their research in their groups to the class.  These presentations should be limited to 3-5 minutes so that the entire class can present in an additional period.
+
+
+remainder of time ? student research and presentations followed by whole group reflection
+
+Suggested Research Topics:
+* Black Holes
+* Gravitational Lensing
+* Tides
+* Planetary Motions
+* Space Travel using sling shot affect (ie Apollo 13) 
+* Relativity
+* Universal gravity
+* Terminal velocity
+* Planets and satellites
+* Dark matter
+* Newton's formulation of universal gravitation
+* Universal Gravitation explained
+* Implications of Universal Gravitation
+* The Moon
+* Shape of Space
+* Kepler's work on Orbits
+* The search for planets/moons with life or the conditions for life
+
+
+Stage of activityWhat the students should doStudent mistakesDemonstration of Masses Sheet representing a section of the UniverseEngage in asking questions through guided inquiryStudents may be confused or not interact fullyPossible teacher responses:
+- Encourage students to consider what the stretched sheet with masses represents.
+- Ask the students to think about the objects independently.
+- Once it is determined that these large masses that they see are solar masses, then the context should be set for engaged question and response.Determining responsibilities of the group membersDetermine all of the necessary duties for the research and presentation and assign roles that can be performed successfully- Missing tasks
+- Assigning tasks inequitably
+Possible teacher responses:
+- Encourage the groups to completely account for all tasks required to complete the research and presentation.
+- Ask guided questions of the lab groups that are not accounting for all the tasks.
+- Indicate to the groups that do not have a balance of tasks that the grade for each member will be based on their participation in the group as well as on the final result of the presentation.
+
+Finding reliable websites regarding their topicStudents should utilize multiple sites and check for their reliability.  NASA and Government science websites are a good start.The students might rely on just one site of questionable reliability.Possible teacher responses:
+- Encourage the students to be as accurate and diligent in their scientific research as possible.  The reliability of the source is essential to any research.
+- The teacher may want to provide a list of reliable websites for the students to use to get started.Preparing the research paperThe groups work together but each student must complete their own independent research paper.The students may not complete their own research paper, copy off of each other or attempt to plagiarize.Possible teacher responses:
+- The groups must be encouraged to get all their research while they are in the computer lab so that they will be able to complete the task.
+- Repeatedly encourage the groups that they are responsible to write up their own research report.  - Encourage the students to be clear about what they are attempting to do.
+- Remind the students that they are responsible for a one to two page typed research report on their topic.The Research PresentationAll of the students from the group will present the research in front of the class.The students do not want to present in front of the classPossible teacher responses:
+Go over the expectations of respect with the entire class for the presentations.  A large part of the grade is given for the presentation since the goal is to get the students to share their information with the class and to become comfortable presenting to their peers.
+
+POST ACTIVITY DISCUSSION PROMPTS
+Much of the discussion should happen while the activity is taking place by asking the groups questions about their research, although the final ten minutes can be utilized to summarize the experience and to attempt to draw connections between all of the research topics and explaining how they all relate to Universal Gravity.  
+
+Groups can be asked to present their research in regard to whether or not it supports Universal Gravity throughout the Universe.  And students can explain how they came to their conclusion.
+
+The students should have a discussion about how they went about approaching their research and writing their papers.  A discussion about misconceptions and errors that were made should be facilitated including among groups that came to different conclusions.  The students should be asked how this research improved their understanding of the nature of the Universe, about gravity and how big the universe is.  The students should consider how we take gravity for granted when it is in fact the force that holds the Universe together.  And if the teacher is inclined he/she can introduce the idea of Dark Energy, by indicating that in fact, physicists have determined that there is a very mysterious force that is causing the Universe to accelerate away from itself, forcing everything outward, called DARK ENERGY!  We will talk about this more when we get to cosmology.
+
+
+2
+
+Physics Core Curriculum 2011-2012
+Unit 4
+
+1
+

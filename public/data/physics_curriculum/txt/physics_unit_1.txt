@@ -1,0 +1,487 @@
+Unit 1: one dimensional motion ? 22 days ? Sept 1 through Oct 4
+* Module 1 (10 days)
+o Holt pp 1-47
+o Hewitt pp 1-50
+o Note: The order of topics in Unit 1 aligns with Holt.  Hewitt begins forces on page 12.  Forces will be covered in Unit 3.
+* Module 2 (12 days)
+o Holt pp 48-79
+o Hewitt pp 51-67
+
+Note:
+* Units 1 and 2 are to be finished by the close of the first quarter
+* First quarter closes on Nov 10, 2011
+
+Eligible Content:
+* S11.A.1.1.5  Analyze or compare the use of both direct and indirect observation as means to study the world and the universe (e.g., behavior of atoms, functions of cells, birth of stars).
+* S11.A.1.3.1  Use appropriate quantitative data to describe or interpret change in systems (e.g., biological indices, electrical circuit data, automobile diagnostic systems data).
+* S11.A.3.2.1  Compare the accuracy of predictions represented in a model to actual observations and behavior.
+* S11.A.3.3.3  Analyze physical patterns of motion to make predictions or draw conclusions (e.g., solar system, tectonic plates, weather systems, atomic motion, waves).
+* S11.C.3.1.3  Describe the motion of an object using variables (i.e., acceleration, velocity, displacement).
+
+Key Concepts:
+1. In physics we convert observations and ideas into numbers and models.
+2. In physics we represent physical events or scenarios in a variety of ways, including verbally, pictorially, graphically, and mathematically.
+3. Time and displacement are fundamental quantities in physics.
+4. Some quantities (vectors such as displacement, velocity, and acceleration) must be assigned a specified direction to be fully described (direction is qualitative in Unit 1, quantitative in Unit 2 through the use of vectors).
+5. The rate of change (for example speed) is the change in some quantity per time, where time is typically in 1 second intervals.
+6. Constant motion is moving equal distance intervals in equal time intervals.
+7. Accelerated motion is moving unequal distance intervals in equal time intervals.
+a. Freefall is the primary of example of accelerated motion.
+
+
+Content Expectations and Performance Expectations (in italics) by module/topic:
+
+Module 1
+
+Using Numbers to Describe Reality
+1. Recognize the importance of units when making measurements
+2. Know the SI units for measuring time (seconds, minutes, hours)
+3. Know the SI units for measuring distance and describing position
+4. Know some of the basic conversion factors within the SI system and between the SI system and the English system
+5. Recognize rates as an amount over time in multiple contexts ? distance covered/time, water flow/time, money earned/time, and so on.
+6. Convert units from one to another, given a conversion factor
+7. Express numbers in scientific notation
+8. Use numbers written in scientific notation in calculations
+Distance and Displacement
+9. Recognize the role of the sign (+/-) when describing 1-D motion
+10. Recognize that there are certain quantities that must have a direction to be fully described
+11. Measure distance accurately in SI units
+12. Measure displacement accurately
+13. Measure time accurately in SI units
+Motion: Speed and Velocity
+14. Know that an observer perceives an object as moving if it changes location with respect to him/her and therefore motion is perceived differently by different observers
+15. Define speed as a particular rate ? the rate at which position changes
+16. Measure the speed of an object, using appropriate tools
+17. Use the definition of average speed to calculate speed, distance covered or elapsed time
+
+Module 2
+Graphs of Motion
+18. Know the features of a graph including axes and the plot of the function
+19. Know how to correctly interpret the slope of a line on a data graph, including the proper units for the slope
+20. Make a graph of data
+21. Interpret a position vs. time graph to find the location of an object at a particular time
+22. Interpret a position vs. time graph to find the time at which an object reaches a particular location
+23. Recognize the correlation between the slope of a line on a position vs. time graph and the speed of an object
+24. Describe the motion of an object based on the shape (linear or curved) of the position vs. time graph
+25. Differentiate between instantaneous and average velocity
+26. Recognize that the position vs. time relationship for an accelerating object is different than that for an object with unchanging velocity
+27. Know the shape of a position vs. time graph for an accelerating object
+Differentiation for PSP
+28. Know the relationships between d, v and a graphs in terms of slopes and areas under curves
+29. Correlate the shape of a graph with the mathematical equation of the relationship
+Acceleration
+30. Know that objects can have a changing velocity
+31. Define acceleration
+32. Define initial velocity
+33. Define final velocity
+34. Know the relationships between acceleration, displacement, initial and final velocity and time for uniformly accelerating objects when the initial velocity is zero
+35. Use the definition of acceleration in order to determine the acceleration, initial velocity, final velocity, or time elapsed for an object in motion
+36. Identify scenarios where the motion of objects has acceleration that is in the same or in the opposite direction as their velocity
+Differentiation for PSP
+37. Know the relationships between acceleration, displacement, initial and final velocity and time for uniformly accelerating objects with non-zero initial or final velocities (not including problems requiring the use of the quadratic formula)
+Freefall
+38. Know that gravity causes objects to accelerate
+39. Know that gravity must be a consideration for any object near the surface of the earth
+40. Know the magnitude and direction of the acceleration due to gravity near the surface of the earth
+41. Know the definition of freefall
+42. Know the conventions used by physics textbooks when describing freely falling objects (no air resistance, uniform gravitational field, level plain, no earth spin, etc.)
+43. Define g
+Key Terms Module 1 and 2* Metric System
+* SI
+* Base unit
+* Meters
+* Seconds 
+* Kilograms
+* Scientific notation
+* Factor label method
+* Precision
+* Accuracy* Significant figures
+* Graphical relationships
+* Linear relationships
+* Inverse relationships
+* Quadratic relationships
+* Square root relationships
+* Coordinate system
+* Origin
+* Vector 
+* Scalar* Displacement
+* Time interval
+* Distance
+* Average velocity
+* Average speed
+* Instantaneous velocity
+* Average acceleration
+* Instantaneous acceleration
+* Reference frame
+
+Misconceptions:
+* At times students are reluctant to round off appropriately.
+* Displacement is different than distance.  Displacement is the length of a straight line between the start and end point of a path.
+* Many students have trouble understanding that if a person is stationary with respect to the Earth that the person may be moving relative to some other observer.
+* http://www.physics.montana.edu/physed/misconceptions/
+* http://phys.udallas.edu/C3P/Preconceptions.pdf
+
+
+Summary of Unit 1 activities:
+
+Module 1
+
+      Math skills
+Need to assess students? math skills, which are often lower that would be expected given the courses on students' transcripts. Basic algebra is the key in this course, with the use (but not manipulation) of certain trigonometric identities.
+
+      Measuring walking speed (Berated Activity)
+As the first lab experiences in the physics classroom, this activity is used to establish behavioral and academic expectations as well as set the tone for the types of investigations during the year. The physics content is an important foundation for all that comes later.
+
+Students should emerge at the end of the activity recognizing that motion can be numerically quantified and that easily measured numbers (time, distance) can be used to generate more descriptive numbers (speed) which can be used to make predictions. Because the ubiquity of rates in introductory physics, this activity can also draw out some of the salient features of rates, providing a useful touchstone for the class when confronted with new rates (acceleration, power, and so on).
+
+
+      A constant speed activity which leads to graphing motion data
+Graphs are excellent ways to visualize data. Students need to experience the process of gathering individual data points and then extrapolating patterns based on the visual cues provided by graphing the data. There are numerous ways to gather motion data, including photogates, sonic rangers, ticker-tape timers, stopwatches and meter sticks, simulations, and so on. Depending on your materials, students should be presented with a constant velocity motion which has easily measurable distance and time characteristics. From this, students should be able to generate data tables, then graphs of position vs. time (or displacement vs. time).
+
+Some of the patterns that must be easily discernable are that an object with a constant speed will have a linear x(t) graph and that the slope of the x(t) graph corresponds to the speed of the object. There are, obviously, many other important lessons that can be brought out in the execution of the activity, including fitting theoretical models to experimental data, the reliability of data and a review of graphing techniques.  The focus here is on accurate data collection, with graphing being the transition into Module 2 which actually contains the graphing CE?s and PE?s for Unit 1.
+
+
+
+Threshold equations:
+* 
+* 
+* 
+
+Threshold problems:
+Conceptual
+* Holt p.68 #1-6
+Computational
+* Holt p.28 #11b, d, g
+* Holt p.44 #5, 6
+Differentiation for PSP
+* Holt p.69 #11
+
+Module 2
+
+Interpreting motion graphs activity (Walk the Line Activity)
+High-school students are expected to learn about graphs in a variety of math contexts; how to plot points in a coordinate plane, how plotted graphs can represent functions, how to find slopes and intercepts, how to shift graphs up or down, how to stretch them, and so on.  In a physics class we also look at graphs, but our primary intent is not to introduce the graphical manipulation and interpretation tools (although many students benefit from the review of the material), but to show how those tools can be used to better understand the world and how it functions.  The ?Walk the Line? activity is intended to re-enforce the skill of looking at a graph and visualizing the motion it represents.  Beginning with simple linear, constant velocity motion, students are shown how the image of a plotted line can quickly reveal a lot of information about the motion of an object, even without numerical analysis.  Students are asked to turn a mathematical model into live action, paying particular attention to the shape, the slope, and the intercepts of various x(t) graphs.  Becoming proficient in the skill of rapid qualitative assessment of motion graphs will aid in understanding the difference between instantaneous and average velocity, the difference between positive and negative quantities when analyzing motion, the difference between accelerated and constant velocity motion, and how to interpret the graph of ANY quantity as it varies in time.  As with algebraic manipulations, graph interpretation is one of those physics skills that is both supported by a math background but can also serve to enhance a student?s math experience, as well.   
+ 
+An accelerated motion activity which leads to graphing motion data
+Students are easily frustrated when rules appear arbitrary or capricious.  Students without a solid conceptual foundation of 1-D motion will see a mathematical treatment of accelerated motion to be unnecessarily complicated and the rules governing problem solving will be baffling and frustrating.  It is important that a student experiences the ways in which accelerated motion yields different relationships between time and position than constant velocity.  If an appropriate challenge is selected, not only will a student appreciate the complexity of the situation, but also recognize the need for developing terms to indicate the initial and final velocities, the acceleration of the object and a finer appreciation of what is meant by the time variable.  There are numerous ways to expose students to constant linear acceleration situations; most obviously with objects in freefall, although it is also possible to use objects on inclined planes or computer simulations.  Ideally, students should be able to make quantitative predictions about the motion of an accelerating object and compare that to the observed motion of the object.  Teachers may opt to use the same data-gathering techniques used for the constant velocity tasks assigned in Module 1, or challenge the students to make predictions using a novel data gathering technique.  In either case, students should be able to, without too much guidance by the teacher, recognize the accuracy of their own predictions when compared to the results of their investigations.  
+      
+	Threshold equations:
+* 
+* 
+* 
+* 
+* Differentiation for PSP
+* 
+* 
+
+	Threshold problems:
+Conceptual problems
+* Holt p.69 #12-15
+* Holt p.70 #26-29
+Computational problems
+* Holt p.59 #5
+* Holt p.70 #21, 23, 30
+* Holt p.881 #44
+* Holt p.64 #2b
+Differentiation for PSP
+* Holt p.71 #37, 40
+
+Unit 1 ? Module 1
+
+Measuring walking speed (Berated activity)
+
+RATIONALE
+At the beginning of a physics course, the most important idea to communicate is that we will be modeling physical situations using numbers and mathematical relationships in order to be able to make predictions about the future.  Students will need to practice imagining the physical situations described, ascribing numbers to physical quantities and relying on algebra and common sense to make predictions.  Nominally, this lab is to develop the student?s ability to measure their own walking speed, but its placement in the course confers on it other responsibilities, as well ? the teacher can use this experience to get to know students (the material is not overly difficult), show that the activity objective dictates the actions in the lab, and to work with students individually to assess mathematical capabilities, reactions to challenges, and attention to detail.  The data is very easy to gather, which means that there is enough time to allow students to make mistakes early on in the lab, discover their errors as they process the data, and then go back and fix their problems before the end of the class period.  Most importantly, because students already know what ?faster? and ?slower? mean, this activity can be used to demonstrate the way in which the mathematics of the situation mirror reality at a very obvious and intuitive level.  
+
+The lab sheet provided should be carefully scrutinized by the teacher and modified to suit the level and number of students participating in the activity.  Some teachers may decide that a blank data table needs to be provided for the students, or that there should be more structure for the students to describe their data gathering process, or that the additional questions need to be more complex or subtle.  As with all instructional materials, those modifications should be made at the discretion of the teacher based on his or her judgment.
+
+The most effective instruction will probably take place as the teacher circulates amongst the lab groups, asking them to describe what they are doing, why they are doing it and what would it mean if certain things changed.  Also, this is an opportunity to give immediate feedback as students create written calculations, allowing the teacher to reiterate or explain some of the conventions used when showing work in a physics class. The post-lab class discussion can also be an effective way to strengthen conceptual relationships and highlight significant ideas present in the activity (the CE and PE items).  During this post discussion the class will be able to use actual walking speeds, which can be paired with actual distances or times from their lives, which can help to emphasize the relevance of the material (the teacher may wish to pre-measure the distances to other classrooms in the school, determine the distance to a familiar landmark, know how much time students have in between class bells, etc.)
+
+This activity could take as few as 10 minutes for students who knew what they were doing.  For some students 40 minutes will not be enough time to gather good data.  The additional questions provided at the end of the lab are simple enough so that they can be completed at home individually, should a group not have time in class.  For groups that feel they are finished early, there are many ways to provide additional challenges or tasks (walking exactly 10 m using nothing but a stop watch, measuring exactly 6 seconds using nothing but a meter stick, determining speeds of other types of locomotion (dancing, the worm, walking backwards, heel-toe, grapevine, etc), or performing other tasks such as using a meter stick to accurately determining the length of a long school hallway.  These activities are often useful in the post-lab discussion as fodder for whole-class problems.
+
+
+PRIOR KNOWLEDGE AND SKILLS
+* units for distance and conversions (can be done prior to English-SI conversions)
+* units for time and conversions
+* the definition of a rate
+* experience calculating rates and quantities (can be done prior to time calculations)
+
+CE?s AND PE?s
+
+5. Recognize rates as an amount over time in multiple contexts ? distance covered/time, water flow/time, money earned/time, and so on.
+* speed is a type of rate ? one where the quantity involved is distance, or change in position
+* a rate is a ratio between quantities, so the magnitudes of the 2 quantities involved may be very different, yet yield the same rate
+* a full description of motion requires direction as part of the vector quantities of displacement and velocity
+* constant speed is the ratio of equal distances over equal times which results in a linear equation typically written as distance as a function of time, the slope of which is the constant speed (constant velocity requires the additional qualification of in the same direction)
+* looking forward to graphing in Unit 1 Module 2, constant speed motion results in a straight line graph where the slope is found by taking the ratio of the distance to the time
+* people usually walk with a velocity of about 1 or 2 m/s.
+11. Measure distance accurately in SI units
+* a change in position can be measured with simple tools, like meter sticks or rulers
+* how to use a meter stick to make distance measurements in SI units
+* how long a meter is, with respect to objects in their everyday experience
+13. Measure time accurately in SI units
+* a change in time can be measured with simple tools like a clock, stopwatch, or metronome
+* how to use a stopwatch to make time measurements in SI units
+15. Define speed as a particular rate ? the rate at which position changes
+16. Measure the speed of an object, using appropriate tools
+17. Use the definition of average speed to calculate speed, distance covered or elapsed time
+
+PHYSICS CONVENTIONS
+* the accuracy of lab measurements is limited to the devices and techniques used by the experimenters
+* objects in this class will be treated as point particles, despite the fact that they are in fact extended objects
+* the default reference frame in this class is the surface of the earth
+
+
+
+STUDENT GROUPING
+Students can work independently, though it is more productive if they work in groups of 2-3.  Groups that are too large will have too much down time while other group members are gathering data.
+
+MATERIALS
+      FOR EACH GROUP
+-space to walk freely in a straight line for between 3-10 meters
+-roll of masking tape
+-a meter stick
+-a stopwatch
+FOR EACH STUDENT
+-copy of handout
+-pen/pencil
+
+TIMELINE (about 40 minutes)
+5-10 minutes ? lecture to relate rate to speed, outline objectives for the activity
+3-5 minutes ? get into groups/gather materials/find appropriate locations to gather data
+25-30 minutes ? data gathering and processing
+	-lay out measured distance (optional)
+	-perform walking trials
+	-gather time (or distance) data
+	-draw diagram of set-up
+	-perform calculations
+	-write responses to prompts
+
+
+
+Stage of activityWhat the students should doStudent mistakesActivity introduction (teacher lecture)Recognize the task assigned and imagine ways to accomplish the taskExpect handout with explicit instructionsPossible teacher responses:
+Encourage all methods of attacking the problem
+Reiterate the rationale for the activity as well as the CE?s and PE?sGathering materialsBased on the need for time and distance data, gather stopwatch and meter stickForget the need for time data and just grab meter sticksPossible teacher responses:
+WaitMeasuring out distances (one possibility for solving the problem)Measure out a reasonably long distance (3-8 m) to minimize the significance of the inherent absolute errors in timingMeasure out 1 mPossible teacher responses:
+Ask why they chose 1 m instead of a smaller distance, like 1 cm?  This prompt can force them to think about the potential timing errorsMeasuring the time (for a fixed distance)Have a consistent part of the body as the location of the moving object (front of the foot, middle of torso, etc)Start with heel on start line and finish with toe crossing the end linePossible teacher responses:
+Ask what information the stopwatch is giving them.  While many recognize that the stopwatch gives time information, they have much more difficulty identifying the time TO DO WHAT?  Eventually, they can see that it is the time for the object to traverse the given distance, so now you can ask the question: where is the object?  Now they can see that if the extended object is to be properly reduced to a point, then they must have consistency in their identification of the objectMeasuring the time (for a fixed distance)Take multiple trialsTake a single data pointPossible teacher responses:
+Ask the student to run the experiment again.  Ask why the results are not exactly the same as the first trial.  Which one is correct? If the student has to give a single number to describe their walking speed, which one would they choose?  Why would only one of those numbers be right and the other wrong?  How can they come up with the best single number that gives the walking rate?
+Measuring the time (for a fixed distance)Students should be aware of perspective when gauging when the object crosses the finish/start line.Stationary timer will have a skewed perspective of the object crossing one of the linesPossible teacher responses:
+Can be addressed with student groups who seem comfortable with the rudiments of the lab and ignored for students who struggle with the basics.  Capable groups should determine their own solution to the problem (walker carries stopwatch/ timer moves with walker/walker signals crossing line, etc) and re-take dataMeasuring the distance (for a fixed time)Some student groups may elect to walk for a fixed amount of time and measure the distance traveledMany similar errors as fixed distance method
+-time too short
+-vague object locationPossible teacher responses:
+This is a perfectly viable method of doing the lab, the only drawback is that it takes more time to measure out the distances for each trial and these groups may have trouble gathering all of their data and processing it during the class periodIn all of the activities above students are trying to find a reliable way to measure a distance covered in time.  It is this constant ratio that is the key.  If they measure the time it takes to walk 3 meters, they should find that it takes double that time to walk 6 meters.  If they find that they walk 3.5 meters in 2 seconds, then they should walk 7 meters in 4 seconds.  And in all of the data processing below, they should be finding that the speed is a constant.  For example, if a group found the speed in two different ways, both should result in the same value for the speed.Data processingStudents average time data to compute speed or average speeds and average final resultsDon?t know how to process multiple trialsPossible teacher responses:
+Have students do the calculations both ways (finding average before and after speed calculation) to see that with linear relationships either method gives the same resultData processingStudents notice that calculating speed takes two different measurements that have two different units, one of which is a distance unit and the other is a time unitStudents mechanically divide two numbersPossible teacher responses:
+The calculations for this activity require one step, but as they get more complicated the take-home message or big idea of the activity should not be lost or neglected in favor of finding ?the answer.?
+Data processingStudents show units when doing calculationsStudents show just the numbersPossible teacher responses:
+Point out that the meaning is obvious in this context, but when problems become more complex (how far could you walk in 4 minutes? In 4 hours?  Is the distance the same?) the units associated with the numbers will be importantData processingStudents calculate the speed by taking distance/timeStudents calculate the speed by taking time/distancePossible teacher responses:
+Ask what should happen to the speed if you walk the distance in a shorter/longer time.  Is that reality reflected in the way they have manipulated the data?  Point out that what they calculated is a perfectly good way to talk about how fast they were moving, but it is not called the speed.Data processingStudents reduce the fraction to determine speed in meters/ONE secondStudents leave the speed with non unitary time Possible teacher responses:
+Ask how far they would go in 10 seconds?  87 seconds?  Note that if rate as given as x meters/sec, then calculations become simpler, hence the convention of putting single units of time in the denominatorData processingStudents may convert meters to miles and seconds to hours and then divide the two to find mphIf done properly, the SI data gathered by the students will yield very small numbers of miles and hours.  Many students lose their number intuition at this point and get lost, sometimes assuming that they have gotten wrong answers from their conversions because the numbers are so smallPossible teacher responses:
+Ask student which is bigger, a mile or the distance they just walked in the classroom.  Is the distance walked about half a mile (which is 0.5 miles), less?  (a tenth of a mile (0.1 miles) etcConnecting numbers to experienceStudents know that the speed of walking is about 1-2 m/s and approximately 3 mph.Students mechanically calculate the speed of walkingPossible teacher responses:
+Two important skills in physics are estimating and connecting numbers (values) to reality. Fermi problems epitomize the ?guesstimation? that physics strives to teach students.
+
+POST ACTIVITY DISCUSSION PROMPTS
+What numbers did people get for their walking velocity? 
+-importance of units (is 2 m/s faster or slower than 2 mph?  Are they the same speed?)
+-importance of having some reference numbers when making estimations and judging the validity of calculations (is it reasonable to have a car on the highway going 3 m/s?)
+-estimate (in m/s) some values for a person running, a car driving along, a thrown baseball, etc
+
+Did all groups use the same method to determine walking speed?
+-important thing was to find a known distance in a known time.  Some groups can chose to fix the distance, or to fix the time.  (can actually do it a 3rd way, where both are arbitrary)
+-the ?best way? to find an answer depends on the materials available and the care taken in gathering data
+
+Did all of your trials come out with the same number (of seconds or meters)?  Why was there some irregularity in the data?  How does that impact the answer to the question: ?what is your walking speed??
+-single data points can be misleading
+-averaging data can summarize many trials to a single number, but with some loss of information
+-averaging numbers can reduce random errors, though not systematic errors
+
+If person A walks 8 m in 8 s, and person B walks 4 m, can you tell who has the biggest walking speed?
+-speed is the ratio of distance AND time, both bits of information are needed
+
+If person B walks 4 m in 4 s, what is their speed compared to person A?
+-speed is a ratio, and so the magnitudes of the quantities involved is not important.
+
+Can something have a speed of 10 m/s if it only goes a distance of 3 m?
+-speed is a ratio, not the distance and not the time
+
+Is it OK to talk about speed in terms of 6.43 m/5.3 s?
+-standard method of representing speed as distance/unit time
+-units for speed (and later, velocity), will always take the form of some distance/some time.  Hence, despite being a mixture of units, it may help to think about the 
+?units for speed? as being a single unit
+
+Use the personal walking data to calculate some relevant facts:
+-how far can you walk during the time in between class bells during the passing period?
+-if the distance from one classroom to another is ______, how long would it take for you to walk that distance?
+-if it takes ________ to walk home, how far away do you live?
+-How long would it take to walk to New York
+
+Unit 1 ? Module 1
+
+A constant speed activity which leads to graphing motion data
+
+RATIONALE
+The walking activity provides a good introduction to motion, allowing students to connect a well known concrete physical activity to more abstract concepts like a constant rate of motion.  The next step is to go from qualitative to quantitative including equations and graphing.  This requires better data.
+
+PRIOR KNOWLEDGE AND SKILLS
+* experience collecting data in tables
+* experience graphing data
+* students often do not know how to read instruments to the right level of accuracy
+
+CE?s AND PE?s
+
+11. Measure distance accurately in SI units
+13. Measure time accurately in SI units
+15. Define speed as a particular rate ? the rate at which position changes
+a. For an unambiguous description of motion there needs to be
+i. An object for reference
+ii. A coordinate axes that are tied to the object of reference above
+iii. A reference clock
+16. Measure the speed of an object, using appropriate tools
+17. Use the definition of average speed to calculate speed, distance covered or elapsed time
+
+PHYSICS CONVENTIONS
+* when graphing, the x-axis is typically time while the y-axis is typically distance, velocity or acceleration
+
+      
+
+Unit 1 ? Module 2
+
+Interpreting motion graphs activity (Walk the Line Activity)
+
+RATIONALE
+Students should be able to look at a x(t) graph and visualize the motion indicated by the various properties of the graph.  This could be considered a separate skill from making the graph or doing numerical analysis of a graph, in that it should happen almost instantaneously and will serve as a useful tool when entering into an analysis of accelerated motion, v(t) and even a(t) graphs.  Students should be looking for the linearity of the graph, the magnitude of the slope of the graph, the sign of the slope of the graph, the y-intercept of the graph, the x- intercept of the graph and become aware of instances where the graph has a change in slope.  All of these attributes should be connected to the actual motion of an object or, in this case, a person.
+
+The activity is presented here as something for the entire class to view as a whole.  The expectation is that the teacher selects students according to their abilities and personalities so that every student will be at once challenged and successful as they interpret the graphs.  Incorrect interpretations are often more instructive than successful attempts, so the teacher must remain aware of teaching moments as they arise from the class? comments and the participating students actions.
+
+As an activity that is ?performed? in front of the class, there are numerous pedagogical facets that a teacher should be aware of, beyond the basic physics.  Many students are reluctant to do anything in front of peers, particularly when there is the possibility of being wrong or of looking silly or ignorant.  The teacher should make sure that the challenge level of the task is appropriate to the level of the student ? slightly trickier than they think they can solve, but comprehensible once they have made a few attempts.
+
+PRIOR KNOWLEDGE AND SKILLS
+* how to make position vs. time graphs for objects moving at a constant velocity, based on data tables
+* basic terms for graphing, including slope, x and y axis, rise, run
+* basic terms for motion, including speed, origin, reference frame, direction
+
+
+
+
+CE?s AND PE?s
+
+21. Interpret a position vs. time graph to find the location of an object at a particular time
+22. Interpret a position vs. time graph to find the time at which an object reaches a particular location
+23. Recognize the correlation between the slope of a line on a position vs. time graph and the speed of an object
+* Since the slope is the change in position versus the change in time, which is the speed,  the greater the slope the greater the speed
+24. Describe the motion of an object based on the shape (linear or curved) of the position vs. time graph
+* Linear motion is constant motion - the slope is constant
+* Curved motion is accelerated motion - the slope in not constant
+25. Differentiate between instantaneous and average velocity
+26. Recognize that the position vs. time relationship for an accelerating object is different than that for an object with unchanging velocity
+27. Know the shape of a position vs. time graph for an accelerating object
+* Accelerated motion graphs are curved not linear
+
+PHYSICS CONVENTIONS
+* time is usually on the x-axis of a graph vs position, velocity, acceleration, etc
+* when possible, it makes sense to call t=0 the beginning of the experiment/data collection time
+* position vs time graphs show the movement of an object along a single axis
+* positive and negative values are dictated by the reference frame, not necessarily the object that is moving (ie. negative motion is not the same thing as going backwards)
+
+STUDENT GROUPING
+The entire class watches, though only one student at a time is actively enacting the graph.  It is up to the teacher to determine the level of student participation in the coaching/correcting offered by the observing students.  However, when there is active student input from the audience the teacher has the opportunity to gauge student understanding and uncover student misconceptions that might go unnoticed if no comments are allowed.
+
+MATERIALS
+Overhead LCD projector and Powerpoint show (option #1)
+Masking tape and chalkboard (option #2)
+Space for students to see the screen/board as well as space to walk and run in a straight line in both directions
+
+
+
+TIMELINE (about 35 minutes)
+2-3 minutes ? lecture, recalling the fact that the movement of an object can be captured in a variety of ways, including graphs of an object?s position as time goes on.
+20-30 minutes ? individual students called to replicate the motion represented by various graphs.  As the complexity of the graphs increases, different aspects of x(t) graphs become significant.
+
+? The teacher should show the set of axis, (the first powerpoint slide, if LCD is available) and point out that it is identical to the axis used when making graphs of position and time for the ticker-timer activity (or equivalent graphing experience).  If no LCD is available, then a crude set of axis can be made on the chalkboard with 2 pieces of masking tape.  This will allow rapid erasing of past graphs, and the quick introduction of new graphs while encouraging students to imagine that there is no scale change from one graph to the next.  The x-axis should be placed at mid-height on the board, to give space for action in the negative region of the graph and the axis should be clearly labeled.
+? Display the first graph (graph A) and ask a student to come to the front of the room and recreate the motion indicated by the graph.  The slides have letter titles so that the teacher can keep track of what graphs will be upcoming and call an appropriate student for the challenge.
+? Continue through the graphs, asking the class whether the re-creation was accurate or if there were inconsistencies.  There may be some instances when alternative interpretations are valid and those should be demonstrated, as well.
+? It is useful to, on occasion, ask the student to describe their motion immediately after they move, so that they make clear for the rest of the class what aspects of the graph they considered to be important and how those were manifest in their actions.
+? Whenever possible, students should verbalize the important considerations, rather than have the rules imposed by the teacher. (ie, where, in the classroom, is the origin?  Does the scale change from one graph to another?  What direction is positive?  When is the student ?starting? the demonstration?  When have they finished?)
+
+
+Stage of activityWhat the students should doStudent mistakesGraph AWalk at a constant velocityDo not start at the originPossible teacher responses:
+At the outset the class will not recognize the significance of the location of the origin in the classroom itself.  If the first student mentions starting at a particular location, then the origin should be made explicit to the rest of the class, although the need for an origin becomes clear in graph C.  In either event, the origin should be placed in a location that has sufficient room in both directions for walking and running. (ie, not at a wall or in a corner)Graph AWalk at a constant velocity along the floorbelieve an upwards sloping graph indicates upward sloping movementPossible teacher responses:
+After a successful recreation by the student, ask why the student did not try to climb the walls, get taller, walk up a ramp, etc.  This misconception (that the graph indicates the PATH of the object?s motion through space) is persistent, and this may be the first time that many students realize that it is a potential hazard.  The teacher may also take this opportunity to clarify for the class the established (positive) direction of the measured displacement.  The sign of the displacement is best left ambiguous until graph F.Graph BWalk/run at a constant velocity, but faster than the previous studentRepeat the same action as the previous studentPossible teacher responses:
+A discussion of scale is appropriate here.  The lack of numbers along the axis emphasizes the broad interpretations we are attempting.  However, once the slope for walking speed has been established, we can assume that subsequent recreations rely on the same scales along the axis.Graph CWalking in positive direction, starting ?behind? the origin (in negative territory)Walk backwards, walk in the negative directionPossible teacher responses:
+Because the graph shows what happens at various instances in time, the graph is almost a story.  By holding up a meter stick vertically at the origin and slowly sliding it to the right, a correct interpretation of the graph emerges: start in negative territory, get closer to the origin, pass the origin, move away from the origin.  With an LCD projector, the teacher can obscure the graph with a hand, then slowly reveal the graph in real-time as the student recreates the motion.
+Graph DStart at a location in the positive space, then move at a constant walking speed in the positive directionwalk into the positive region and then continue in the positive directionPossible teacher responses:
+Can point out the need for students to indicate when t=0 is taking place.  Although there is no graph in the negative TIME region, it does not mean that the object did not exist, it simply indicates that we, as physics students, are not interested in the object during that time.  It will be increasingly important for students to recognize WHEN mathematical or graphical modeling begins or ends in order to use the models accurately and effectively.  It may be useful for students to say ?start? and ?end? when they are recreating the graphs.Graph EStand in the positive regionmovePossible teacher responses:
+Read the graph at specific points in time to locate the object and note that the location does not change as time goes on.  There is a strong inclination to say that whenever the graph is ?straight? then the object is standing still.  Point out that ALL of the graphs we have looked at so far are straight, the difference is that this one is straight and HORIZONTAL.Graph FStudent should start at the origin and move into the negative regionWalk into the positive region, backwardsPossible teacher responses:
+In most cases, the rest of the class will point out the correct motion, and the active student will then recreate the graph by walking backwards from the origin, which is correct.  There may be some students who recognize that the way the object is facing is not relevant, in which case they should demonstrate to the class another way to recreate the graph ? by walking forwards into the negative region of space.Graph GStart in negative, walk/run quickly in negative directionPossible teacher responses:
+Students by now have managed to catch on and this graph merely puts together many of the aspects of x(t) graph discussed previously.  If desired, other graphs with similar variations (linear, uniform motion) can be created to re-enforce concepts so that all students can participate.Graph HStudent should walk/run away from the origin, then return past the originContinue moving in the positive direction, merely changing their speedPossible teacher responses:
+Point out that more complex motions can be represented on the same graph, although there are difficulties.  What is the slope of the graph?  Where all previous examples showed a single slope and therefore a single speed, this one is not uniform, though it is linear in certain parts.  Simple questions like ?how far will you go in 3 seconds?? become more difficult because we are no longer analyzing a single, straight line.  It will become increasingly important that students recognize when to break up complex motion into simpler pieces for numerical analysis.
+Graph IStart in positive region, move into negative, pause, then run into positive regionPossible teacher responses:
+Students should be comfortable with this graph at this point, simply stringing together different uniform motions.  It is a good idea to have the student verbalize the difference between the initial walk speed vs the later run speed, discernable from the differing slopes.Graph JStudent starts at the origin moves quickly into the positive region and slows to a stopPossible teacher responses:
+Encourage students to verbalize their reasoning, specifically using the terms ?slope? and ?speed? in order to describe their motion to the class.Graph KStart at the origin, move slowly into the positive region with an increasing speedPossible teacher responses:
+Students should note the change in the QUALITY of the line: curved vs straight.  Again, students should be able to verbalize the fact that with a changing slope, there is a corresponding change in speed.  These motions are no longer simple linear relationships between position and time.  Curved lines indicate that the motion is not uniform; the speed (in the case of linear motion) is changing from one moment to the next.  There is no need to use the word acceleration at this point, although students should be made aware of the fact that this type of motion is qualitatively different than everything presented previously.Graph LStudent should stand in stupefied silenceWalk forwards, then backwards to the origin Possible teacher responses:
+Students will usually notice that this is not a possible graph for a single object.  To see why, the teacher can ask about the location of the object at particular moments, eventually coming to a point where the object must exist at two spots at once.  Students that try to walk forwards, then back are still possessed of the misconception that the line indicates the path of the object.
+
+POST ACTIVITY DISCUSSION PROMPTS
+Much of the discussion should happen while the activity is taking place, although the final slide can be used to quickly summarize the important points for the students.  
+
+There is also the opportunity to ask one student to make a graph and another student execute it.  Alternatively, a student could move along the axis and another student graphs the motion in real time or after the completion of the motion.  In all cases the goal should be a quick and intuitive interpretation of x(t) graphs, completely independent of numerical analysis.
+
+It may be interesting to ask students how they might graph the teachers motion as they walk around the classroom (either 2 independent graphs of x(t) and y(t), a 3-d graph with 2 spatial dimensions along 2 axis and time along the 3rd, etc)
+
+As much as possible, point out that many of the graph analysis tools acquired in math class are entirely appropriate when analyzing these graphs: calculating the rise or the run, finding the slope of a line, finding the x or y intercept, etc.  Interpretation of those numbers in a physics context should be the only new skill needed (what does the x-intercept mean? What does the rise indicate?)
+
+
+
+Unit 2 ? Module 2
+
+An accelerated motion activity which leads to graphing motion data
+
+RATIONALE
+In the previous graphing activity students encountered curved graphs, or graphs depicting accelerated motion.  In this activity the goal is collect data on accelerated motion for the purpose of graphing.  The most typically cases rely on gravity to cause constant acceleration whether in freefall or on an inclined plane.
+
+PRIOR KNOWLEDGE AND SKILLS
+* experience collecting data in tables
+* experience graphing
+* experience with accelerated motion though typically qualitative but not quantitative
+
+CE?s AND PE?s
+
+34. Know the relationships between acceleration, displacement, initial and final velocity and time for uniformly accelerating objects when the initial velocity is zero
+35. Use the definition of acceleration in order to determine the acceleration, initial velocity, final velocity, or time elapsed for an object in motion
+36. Identify scenarios where the motion of objects has acceleration that is in the same or in the opposite direction as their velocity
+38. Know that gravity causes objects to accelerate
+* This is a phenomenological observation prior to the explanation provided by the concept of force in Unit 3.
+39. Know that gravity must be a consideration for any object near the surface of the earth
+40. Know the magnitude and direction of the acceleration due to gravity near the surface of the earth
+
+
+PHYSICS CONVENTIONS
+
+* The positive y-axis is typically pointed radially away from the center of the Earth
+* Vertical distance can be labeled as y, h, d, or confusingly at times x.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Worksheets and Resources
+
+
+26
+
+Physics Core Curriculum 2011-2012
+Unit 1
+
+1
+

@@ -1,0 +1,399 @@
+Unit 2: two dimensional motion ? 23 days ? Oct 5 through Nov 10
+* Module 1 (6 days)
+o Holt pp 80-94
+o Hewitt pp 68-72
+* Module 2 (17 days)
+o Holt pp 95-117
+o Hewitt pp 73-85
+Note:
+* Unit 2 is to be finished by the close of the first quarter
+* First quarter closes on Nov 10, 2011
+
+Eligible Content:
+* S11.A.1.1.5  Analyze or compare the use of both direct and indirect observation as means to study the world and the universe (e.g., behavior of atoms, functions of cells, birth of stars).
+* S11.A.1.3.1  Use appropriate quantitative data to describe or interpret change in systems (e.g., biological indices, electrical circuit data, automobile diagnostic systems data).
+* S11.A.3.2.1  Compare the accuracy of predictions represented in a model to actual observations and behavior.
+* S11.A.3.3.3  Analyze physical patterns of motion to make predictions or draw conclusions (e.g., solar system, tectonic plates, weather systems, atomic motion, waves).
+* S11.C.3.1.3  Describe the motion of an object using variables (i.e., acceleration, velocity, displacement).
+
+Key Concepts:
+1. In physics we convert observations and ideas into numbers and models.
+2. In physics we represent physical events or scenarios in a variety of ways, including verbally, pictorially, graphically, and mathematically.
+3. Time and displacement are fundamental quantities in physics.
+4. Some quantities (vectors such as displacement, velocity, and acceleration) must be assigned a specified direction to be fully described (direction is qualitative in Unit 1, quantitative in Unit 2 through the use of vectors).
+5. The rate of change (for example speed) is the change in some quantity per time, where time is typically in 1 second intervals.
+6. Constant motion is moving equal distance intervals in equal time intervals.
+7. Accelerated motion is moving unequal distance intervals in equal time intervals.
+
+8. A projectile is an object that moves through the air acted on only by gravity.
+a. Air resistance is typically ignored.
+b. The horizontal and vertical components of projectile motion are independent.
+c. The horizontal component typically has no acceleration and therefore involves constant motion.
+d. The vertical component has acceleration due to gravity and therefore involves accelerated (non-constant) motion equivalent to freefall.
+Content Expectations and Performance Expectations (in italics) by module/topic:
+
+Module 1
+
+Graphical Vectors
+1. Know the definition of vectors, scalars
+2. Know the conventions for defining directions for vectors (degrees away from +x axis, cardinal compass points, compass directions)
+3. Know that a negative vector is the same a positive vector, with head and tail reversed
+4. Utilize vector arrows to represent vector quantities
+5. Construct vector scale drawings with a ruler and protractor
+6. Add vectors head to tail using the graphical method
+7. Determine resultant vector graphically from multiple component vectors
+
+Mathematical Solutions of Vectors
+8. Determine resultant magnitude of perpendicular vectors using Pythagorean theorem
+9. Adjust velocities in the presence of external vectors (i.e. river current, wind, etc.)
+   Differentiation for PSP
+10. Know how to resolve (decompose) vectors using trigonometric relationships
+11. Know how to use a scientific calculator to calculate trig relationships
+12. Determine angle of vector using inverse trig function (for right triangle only)
+13. Decompose multiple (non-axis) vectors and calculate resultant
+14. Decompose multiple non-orthogonal vectors and calculate resultant
+
+Module 2
+
+Projectile Motion
+15. Know that the horizontal component of motion of a projectile has constant velocity
+16. Know that the vertical component of motion of a projectile is accelerating
+17. Know the physics conventions for projectile motion problems (no air resistance, uniform gravitational field, flat, level, infinite plane)
+18. Know the value of the acceleration and velocity for a projectile at critical points in a projectile?s trajectory, including launch, peak, and impact (no calculations)
+19. Combine the aspects of constant velocity in the x direction and accelerated motion in the y direction to solve simple projectile problems when initial vertical velocity is zero
+Differentiation for PSP
+20. Use equations of motion for projectiles to find any of the following: displacement (x, y, final), velocity (x, y, initial, final), time, velocity vector angles, range when launched at an angle across a level plane
+
+
+Key Terms Module 1 and 2* Angle
+* Degrees 
+* Direction
+* Magnitude
+* Vector head
+* Vector tail
+* Vector body
+* Trigonometry
+* Vector diagram* Vector addition
+* Resultant
+* Coordinate system
+* Horizontal
+* Vertical
+* Components
+* Trajectory
+* Projectile
+* ParabolicDifferentiation for PSP
+* Theta
+* Hypotenuse
+* Opposite side
+* Adjacent side
+* Sine
+* Cosine
+* Tangent
+* Inverse sine
+* Inverse cosine
+* Inverse tangent
+Misconceptions:
+* http://www.physics.montana.edu/physed/misconceptions/
+* http://phys.udallas.edu/C3P/Preconceptions.pdf
+
+
+Summary of Unit 2 activities:
+
+Module 1
+
+	Working with displacement vectors activity (Land Map Activity)
+Vectors are an essential concept for understanding physical interactions.  The description of velocity, for example, is not complete without specifying a magnitude and direction for the motion.  In turn, evidence for a net force acting on a moving body can be provided by a change in direction, a change in magnitude of the motion, or both.  This activity asks students to use a protractor and ruler to analyze points on a 2-D map in order to form an experiential framework for vector manipulations, including vector addition and resolution.
+
+	Triangles and vectors activity
+Being able to decompose and construct resultant vectors using the Pythagorean theorem is critical for using vectors mathematically.  For PSP students this is the place to teach the basics of the trigonometric identities sine, cosine, and tangent which are essential for using vectors in calculations.
+
+	Threshold equations:
+* 
+* Differentiation for PSP
+o      and      
+o     and      
+o      and      
+
+Threshold problems:
+      Conceptual problems
+* Holt p. 108 #1-20
+Computational problems
+* Holt p. 109 #23, 25
+
+
+
+
+
+
+
+
+
+Module 2
+	
+	Everyday examples of projectile motion activity
+Students have a deep understanding of projectile motion from previous personal experiences, though some of their theories may contain equally deep misconceptions.  The role of friction (especially air resistance) can cause difficulties for students when asked to abstractly consider scenarios without friction.  Everyday examples help to bridge the gap between experiences and abstract constructs.
+
+Calculating the range for projectile motion activity (Shoot for Your Grade Activity)
+As a culminating project for describing motion, students should be able to calculate the range of a horizontal projectile from a fixed height, given enough information to determine the height and initial velocity.  Unit 3 begins a deeper explanation of motion by introducing forces as the causes of changes in motion.  (This is similar to the Velocity of a Projectile activity in Holt pp. 116-7.)
+
+
+	Threshold problems:
+      Conceptual problems
+* Holt p. 109 #27-30
+      Computational problems
+* Holt p. 109 #32, 43a
+      Differentiation for PSP
+* Holt p. 110 #34
+* Holt p. 881 #54
+
+
+Unit 2 ? Module 1
+
+Working with displacement vectors (Land Map Activity)
+
+RATIONALE
+Vectors provide a useful tool for visualizing motion, force, momentum, fields, and so on.  Once the tools for creating, manipulating and interpreting vectors have been created, then students will be able to use the tools to better process problems involving 2-D motion, relative motion, forces, momentum, fields, and so on.  In order to develop the vector tools properly, students should be able to visualize the manipulation of arrows and integrate those images with the vocabulary used to describe vector quantities.  The use of protractors and rulers to construct vector diagrams to scale takes time, but the experiences help students understand the mathematical treatment of vectors that comes later.  
+
+As students answer the questions about the Physics Land Map, they should become more familiar with the cardinal points of the compass, how to use a protractor to measure an angle, how to use a protractor to construct an angle, how to use a scale key on a map, the conventions for describing a vector?s directional information, the process of adding vectors ?head to tail,? and resolving (decomposing) vectors to perpendicular components.  This worksheet is not intended to teach the process of adding or resolving vectors mathematically, but rather is it intended to provide experiences where the rationale for the rules governing those techniques emerges based on the student?s own intuition about how to solve problems.  All of the questions are based on displacement vectors, in that displacements are the easiest to visualize.  The expectation is that once the vector tools have been introduced with displacement vectors, the skills can then be readily transferred to manipulate ANY type of vector quantity.
+
+
+PRIOR KNOWLEDGE AND SKILLS
+* how to describe an angle using the points of the compass
+* how to use a protractor to measure and construct angles
+* how to use a ruler to measure and construct lines of a given length
+* how to compute displacement for an object moving at a constant velocity
+* how to use scale a measurement based on a map key
+* the definition of vector magnitude
+
+CE?s AND PE?s
+
+1. Know the definition of vectors, scalars
+2. Know the conventions for defining directions for vectors (degrees away from +x axis, cardinal compass points, compass directions)
+4. Utilize vector arrows to represent vector quantities
+5. Construct vector scale drawings with a ruler and protractor
+6. Add vectors head to tail using the graphical method
+7. Determine resultant vector graphically from multiple component vectors
+
+
+PHYSICS CONVENTIONS
+* angle measures can be described by naming the angle between a ray and a cardinal compass direction, with the assumption that East is in the positive x direction and North is in the positive y direction
+
+STUDENT GROUPING
+Each student should be provided with their own Physics Land Map as well as the questions to be answered.  At the discretion of the teacher, students may work in groups.  Because students will need to refer to 2 sheets of paper, use a protractor, a ruler, a pencil and perhaps a calculator, the teacher should make sure that there is adequate workspace to accommodate the materials needed.
+
+MATERIALS
+FOR EACH STUDENT:
+	Copy of Physics land map
+	Copy of questions sheet
+	Protractor with at least 1? markings
+	Ruler with at least 1 mm markings
+FOR THE CLASS
+	LCD projection screen (optional)
+
+TIMELINE (about 40 minutes + potential homework)
+2-3 minutes ? lecture, recalling that vector quantities are those that have both a direction (which way the arrow is pointing) as well as a magnitude (how long the arrow is, or how much of the quantity the vector represents).  Inform students that they will be asked to draw vectors on a map of a place called Physics Land, as well as answer questions about some of the places found there.  Students should not find the questions to be too difficult, but it will be important to be careful with measurements and to be aware of how they are going about solving some of the problems presented.
+2-3 minutes ? distribute materials, divide into groups
+35-40 minutes ? students work on solving problems.  The teacher should assess the time constraints and the abilities of the students to determine if all of the questions need to be answered during the class period.  
+(Homework) - If additional time is needed, the teacher needs to be aware of the fact that students usually do not have access to protractors at home and that therefore it may be impossible to complete the worksheet on their own, regardless of their level of comprehension or motivation.  Some of the questions at the end of the worksheet are conceptually redundant with those asked earlier and so can be easily eliminated without affecting the student?s exposure to novel concepts (questions 13-15).
+
+
+Stage of activityWhat the students should doStudent mistakesPutting names on the mapPut their name on the mapNo namePossible teacher responses:
+Students may think that the map is merely to be used as reference material, not realizing that a significant assessment of their understanding is possible by looking at the markings that they make when representing vectors or displacements.  As such, it is important that the maps be turned in along with the worksheet questions.Calculating scaled distancesUse the map key to convert between real and scaled distancesOverlook the scale information providedPossible teacher responses:
+The scale has been designed so that 1cm (map) = 1 km (real).  This is to facilitate conversions and place the pedagogical emphasis on drawing vectors rather than converting units.Question #4Construct a vector with the tail at Dis Place, in a direction measuring 38? below the positive x-axisConfuse S of E and E of SPossible teacher responses:
+Ask the student to point in a direction that is DUE EAST.  From then, ask for a direction that is only 5 degrees S of E, then 10 degrees, etc.  This terminology is confusing because the reference cardinal direction is the second direction mentioned in the instructions (s of E).Question #4Construct a vector with the tail at Dis Place, in a direction measuring 38? below the positive x-axisFail to use a protractor to accurately measure 38? Possible teacher responses:
+Some protractors have 2 sets of angle measures printed on them, increasing from 0? to 180? as well as decreasing from 180? to 0?.  If students do not recall the fact that an angle can only be measured at the intersection of 2 lines, they may not realize that they are using the wrong line on the protractor as the 0? reference line.  It is sometimes helpful to ask them to define what an angle means, which will force them to recall that it requires 2 lines, not just one.  Form there, ask to see a 5? angle, gradually increasing to 38?.Question #4students use the protractor to mark direction properly on their mapStudents struggle to create a vector with both magnitude and directionPossible teacher responses:
+When trying to draw a vector, students will sometimes grab the ruler first, make it the proper length, and THEN attempt to make it point in the proper direction, which results in frustration.  The technique of placing the protractor first, making a small dot at the vertex and at the angle measure required, and THEN filling in the Question #7 Students convert 45 minutes to seconds or convert 6.71 m/s to m/min.No conversionPossible teacher responses:
+Ask how far the bird would go in 45 seconds?  45 hours?  45 days?
+Question #8Students carefully construct each displacement vector, beginning at the termination of the previous vector-Sloppy protractor or ruler work
+-improper angle measuresPossible teacher responses:
+Students should conclude that the physicists end up at Coasting.   Each vector is given in terms of the compass points, although some students may try to measure angles relative to the previous vector.
+POST ACTIVITY DISCUSSION PROMPTS
+Students that are able to complete the questions about Physics Land are already in possession of many of the tools needed to manipulate vectors.  It may be useful, however, to refer back to specific questions when trying to solve problems later in the course.  The process of turning a single vector into 2 mutually perpendicular components (decomposing or resolving a vector) is what students are asked to so in the helicopter problem and in the stingray problem.  Vector addition is what is required for the 3-day boat journey and the diamond prospector.  The ability to lift and move a vector without altering its magnitude or direction is what is needed to determine the location of the teleporting scientist.  While it is not necessary to explain each one of these skills immediately after students perform the Physics Land task, it may be a useful reference for times when the mathematics of a problem threatens to overwhelm their intuition about a situation.  
+
+
+Unit 2 ? Module 1
+
+Manipulating trig identities activity 
+
+RATIONALE
+Once students understand the concept of vectors they need to learn the mathematical operations that connect vector components with the resultant vector.  For PSP students this is the place to teach the basics of the trigonometric identities sine, cosine, and tangent which are essential for using vectors in calculations.
+
+
+PRIOR KNOWLEDGE AND SKILLS
+* Knowledge of the Pythagorean theorem
+
+CE?s AND PE?s
+
+8. Determine resultant magnitude of perpendicular vectors using Pythagorean theorem
+
+
+Unit 2 ? Module 2
+
+Everyday examples of projectile motion
+
+
+RATIONALE
+Everyday examples help to bridge the gap between experiences and abstract constructs.
+
+PRIOR KNOWLEDGE AND SKILLS
+* sports activities often provide well known examples of projectile motion
+
+CE?s AND PE?s
+
+15. Know that the horizontal component of motion of a projectile has constant velocity
+* This can be demonstrated by simultaneously launching two projectiles with different vertical components but identical horizontal components
+16. Know that the vertical component of motion of a projectile is accelerating
+* This can be demonstrated by simultaneously launching two projectiles with different horizontal components
+17. Know the physics conventions for projectile motion problems (no air resistance, uniform gravitational field, flat, level, infinite plane)
+* These conventions differ from everyday experience and actual physical situations so it may take some time to acclimate students to a physics way of thinking
+
+
+
+
+Unit 2 ? Module 2
+
+SHOOT FOR YOUR GRADE ACTIVITY ? calculating the range for projectile motion
+
+RATIONALE
+
+Students should be able to calculate the range of a horizontal projectile from a fixed height, given enough information to determine the height and initial velocity.  The students at this point should understand that the x and y motion of a projectile are independent.  The horizontal displacement is determined to be constant velocity multiplied by the time of flight (which in this case of the horizontal projectile from a fixed height is the same time as the vertical time of flight).  The vertical displacement is determined by accelerating objects due to gravity.  In this case, the object has no initial vertical component and is in freefall.  The displacement is determined by the formula dy = ? g t2.  Students should be able to realize that if they are able to determine the initial horizontal velocity from a fixed height, that they have enough information to calculate the range, or horizontal displacement of the projectile.  
+
+This activity is presented to be performed in groups of 4.  The teacher should attempt to balance the groups so that there is a representative range of abilities within each group.  The goal is that each group has an adequate chance to draw on their prior knowledge of projectiles both conceptually and mathematically to be successful at this lab, ?Shoot for your Grade!?  The lab can be modified for different class skill levels by providing greater opportunity for the students to determine what information is required to solve the task based on the skill level of the class.  This lab provides an intense experience for students because they recognize that their ability to accurately solve the task will significantly affect their grade.  This provides poignancy to this lab that draws out the students? highest motivation.  It is also an opportunity for healthy competition to present itself within the classroom.  Students have a strong desire to be successful.  In order to reward effort and to ensure good problem solving skills, a large portion of the grade for the lab is based on the group?s demonstration of their problem solving and calculations.  Depending on the appropriate skill level of the class, the proportion of the grade that makes up the success level of the calculated range can be determined by the teacher.  The students who do not hit the target or who desire a higher grade for the performance part of the lab are required to redo the problem solving and calculation portion of the lab, and must explain the sources of all of their error. The teacher can decide how to incorporate these ?retrials? into the group?s grade.  Much of the learning is created by the intensity of a ?real? life challenge.  Lack of initial success should be utilized to encourage greater engagement with the task and the requisite explanation of sources of error and correct solution of the problem.
+
+
+
+
+PRIOR KNOWLEDGE AND SKILLS
+* knowledge of motion equations 
+* ability to manipulate variables to calculate using multiple equations
+* understanding that concerning projectiles, horizontal motion and vertical motion can be treated independently
+* concerning projectiles, horizontal motion is constant velocity and vertical motion is acceleration
+* the time involved for the horizontal and vertical components of motion is the same for a horizontal projectile from a given height
+* for a horizontal projectile the height determines the time that the projectile is in the air because there is no initial vertical component of velocity and the vertical component can be treated as free-fall
+* the formula for the vertical displacement of free-falling objects with zero initial velocity is dy = ? g t2
+* the formula for the horizontal displacement (the range) of an object is dx = vxt
+
+
+CE?s AND PE?s
+
+15. Know that the horizontal component of motion of a projectile has constant velocity
+16. Know that the vertical component of motion of a projectile is accelerating
+* Since this is projectile motion, the acceleration is due to gravity
+17. Know the physics conventions for projectile motion problems (no air resistance, uniform gravitational field, flat, level, infinite plane)
+18. Know the value of the acceleration and velocity for a projectile at critical points in a projectile?s trajectory, including launch, peak, and impact (no calculations)
+* The horizontal component of the velocity does not change, it is constant
+* The vertical component of the velocity changes
+19. Combine the aspects of constant velocity in the x direction and accelerated motion in the y direction to solve simple projectile problems when initial vertical velocity is zero
+* Though the components may be treated independently there is only one object which means that there is only a single time of flight
+
+PHYSICS CONVENTIONS
+
+* no air resistance
+* uniform gravitational field
+* flat, level, infinite plane
+
+STUDENT GROUPING
+
+This activity is presented to be performed in groups of 4.  The teacher should attempt to balance the groups so that there is a representative range of abilities within each group.  The goal is that each group has an adequate chance to draw on their previous knowledge of projectiles both conceptually and mathematically to be successful at this lab.  The groups should determine which person will perform each task in the lab.  There need to be multiple time keepers (3 helps to average out error) and one student to catch the projectile as it leaves the table.  Any of these students can perform the task of measuring the height of the table and the length that the projectile travels across the table.
+
+Each group will collect their data separately (the initial velocity and consequently the range will be changed for each group!).  Once all data has been collected, the group will work collectively on their calculation of the range of the projectile.  However, each group member will submit their own copy of all tables of measurements, calculations, and conclusions.
+
+MATERIALS
+
+* Long lab table (preferably approx 2 meters long) 
+* A board to act as the Inclined Plane (preferably about 1 meter long with as smooth a transition to the table top as possible ? so that the projectile does not bounce, though a small piece of paper taped to the bottom of the ramp and to the table will mitigate bounces)
+* A steel ball preferably approximately 1? in diameter (the projectile)
+* Meter sticks
+* The ?Shoot for you Grade? Target (A target on paper with a small hole at the center, with concentric circles, a bullseye.  The first circle should be approx. 4 cm in diameter marked with an ?A?, The second concentric circle should be about 8 cm marked ?B?, the third concentric circle should be about 16cm marked ?C?; the fourth circle should fit on your paper,  marked ?D? about 24cm; and outside that is marked ?Sorry, E- Try Again?, The target should be colorfully marked if possible to encourage excitement at hitting the target, but should allow you to mark where the projectile hits (unless you prefer to place a sticker))
+* Masking tape
+* Space at end of table for projectile Range and for students to make measurements and for the teacher to position themselves to mark where the projectile lands
+
+TIMELINE (about 100 minutes)
+
+2-3 minutes ? lecture, congratulating the class on getting to the point that they are ready to ?Shoot for their Grade!? and reminding them of the basic facts about projectiles (if this is necessary).  Explain that they will be in the assigned groups of 4, that each team member should have assigned jobs for the lab, and that everyone is responsible to have their own lab and calculations at the end.
+
+10 minutes ? Allow the teams to get into their groups.  Explain how the lab will work.  (The inclined plane is already set up on the lab table with about a meter of horizontal space from the end of the ramp to the edge of the table)  The inclined plane is a ?black box? literally or figuratively. (The inclined plane enables different initial placement of the projectile for each group, which the teacher marks by group, so that the initial velocity for each group is different but reproducible!  Students do not need to be concerned with the incline plane and it could be concealed if this is possible, so that the students only know that each group has a different initial velocity and, consequently,
+Range.)  The students will have an opportunity to make all of the measurements that they need to determine the initial velocity and the vertical height of the table.  Given this information and three practice trials each group will then calculate how far horizontally the projectile will travel in the air (the range of the projectile.)  Holding up the target, the teacher indicates that the group will place the center of the target where they have calculated the projectile will land.  Hitting the target in the bullseye will result in an ?A? for the lab part of the lab and will be averaged with the write-up part of the lab, consisting of the data tables, measurements, calculations, and conclusion based on your results indicating all of the sources of error.  If the target is missed all together, or if the students want to shoot for a better grade, the students will complete an entirely new sheet containing all of their new calculations and a new conclusion indicating where their sources of error were, specifically.  If time allows, the groups can have an opportunity to recalculate their initial velocity, if that is the source of the error.
+
+Explain the Rules? Each group will have 3 trials to determine the initial velocity of their projectile.  The group must make all necessary measurements.  The teacher will release the projectile (marking on the inclined plane the location and the name of the group so that the velocity is repeatable).  One group member will catch the projectile just after the projectile leaves the table? Don?t let the projectile hit the floor! (If the projectile hits the floor the students will know what the range is!  Some negative consequence, such as a zero grade, may be needed to make sure the projectile does not hit the floor.)  The other three group members will have stop watches and will determine the time that the projectile takes to cross the horizontal distance from the base of the ramp across the table.  
+
+Information for the teacher:
+Try this activity on your own before the students do it.
+
+The group should have measured this distance so that they can calculate the initial velocity using vx=dx/t with t being the average time of the three trials.  The group should record all of their data including the height of the table so that they can calculate the time that the projectile is in the air, using dy = ? g t2.  Solving for t, and realizing that the horizontal time and the vertical time of flight are the same, the group should calculate dx = vxinitial t.
+
+Upon completing their calculations, each group will have one opportunity to place the target.  (The group should remember to set the center where they calculated the range to be? the teacher may direct them to consider that they measure the range from the point directly below where the projectile leaves the table.)
+
+A student that is not in the group will be instructed on how to release the projectile from the correct spot for the present group.  There must be consistency between this release and the group?s practice releases.  The teacher then positions him/herself beside the target, preferable kneeling along the target, so that he/she can mark where the projectile hits the floor (hopefully on the target! ? this can be done by directly marking the target or placing a sticker or using a sheet of carbon paper inverted and placed on top of the target to record the point of impact).
+
+With some flourish the teacher asks if the group is sure, then says on the mark, get set, go.  The student holding the projectile releases it and the teacher marks the spot where the projectile hits the floor.  (Only the distance from the table matters as the projectile may ?wander? to the side and this horizontal displacement should not be counted against the group? mark where the projectile hits, but count the grade based on the position perpendicular to the central axis!!!  A modified bullseye that is more rectangular may be called for to alleviate some of the lateral error.)
+
+30 minutes ? approximately five minutes per group.  Allow the students to perform their measurements and collect their data for three trials.  Encourage the students, as needed to record all data, create tables, measure accurately and precisely, and to be clear on what they need to measure to complete the task.
+
+(Ideally all groups can get their data in one period)
+
+30 minutes ? all the groups should be able to complete their calculations and ?Shoot for their Grade!?  
+
+10 minutes ? any groups that missed the target should have had time to redo their calculations and rewrite their conclusion. This is an opportunity for all groups that need to, to retry placing their target.
+
+(This ends the second period, everyone should have completed the process of ?Shooting for their Grade?)
+
+For Homework, the students will complete their formalized lab, with all data charts, calculations, recalculations and thorough conclusions of their lab experience and results.  Those groups that required a second trial shot are encouraged to be extra thorough in their write-up as that will potentially compensate for a less than desirable calculation.  Explaining the sources of error is extremely important!
+
+The third class ? collect the lab reports with calculations
+
+20 minutes ? Class discussion about the lab.  What was learned and what were the sources of error.  How could we perform the lab more accurately?  What equipment would make the lab more accurate?  
+
+Congratulate the class on completing, ?Shoot for your Grade?!
+
+ 
+Stage of activityWhat the students should doStudent mistakesExplanation of ActivityAsk questions to clarify what they need to measure and calculate to complete the taskNot asking questions
+Misunderstanding conceptsPossible teacher responses:
+The teacher needs to determine how much conceptual and mathematical information to provide, that is appropriate to the level of the class.  Hopefully before this activity the conceptual basis of projectiles has been reviewed.  However, if there are misconceptions, these should be clarified so that the task is clear.  Determining responsibilities of the group membersDetermine all of the necessary duties for the lab and assign roles that can be performed successfullyMissing tasks
+Assigning tasks inequitably
+Possible teacher responses:
+Encourage the groups to completely account for all tasks required to complete the lab.  Ask guided questions of the lab groups that are not accounting for all the tasks.  Indicate to the groups that do not have a balance of tasks that the grade for each member will be based on their participation in the group as well as on the final result and lab write-up.Measuring necessary quantities, (ie Length and height of table)Measure all quantities accurately and preciselyStudents may not measure from the proper starting and ending point for the projectile
+Students may not measure perpendicular for the height
+Students must be precise to get a good resultPossible teacher responses:
+Encourage students to consider what part of the projectile they need to measure in order to determine the horizontal initial velocity.  Also indicate that accuracy is essential for good results and that height is a measurement of perpendicular distance from the floor.  The students should be encouraged to measure as precisely as their measuring device will allow to ensure that their calculations will be correct for the range.  Errors accumulate.
+Determining the time elapsed that the projectile is travelling at constant velocityStudents should measure the time that the projectile is travelling at constant velocity? this is the time that it is travelling horizontally across the table.Students often measure the time including the time coming down the inclined plane, which introduces error
+Students don?t always start when the projectile reaches the table or stop when it leaves the table and that this is the same distance that they measuredPossible teacher responses:
+Make sure to question the students about what they are measuring and to guide them to understanding that they are attempting to calculate the constant velocity of the projectile.  Ask them whether the projectile is going at constant velocity when it is travelling down the inclined plane.  Ask them what distance they measured and whether this is the same time that they are measuring. Sometimes confusion occurs because there are TWO time quantities that students must keep track of: the time across the table and later the time in flight.Number of trials necessary to calculate the average velocity of the projectileStudents should utilize as many stop watches as possible for each trial and complete three good trials recording ALL times.The students might only designate one time keeper.
+The students might not record all the times for all the trials.Possible teacher responses:
+Encourage the students to be as accurate and diligent in their scientific method as possible.  Time is very difficult to measure accurately and the students should utilize as long of a distance over which the projectile is experiencing constant velocity as possible to determine the horizontal initial velocity as the projectile leaves the table.  The students should be encouraged to record ALL times for ALL trials and to include them in their data table.  Later if times are determined to be inaccurate they must be explained.Calculating the range of the projectileThe groups work together but each student must complete their own calculation with ALL work shownThe students may not understand how to calculate the range
+The students may not show all work and not complete their own calculationPossible teacher responses:
+The teacher will be working with the groups to get their data but must also be aware of the groups that are working on their calculations.  The groups must be encouraged to get all their data while they are collecting projectile data and measurements so that they will be able to complete the task.  Repeatedly encourage the groups that are working on their calculations to write up their own calculations and lab report.  Hopefully the groups are balanced so that the groups have a balance of abilities and that they can help each other.  Encourage the students to be clear about what they are attempting to calculate.  Ask the students to consider what the variables of the formulas stand for.  Tell the students to consider if their results are reasonable.  Double check their calculations and check their units!
+Shooting for the GradeOne student from the group should place the center of the target at the calculated distance from the point where the projectile leaves the tableThe student does not place the target at the center of the bulls-eye
+The student does not measure from the perpendicular distance below where the projectile leaves the tablePossible teacher responses:
+Ask the students where they expect the projectile to land and whether they have placed the center of the target there.  Also ask the students where they should measure the starting point from if they are not measuring from the perpendicular spot of the table.Re-calculating if necessaryThe group should take their measurements and do a new calculation sheet.
+If the initial velocity is the problem then the group should repeat the three trials againThe students miss the target but do not want to redo the trial
+The students suspect that their initial velocity is wrong but don?t know what to do
+The students attempt to simply correct their calculations
+The students attempt to calculate their answer based on ?knowing the value of the first trial?Possible teacher responses:
+All groups that missed the target or that are not satisfied with their grade are required to completely redo their calculation.  This should be turned-in in addition to their first trial.  The students are strongly encouraged that science is about documentation and that re-calculating their results is a valuable and rewarded pursuit.  If the students need more data then they should be encouraged to set up for three more trials, indicating where they made their mistake as a justification for be allowed to retry.  The students need to be held accountable that they are working to solve the calculations based on THEIR DATA!!!  Make sure that the students are not figuring out their error from merely adjusting their initial results based on where the first trial hit? THIS is CHEATING AND WILL RESULT IN AN E.  Encourage the students that despite a bad initial trial that their efforts will be rewarded and that they must be very thorough in explaining their sources of error in their conclusion!
+Lab Write-UpEach student should complete an independent and comprehensive lab write-upStudents try to turn in group lab
+The students that did well on the first trial attempt to not complete lab-write up
+The lab write-ups are not thorough and complete with all work, calculations, and data tables
+The conclusions are absent or not thoroughPossible teacher responses:
+Having built up the suspense of the ?Shoot for your Grade? part of the lab, the teacher must now ensure the students that did not do well that they can get a decent grade by turning in a thorough lab report with explanatory conclusion which is completed independently.  The students that did very well on the trial part of the lab must be reminded that a large part of the lab grade is the write-up.  Everyone must be reminded that this is a Complete Lab-Write Up and that all the parts of the lab write-up must be present!!!
+MODIFICATION OF THE ACTIVITY
+Instead of measuring the distance and time needed to calculate the constant velocity of the projectile, let the projectile hit the floor as if shooting for the grade.  With measurement of the height and distance from the table, the initial horizontal velocity can be calculated.  Then take the entire set up and move it to a different initial height for the actual ?Shoot for your Grade? activity.
+
+POST ACTIVITY DISCUSSION PROMPTS
+Much of the discussion should happen while the activity is taking place, although the final twenty minutes can be utilized to summarize the experience and to attempt to make this semi-competitive experience positive for everyone.  
+
+Groups can be asked to present their results and explain how they came to their calculated value.  The goal is that everyone understands how to complete the task now that they have completed the lab.
+
+The students should have a discussion about how they went about solving the projectile problem.  A discussion about misconceptions and errors that were made should be facilitated.  The students should be asked why the trials were repeatable.  What role does that inclined plane play in the lab?  Why is it important that the table be horizontal?  Could we solve the problem if the table was at an angle?  If the next unit to be discussed is on Energy, then it is possible to utilize this lab as an introduction into potential and kinetic energy as indicated by the inclined plane.
+
+ 
+
+
+
+2
+
+Physics Core Curriculum 2011-2012
+Unit 2
+
+1
+

@@ -1,0 +1,4 @@
+Activity Name: Working with displacement vectors activity (Land Map Activity)
+
+Vectors are an essential concept for understanding physical interactions.  The description of velocity, for example, is not complete without specifying a magnitude and direction for the motion.  In turn, evidence for a net force acting on a moving body can be provided by a change in direction, a change in magnitude of the motion, or both.  This activity asks students to use a protractor and ruler to analyze points on a 2-D map in order to form an experiential framework for vector manipulations, including vector addition and resolution.
+

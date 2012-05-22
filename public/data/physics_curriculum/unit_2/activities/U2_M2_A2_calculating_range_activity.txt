@@ -1,0 +1,3 @@
+Activity Name: Calculating the range for projectile motion activity (Shoot for Your Grade Activity)
+
+As a culminating project for describing motion, students should be able to calculate the range of a horizontal projectile from a fixed height, given enough information to determine the height and initial velocity.  Unit 3 begins a deeper explanation of motion by introducing forces as the causes of changes in motion.  (This is similar to the Velocity of a Projectile activity in Holt pp. 116-7.)

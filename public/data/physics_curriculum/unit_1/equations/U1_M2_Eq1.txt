@@ -1,0 +1,1 @@
+a = \left ( \frac{v_{f} - v_{i}}{t} \right )

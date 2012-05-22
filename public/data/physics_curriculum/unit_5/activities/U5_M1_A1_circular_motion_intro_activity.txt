@@ -1,0 +1,3 @@
+Activity Name: Circular motion introductory activity
+
+This activity is designed to force students to the realization that the direction of the net force exerted on an object in circular motion is directed INWARDS, towards the center of the circle defining the path (not outwards or in the direction of the velocity).

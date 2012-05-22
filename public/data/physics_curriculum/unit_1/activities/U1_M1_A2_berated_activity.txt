@@ -1,0 +1,3 @@
+As the first lab experiences in the physics classroom, this activity is used to establish behavioral and academic expectations as well as set the tone for the types of investigations during the year. The physics content is an important foundation for all that comes later.
+
+Students should emerge at the end of the activity recognizing that motion can be numerically quantified and that easily measured numbers (time, distance) can be used to generate more descriptive numbers (speed) which can be used to make predictions. Because the ubiquity of rates in introductory physics, this activity can also draw out some of the salient features of rates, providing a useful touchstone for the class when confronted with new rates (acceleration, power, and so on).

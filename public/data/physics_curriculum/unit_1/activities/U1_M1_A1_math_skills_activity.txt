@@ -1,0 +1,10 @@
+Activity 1
+# Unit 1
+## Module 1
+
+Name:
+Math Skills
+
+Rationale:
+Need to assess students’ math skills, which are often lower that would be expected given the courses on students' transcripts. Basic algebra is the key in this course, with the use (but not manipulation) of certain trigonometric identities.
+

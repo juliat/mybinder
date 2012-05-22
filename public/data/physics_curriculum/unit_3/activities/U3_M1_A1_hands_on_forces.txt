@@ -1,0 +1,12 @@
+Activity Name: Hands-on exploration of forces (Everyday Forces Activity)
+
+<p>A common set of experiences is essential to connecting new material with prior student experience.  The main goal of this activity is to allow the student to explore a variety of circumstances that deals with gravity, mass, forces, weight, inertia and equilibrium.  These experiences can be drawn upon later in class discussions.
+</p><p>
+The student should recognize the role of mass/inertia in motion changes; specifically, the more massive an object, the greater the net force that is required to cause it to accelerate.  (See the comment on inertia below.) <strong>The relationship between mass and inertia in this course is that the inertia of an object is measured by its mass.</strong>
+</p><p>
+Also the student should start to recognize that at this stage in learning physics a specific object is usually the focus of attention and therefore designated as the “system.”  This is a misleading term when compared to everyday language because the system in this case is just a lone object.  Everything else in the universe is designated as the surroundings.  It is crucial to explicitly define the system because it drives the labeling of the forces and other objects.  Free body diagrams are an important representational tool which also require the explicit designation of the system.
+</p><p>
+The connection between equilibrium (and non-equilibrium) and motion is important.  Objects in equilibrium have no net force acting on them, and show constant motion (including not moving).
+</p><p>
+Finally, one of the most confusing ideas in the topic of “forces” is the relationship between mass, gravity, force and weight. 
+</p>

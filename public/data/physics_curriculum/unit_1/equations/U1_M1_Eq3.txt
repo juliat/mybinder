@@ -1,0 +1,1 @@
+x = \left ( \frac{v_{i} + v_{f}}{2} \right )t

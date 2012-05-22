@@ -1,0 +1,3 @@
+Activity Name: Space station with artificial gravity activity
+
+From Hewitt (p. 223): Today we live on the outer surface of our spherical planet, held here by gravity. Earth has been the cradle of humankind. But we will not stay in the cradle forever. We are on our way to becoming a spacefaring people. In the years ahead many people will likely live in huge lazily rotating space stations where simulated gravity will be provided so the people can function normally.

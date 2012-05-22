@@ -1,0 +1,186 @@
+Unit 1: one dimensional motion – 22 days – Sept 1 through Oct 4
+* Module 1 (10 days)
+o Holt pp 1-47
+o Hewitt pp 1-50
+o Note: The order of topics in Unit 1 aligns with Holt.  Hewitt begins forces on page 12.  Forces will be covered in Unit 3.
+* Module 2 (12 days)
+o Holt pp 48-79
+o Hewitt pp 51-67
+
+Note:
+* Units 1 and 2 are to be finished by the close of the first quarter
+* First quarter closes on Nov 10, 2011
+
+Eligible Content:
+* S11.A.1.1.5  Analyze or compare the use of both direct and indirect observation as means to study the world and the universe (e.g., behavior of atoms, functions of cells, birth of stars).
+* S11.A.1.3.1  Use appropriate quantitative data to describe or interpret change in systems (e.g., biological indices, electrical circuit data, automobile diagnostic systems data).
+* S11.A.3.2.1  Compare the accuracy of predictions represented in a model to actual observations and behavior.
+* S11.A.3.3.3  Analyze physical patterns of motion to make predictions or draw conclusions (e.g., solar system, tectonic plates, weather systems, atomic motion, waves).
+* S11.C.3.1.3  Describe the motion of an object using variables (i.e., acceleration, velocity, displacement).
+
+Key Concepts:
+1. In physics we convert observations and ideas into numbers and models.
+2. In physics we represent physical events or scenarios in a variety of ways, including verbally, pictorially, graphically, and mathematically.
+3. Time and displacement are fundamental quantities in physics.
+4. Some quantities (vectors such as displacement, velocity, and acceleration) must be assigned a specified direction to be fully described (direction is qualitative in Unit 1, quantitative in Unit 2 through the use of vectors).
+5. The rate of change (for example speed) is the change in some quantity per time, where time is typically in 1 second intervals.
+6. Constant motion is moving equal distance intervals in equal time intervals.
+7. Accelerated motion is moving unequal distance intervals in equal time intervals.
+a. Freefall is the primary of example of accelerated motion.
+
+
+Content Expectations and Performance Expectations (in italics) by module/topic:
+
+Module 1
+
+Using Numbers to Describe Reality
+1. Recognize the importance of units when making measurements
+2. Know the SI units for measuring time (seconds, minutes, hours)
+3. Know the SI units for measuring distance and describing position
+4. Know some of the basic conversion factors within the SI system and between the SI system and the English system
+5. Recognize rates as an amount over time in multiple contexts – distance covered/time, water flow/time, money earned/time, and so on.
+6. Convert units from one to another, given a conversion factor
+7. Express numbers in scientific notation
+8. Use numbers written in scientific notation in calculations
+Distance and Displacement
+9. Recognize the role of the sign (+/-) when describing 1-D motion
+10. Recognize that there are certain quantities that must have a direction to be fully described
+11. Measure distance accurately in SI units
+12. Measure displacement accurately
+13. Measure time accurately in SI units
+Motion: Speed and Velocity
+14. Know that an observer perceives an object as moving if it changes location with respect to him/her and therefore motion is perceived differently by different observers
+15. Define speed as a particular rate – the rate at which position changes
+16. Measure the speed of an object, using appropriate tools
+17. Use the definition of average speed to calculate speed, distance covered or elapsed time
+
+Module 2
+Graphs of Motion
+18. Know the features of a graph including axes and the plot of the function
+19. Know how to correctly interpret the slope of a line on a data graph, including the proper units for the slope
+20. Make a graph of data
+21. Interpret a position vs. time graph to find the location of an object at a particular time
+22. Interpret a position vs. time graph to find the time at which an object reaches a particular location
+23. Recognize the correlation between the slope of a line on a position vs. time graph and the speed of an object
+24. Describe the motion of an object based on the shape (linear or curved) of the position vs. time graph
+25. Differentiate between instantaneous and average velocity
+26. Recognize that the position vs. time relationship for an accelerating object is different than that for an object with unchanging velocity
+27. Know the shape of a position vs. time graph for an accelerating object
+Differentiation for PSP
+28. Know the relationships between d, v and a graphs in terms of slopes and areas under curves
+29. Correlate the shape of a graph with the mathematical equation of the relationship
+Acceleration
+30. Know that objects can have a changing velocity
+31. Define acceleration
+32. Define initial velocity
+33. Define final velocity
+34. Know the relationships between acceleration, displacement, initial and final velocity and time for uniformly accelerating objects when the initial velocity is zero
+35. Use the definition of acceleration in order to determine the acceleration, initial velocity, final velocity, or time elapsed for an object in motion
+36. Identify scenarios where the motion of objects has acceleration that is in the same or in the opposite direction as their velocity
+Differentiation for PSP
+37. Know the relationships between acceleration, displacement, initial and final velocity and time for uniformly accelerating objects with non-zero initial or final velocities (not including problems requiring the use of the quadratic formula)
+Freefall
+38. Know that gravity causes objects to accelerate
+39. Know that gravity must be a consideration for any object near the surface of the earth
+40. Know the magnitude and direction of the acceleration due to gravity near the surface of the earth
+41. Know the definition of freefall
+42. Know the conventions used by physics textbooks when describing freely falling objects (no air resistance, uniform gravitational field, level plain, no earth spin, etc.)
+43. Define g
+Key Terms Module 1 and 2* Metric System
+* SI
+* Base unit
+* Meters
+* Seconds 
+* Kilograms
+* Scientific notation
+* Factor label method
+* Precision
+* Accuracy* Significant figures
+* Graphical relationships
+* Linear relationships
+* Inverse relationships
+* Quadratic relationships
+* Square root relationships
+* Coordinate system
+* Origin
+* Vector 
+* Scalar* Displacement
+* Time interval
+* Distance
+* Average velocity
+* Average speed
+* Instantaneous velocity
+* Average acceleration
+* Instantaneous acceleration
+* Reference frame
+
+Misconceptions:
+* At times students are reluctant to round off appropriately.
+* Displacement is different than distance.  Displacement is the length of a straight line between the start and end point of a path.
+* Many students have trouble understanding that if a person is stationary with respect to the Earth that the person may be moving relative to some other observer.
+* http://www.physics.montana.edu/physed/misconceptions/
+* http://phys.udallas.edu/C3P/Preconceptions.pdf
+
+
+Summary of Unit 1 activities:
+
+Module 1
+
+      Math skills
+Need to assess students’ math skills, which are often lower that would be expected given the courses on students' transcripts. Basic algebra is the key in this course, with the use (but not manipulation) of certain trigonometric identities.
+
+      Measuring walking speed (Berated Activity)
+As the first lab experiences in the physics classroom, this activity is used to establish behavioral and academic expectations as well as set the tone for the types of investigations during the year. The physics content is an important foundation for all that comes later.
+
+Students should emerge at the end of the activity recognizing that motion can be numerically quantified and that easily measured numbers (time, distance) can be used to generate more descriptive numbers (speed) which can be used to make predictions. Because the ubiquity of rates in introductory physics, this activity can also draw out some of the salient features of rates, providing a useful touchstone for the class when confronted with new rates (acceleration, power, and so on).
+
+
+      A constant speed activity which leads to graphing motion data
+Graphs are excellent ways to visualize data. Students need to experience the process of gathering individual data points and then extrapolating patterns based on the visual cues provided by graphing the data. There are numerous ways to gather motion data, including photogates, sonic rangers, ticker-tape timers, stopwatches and meter sticks, simulations, and so on. Depending on your materials, students should be presented with a constant velocity motion which has easily measurable distance and time characteristics. From this, students should be able to generate data tables, then graphs of position vs. time (or displacement vs. time).
+
+Some of the patterns that must be easily discernable are that an object with a constant speed will have a linear x(t) graph and that the slope of the x(t) graph corresponds to the speed of the object. There are, obviously, many other important lessons that can be brought out in the execution of the activity, including fitting theoretical models to experimental data, the reliability of data and a review of graphing techniques.  The focus here is on accurate data collection, with graphing being the transition into Module 2 which actually contains the graphing CE’s and PE’s for Unit 1.
+
+
+
+Threshold equations:
+* 
+* 
+* 
+
+Threshold problems:
+Conceptual
+* Holt p.68 #1-6
+Computational
+* Holt p.28 #11b, d, g
+* Holt p.44 #5, 6
+Differentiation for PSP
+* Holt p.69 #11
+
+Module 2
+
+Interpreting motion graphs activity (Walk the Line Activity)
+High-school students are expected to learn about graphs in a variety of math contexts; how to plot points in a coordinate plane, how plotted graphs can represent functions, how to find slopes and intercepts, how to shift graphs up or down, how to stretch them, and so on.  In a physics class we also look at graphs, but our primary intent is not to introduce the graphical manipulation and interpretation tools (although many students benefit from the review of the material), but to show how those tools can be used to better understand the world and how it functions.  The “Walk the Line” activity is intended to re-enforce the skill of looking at a graph and visualizing the motion it represents.  Beginning with simple linear, constant velocity motion, students are shown how the image of a plotted line can quickly reveal a lot of information about the motion of an object, even without numerical analysis.  Students are asked to turn a mathematical model into live action, paying particular attention to the shape, the slope, and the intercepts of various x(t) graphs.  Becoming proficient in the skill of rapid qualitative assessment of motion graphs will aid in understanding the difference between instantaneous and average velocity, the difference between positive and negative quantities when analyzing motion, the difference between accelerated and constant velocity motion, and how to interpret the graph of ANY quantity as it varies in time.  As with algebraic manipulations, graph interpretation is one of those physics skills that is both supported by a math background but can also serve to enhance a student’s math experience, as well.   
+ 
+An accelerated motion activity which leads to graphing motion data
+Students are easily frustrated when rules appear arbitrary or capricious.  Students without a solid conceptual foundation of 1-D motion will see a mathematical treatment of accelerated motion to be unnecessarily complicated and the rules governing problem solving will be baffling and frustrating.  It is important that a student experiences the ways in which accelerated motion yields different relationships between time and position than constant velocity.  If an appropriate challenge is selected, not only will a student appreciate the complexity of the situation, but also recognize the need for developing terms to indicate the initial and final velocities, the acceleration of the object and a finer appreciation of what is meant by the time variable.  There are numerous ways to expose students to constant linear acceleration situations; most obviously with objects in freefall, although it is also possible to use objects on inclined planes or computer simulations.  Ideally, students should be able to make quantitative predictions about the motion of an accelerating object and compare that to the observed motion of the object.  Teachers may opt to use the same data-gathering techniques used for the constant velocity tasks assigned in Module 1, or challenge the students to make predictions using a novel data gathering technique.  In either case, students should be able to, without too much guidance by the teacher, recognize the accuracy of their own predictions when compared to the results of their investigations.  
+      
+	Threshold equations:
+* 
+* 
+* 
+* 
+* Differentiation for PSP
+* 
+* 
+
+	Threshold problems:
+Conceptual problems
+* Holt p.69 #12-15
+* Holt p.70 #26-29
+Computational problems
+* Holt p.59 #5
+* Holt p.70 #21, 23, 30
+* Holt p.881 #44
+* Holt p.64 #2b
+Differentiation for PSP
+* Holt p.71 #37, 40

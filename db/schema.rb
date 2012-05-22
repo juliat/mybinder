@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20120514073113) do
     t.string   "image_file"
     t.string   "remote_image_url"
     t.integer  "mod_id"
+    t.integer  "number"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end

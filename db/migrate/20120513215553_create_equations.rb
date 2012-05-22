@@ -5,6 +5,7 @@ class CreateEquations < ActiveRecord::Migration
       t.string :image_file
       t.string :remote_image_url
       t.integer :mod_id
+      t.integer :number
 
       t.timestamps
     end
