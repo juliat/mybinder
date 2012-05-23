@@ -18,6 +18,16 @@
 			<% end %>
 		</ul>
 	</div>
+	<div class="equations">
+		<h3>Threshold Equations</h3>
+		<ul>
+			<% for equation in mod.equations %>
+				<li>
+					<%= image_tag  equation.image_file, :alt => "#{equation.latex}" %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
 	<div class="problems">
 		<h3>Threshold Problems</h3>
 		<% mod.sorted_threshold_problems.each do |type, problems| %>
