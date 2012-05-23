@@ -1,0 +1,12 @@
+<div class="fields">
+	<div class="min_document">
+		<%= f.link_to_remove(raw("<i class='icon-remove'></i>")) %>
+		
+		<%= f.fields_for :documents do |document| %>
+			<%= f.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" }%>
+			<%= f.input :name %>
+			<%= f.input :file %>
+			<%= f.input :description %>
+		<% end %>
+	</div>
+</div>

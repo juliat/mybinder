@@ -10,30 +10,7 @@
     <%= @activity.prior_knowledge %>
 </div>
 
-<div class="documents">
-    <h2>Activity Documents</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Contributed By</th>
-                <th>File</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <% @activity.documents.each do |doc|  %>
-                <td><%= doc.name %></td>
-                <td><%= doc.description %></td>
-                <td><%= doc.user.email %></td>  
-                <td><%= link_to "Download", "#{doc.file}" %></td>
-                <% end %>
-            </tr>
-        </tbody>
-    </table>
-  </ul>  
-</div>
+<%= render :partial => 'detailed_activities' %>
 
 <% if can? :update, @activity %>
     <%= link_to 'Edit', edit_activity_path(@activity) %> |

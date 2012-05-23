@@ -12,7 +12,7 @@ class Ability
        can :manage, [Course, Unit, Topic, Mod, Standard, 
                      AuthorOrg, Goal, GoalType, Misconception, 
                      KeyConcept, KeyTerm, StandardGoalMapping,
-                     Activity, OnlineResource]
+                     Activity, DetailedActivity, OnlineResource]
        can [:show, :update, :destroy], User do |a_user|
             user.id == a_user.id
        end
@@ -20,7 +20,7 @@ class Ability
     elsif
         user.role == "teacher"
         can :read, [Course, Unit, Topic, Mod, OnlineResource]
-        can [:read, :create, :update], Activity
+        can [:read, :create, :update], DetailedActivity
         
         can [:show, :update, :destroy], User do |a_user|
             user.id == a_user.id
@@ -29,7 +29,7 @@ class Ability
             user.id == teacher.user_id
         end
     else
-       can :read, [Course, Unit, Topic, Mod, Activity, OnlineResource]
+       can :read, [Course, Unit, Topic, Mod, Activity, DetailedActivity, OnlineResource]
     end
 
 

@@ -6,6 +6,7 @@ Mybinder::Application.routes.draw do
     resources :units
     resources :mods
     resources :activities
+    resources :detailed_activities
     resources :equations
     resources :online_resources
   

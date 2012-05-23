@@ -1,0 +1,27 @@
+<h6>Contribute Your Materials for this Activity</h6>
+<div id="detailed_activity_form">
+	<%= simple_nested_form_for detailed_activity, :remote => true, :html => { :class => 'form-horizontal' } do |activity_form| %>
+
+		<%= activity_form.link_to_remove(raw("<i class='icon-remove'></i>")) %>	
+		<%= activity_form.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" }%>
+		<%= activity_form.input :name %>
+		<%= activity_form.input :description %>
+		
+		
+		<div id="activities_documents">
+			<%= activity_form.simple_fields_for :documents do |document_form| %>
+				
+				<!-- partial for documents field -->
+				<%= render :partial => 'documents/document_fields', :locals => {:f => document_form} %>
+				
+			<% end %> 
+			<p>
+				<br />
+				<%= activity_form.link_to_add(raw("<i class='icon-plus icon-white'></i> Add document"), :documents, :class => 'btn btn-mini btn-primary') %>
+			</p>
+		</div> 
+		
+		<%= activity_form.button :submit, :class => 'btn-primary' %>
+		<%= link_to "Cancel", "#" %>
+	<% end %>
+</div>
