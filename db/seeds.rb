@@ -63,7 +63,7 @@ def getUnitEquations(unit, modules)
 		
 		# depending on the file extension, either save the image_file or latex	
 		if e['file_type'] == ".gif" 
-			equation.image_file = e['file']
+			equation.image_file = File.new(directory + e['file'])
 		elsif e['file_type'] == ".txt"
 			equation.latex = File.new(directory + e['file'], 'r').gets()
 		end
@@ -250,7 +250,7 @@ end
 # =====================================================================================================================
 
 
-[User, Course, Unit, Mod, Topic, Goal, Misconception, ProblemType, ThresholdProblem, TextReference].each(&:delete_all)
+[User, Course, Unit, Mod, Topic, Goal, Misconception, ProblemType, ThresholdProblem, TextReference, Equation].each(&:delete_all)
 
 # create admin
 @user = User.new()
