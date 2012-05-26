@@ -6,10 +6,10 @@
 <% end %>	
 </ul>
 
-<%# if can? :create, @online_resource %>
+<% if can? :create, OnlineResource %>
 	<%= link_to "Contribute a Resource", "#resource_form", :rel => "facebox" %>
 	<% @online_resource	= OnlineResource.new() %>
 	<div id="resource_form" style="display: none">
 		<%= render :partial => "online_resources/contribute_resource", :locals => {:online_resource => @online_resource, :resourceable_id => @resourceable_id} %>
 	</div>
-<%# end %>
+<% end %>

@@ -64,6 +64,7 @@ class OnlineResourcesController < ApplicationController
         format.html { head :no_content }
         format.json { head :no_content }
         format.xml  { head :ok }
+        format js # updated
       else
         format.html { head :no_content }
         format.json { render json: @online_resource.errors, status: :unprocessable_entity }
