@@ -1,5 +1,7 @@
 <%= content_tag_for(:li, online_resource) do %>
-	<h6><%= online_resource.name %></h6>
+	<h6><%= link_to(online_resource.name, online_resource.url)%></h6>
 	<p><%= online_resource.description %></p>
+	<p>Contributed by <%= online_resource.user.email %></p>
 	<hr>
 <% end %>
+		
