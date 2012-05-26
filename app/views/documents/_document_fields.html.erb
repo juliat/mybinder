@@ -4,9 +4,9 @@
 		
 		<%= f.fields_for :documents do |document| %>
 			<%= f.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" }%>
-			<%= f.input :name %>
-			<%= f.input :file %>
-			<%= f.input :description %>
+			<%= f.input :name, :label => "Document Name" %>
+			<%= f.input :file, :label => "Document File" %>
+			<%= f.input :description, :label => "Document Description" %>
 		<% end %>
 	</div>
 </div>

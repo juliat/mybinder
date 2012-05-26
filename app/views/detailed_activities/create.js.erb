@@ -1,0 +1,8 @@
+/* use self-invoking anonymous function here */
+(function(){
+	da_list = $('#detailed_activities');
+	da_list.append('<%= escape_javascript(render(@detailed_activity)) %>');
+	da_list.children().last().effect('highlight', {color: 'cyan', mode: 'show'}, 2000);
+		
+	document.getElementById('new_detailed_activity').reset();
+})();

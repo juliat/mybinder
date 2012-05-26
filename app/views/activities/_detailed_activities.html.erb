@@ -15,5 +15,6 @@
 
 <% @detailed_activity = DetailedActivity.new() %>
 <% if can? :create, @detailed_activity %>
-	<%= render :partial => "detailed_activities/contribute_activity", :locals => {:detailed_activity => @detailed_activity} %>
+	<%= render :partial => "detailed_activities/contribute_activity", 
+	:locals => {:detailed_activity => @detailed_activity, :activity_id => activity_id} %>
 <% end %>

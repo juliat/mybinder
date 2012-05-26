@@ -10,7 +10,7 @@
     <%= @activity.prior_knowledge %>
 </div>
 
-<%= render :partial => 'detailed_activities' %>
+<%= render :partial => 'detailed_activities', :locals => {:activity_id => @activity.id} %>
 
 <% if can? :update, @activity %>
     <%= link_to 'Edit', edit_activity_path(@activity) %> |

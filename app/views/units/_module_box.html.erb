@@ -20,23 +20,31 @@
 	</div>
 	<div class="equations">
 		<h3>Threshold Equations</h3>
-		<ul>
-			<% for equation in mod.equations %>
-				<li>
-					<%= image_tag  equation.image_file, :alt => "#{equation.latex}" %>
-				</li>
-			<% end %>
-		</ul>
+		<% unless mod.equations.empty? %>
+			<ul>
+				<% for equation in mod.equations %>
+					<li>
+						<%= image_tag  equation.image_file, :alt => "#{equation.latex}" %>
+					</li>
+				<% end %>
+			</ul>
+		<% else %>
+			<p class="nil-message">There aren't any threshold equations for this module.</p>
+		<% end %>
 	</div>
 	<div class="problems">
 		<h3>Threshold Problems</h3>
-		<% mod.sorted_threshold_problems.each do |type, problems| %>
-			<h4><%= type %></h4>
-			<ul>
-				<% for problem in problems %>
-					<li><%= problem %></li>
-				<% end %>
-			</ul>
+		<% unless mod.sorted_threshold_problems.nil? %>
+			<% mod.sorted_threshold_problems.each do |type, problems| %>
+				<h4><%= type %></h4>
+				<ul>
+					<% for problem in problems %>
+						<li><%= problem %></li>
+					<% end %>
+				</ul>
+			<% end %>
+		<% else %>
+			<p class="nil-message">There aren't any threshold problems for this module.</p>
 		<% end %>
 	</div>
 	<% else %>
