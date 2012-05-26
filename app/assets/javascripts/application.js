@@ -22,3 +22,7 @@
 //= require on_the_spot
 //= require jquery.facebox
 //= require_tree .
+
+$(document).ready(function() {
+	jQuery('a[rel*=facebox]').facebox()
+})

@@ -1,6 +1,6 @@
-<h6>Contribute a Resource</h6>
 <div id="online_resource_form">
 	<%= simple_form_for online_resource, :remote => true, :html => { :class => 'form-horizontal' } do |f| %>
+		<legend>Contribute a Resource</legend>
 		<%= f.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" } %>
 		<%= f.input :resourceable_type, :as => :hidden, :input_html => { :value => controller_name.classify } %>
 		<%= f.input :resourceable_id, :as => :hidden, :input_html => {:value => resourceable_id} %>
@@ -9,6 +9,5 @@
 		<%= f.input :description %>
 
 		<%= f.button :submit, :class => 'btn-primary' %>
-		<%= link_to "Cancel", "#" %>
 	<% end %>
 </div>

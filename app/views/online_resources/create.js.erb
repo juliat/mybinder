@@ -1,12 +1,23 @@
 /* use self-invoking anonymous function here */
-<!--
 (function(){
--->
 	or_list = $('#online_resources');
-	or_list.append('<%= escape_javascript(render(@online_resource)) %>');
-	or_list.children().last().effect('highlight', {color: 'cyan', mode: 'show'}, 2000);
-		
-	document.getElementById('new_online_resource').reset();
+	
 <!--
-})();
+	/* display a message confirming that the resource has been submitted */
+	or_form =  $('#online_resource_form');
+	or_form.hide();	
+	$('#facebox .content').append('<%# render :partial => 'resource_contributed' %>');
+	
+	/* close the modal box */
+	jQuery(document).trigger('close.facebox');
 -->
+	
+	/* append the submitted element to the online resources list */
+	$(document).bind('afterClose.facebox', function() {
+		or_list.append('<%= escape_javascript(render(@online_resource)) %>');
+		or_list.children().last().effect('highlight', {color: 'cyan', mode: 'show'}, 2000);
+		
+	})
+	/* reset the form */
+	document.getElementById('new_online_resource').reset();
+})();
