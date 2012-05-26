@@ -1,6 +1,6 @@
 <h6>Contribute Your Materials for this Activity</h6>
 <div id="detailed_da_form">
-	<%= simple_nested_form_for detailed_activity, :html => { :class => 'form-horizontal' } do |da_form| %>
+	<%= simple_nested_form_for detailed_activity, :remote => true, :html => { :class => 'form-horizontal' } do |da_form| %>
 
 		<%= da_form.link_to_remove(raw("<i class='icon-remove'></i>")) %>	
 		<%= da_form.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" }%>

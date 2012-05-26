@@ -1,5 +1,9 @@
-<%= content_tag_for(:li, detailed_activity) do %>
-	<h6><%= detailed_activity.name %></h6>
-	<p><%= detailed_activity.description %></p>
-	<hr>
-<% end %>
+<li class="well">
+	<h5><%= detailed_activity.name %></h5>
+	<h6>Activity Documents</h6>
+	<ul>
+		<% for document in detailed_activity.documents %>
+			<li><%= link_to(document.name, "#{document.file}") %></li>
+		<% end %>
+	</ul>
+</li>

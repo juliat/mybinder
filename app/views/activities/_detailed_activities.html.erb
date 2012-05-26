@@ -1,15 +1,7 @@
 <h2>Detailed Versions of this Activity</h2>
 <ul id="detailed_activities">
 	<% for activity in @activity.detailed_activities %>
-		<li class="well">
-			<h5><%= activity.name %></h5>
-			<h6>Activity Documents</h6>
-			<ul>
-				<% for document in activity.documents %>
-					<li><%= link_to(document.name, "#{document.file}") %></li>
-				<% end %>
-			</ul>
-		</li>
+		<%= render :partial => 'detailed_activities/detailed_activity', :locals => {:detailed_activity => activity} %>
 	<% end %>
 </ul>
 

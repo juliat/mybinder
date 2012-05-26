@@ -53,6 +53,8 @@ group :assets do
   gem 'jquery-ui-rails'
   
   gem 'google-webfonts'
+  
+  gem 'facebox-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
