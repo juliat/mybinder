@@ -6,10 +6,15 @@
 	/* display a message confirming that the resource has been submitted */
 	or_form =  $('#online_resource_form');
 	or_form.hide();	
-	$('#facebox .content').append('<%# render :partial => 'resource_contributed' %>');
+	
 	
 	/* close the modal box */
 	jQuery(document).trigger('close.facebox');
+-->
+	
+<!--
+	 $("#post_errors").html("<%# escape_javascript(error_messages_for(@post))%>");
+	 $("#post_errors").show(300);
 -->
 	
 	/* append the submitted element to the online resources list */

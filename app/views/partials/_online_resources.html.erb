@@ -1,21 +1,17 @@
+<% @online_resources ||= online_resources %>
+<div id="online_resources_container">
 <h4>Online Resources <%= "for this #{controller.controller_name.singularize.capitalize}" %></h4>
-<ul id="online_resources">
 <hr>
+<ul id="online_resources">
 <% unless @online_resources.nil? %>
 	<%= render :partial => @online_resources %>
 <% end %>	
 </ul>
 
 <% if can? :create, OnlineResource %>
-	<%= link_to "Contribute a Resource", "#new_online_resource_form", :rel => "facebox" %>
+	<%= link_to "Contribute a Resource", "#new_online_resource_form", :rel => "facebox", :class => "btn btn-primary" %>
 	<% @new_online_resource	= OnlineResource.new() %>
 	<div id="new_online_resource_form" style="display: none">
 		<%= render :partial => "online_resources/form", :locals => {:online_resource => @new_online_resource, :resourceable_id => @resourceable_id} %>
-	</div>
-<% end %>
-
-<% if can? :edit, OnlineResource %>
-	<div id="edit_online_resource_form" style="display: none">
-		<%= render :partial => "online_resources/form", :locals => {:this_resource => } %>
 	</div>
 <% end %>

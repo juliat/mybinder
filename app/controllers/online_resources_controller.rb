@@ -77,11 +77,9 @@ class OnlineResourcesController < ApplicationController
   # DELETE /online_resources/1.json
   def destroy
     @online_resource = OnlineResource.find(params[:id])
+    @resourceable = @online_resource.resourceable;
     @online_resource.destroy
-
-    respond_to do |format|
-      format.html { redirect_to online_resources_url }
-      format.json { head :no_content }
-    end
+    flash[:notice] = "This resource was deleted."
+    @online_resources = @resourceable.online_resources;
   end
 end

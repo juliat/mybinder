@@ -3,6 +3,7 @@
 	<p><%= online_resource.description %></p>
 	<p>Contributed by <%= online_resource.user.email %></p>
 	<%= link_to "Edit", "#edit_online_resource_form", :rel => "facebox" %>
+	<%= link_to "Delete", online_resource, :confirm => 'Are you sure?', :method => :delete, :remote => true %></td>
 	<hr>
 <% end %>
 		
