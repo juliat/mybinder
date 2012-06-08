@@ -1,7 +1,21 @@
+<% unless @online_resource.nil? 
+	online_resource = @online_resource 
+	editing = true
+else
+	editing = false
+end %>
 <%= simple_form_for online_resource, :remote => true, :html => { :class => 'form-horizontal' } do |f| %>
 	<legend><%= controller.action_name == "edit" ? "Edit this" : "Contribute" %> Resource</legend>
 	<%= f.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" } %>
-	<%= f.input :resourceable_type, :as => :hidden, :input_html => { :value => controller_name.classify } %>
+	<% if editing 
+		resourceable_type = online_resource.resourceable_type
+		resourceable_id = online_resource.resourceable_id
+	   else
+		resourceable_type = controller_name.classify
+		resourceable_id =resourceable_id
+	   end
+	 %>
+	<%= f.input :resourceable_type, :as => :hidden, :input_html => { :value => resourceable_type } %>
 	<%= f.input :resourceable_id, :as => :hidden, :input_html => {:value => resourceable_id} %>
 	<%= f.input :name %>
 	<%= f.input :url %>
