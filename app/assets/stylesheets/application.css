@@ -10,6 +10,6 @@
  *
  *= require_self
  *= require on_the_spot
- *= require jquery.facebox
+ *= require facebox
  *= require_tree .
 */

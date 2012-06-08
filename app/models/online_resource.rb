@@ -5,4 +5,8 @@ class OnlineResource < ActiveRecord::Base
     # =================================================================================
     belongs_to :resourceable, :polymorphic => true
     belongs_to :user
+    
+    # Scopes
+    # =================================================================================
+    scope :for_user, lambda{|user_id| where("user_id = ?", user_id)}
 end

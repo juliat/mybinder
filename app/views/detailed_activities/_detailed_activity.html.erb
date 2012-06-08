@@ -1,9 +1,12 @@
 <li class="well">
 	<h5><%= detailed_activity.name %></h5>
+	<p><%= detailed_activity.description %></p>
+	<% unless detailed_activity.documents.empty? %>
 	<h6>Activity Documents</h6>
 	<ul>
 		<% for document in detailed_activity.documents %>
 			<li><%= link_to(document.name, "#{document.file}") %></li>
 		<% end %>
 	</ul>
+	<% end %>
 </li>

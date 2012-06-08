@@ -1,0 +1,5 @@
+<% unless @user.id == current_user.id %>
+	<h1><%= "Info for #{@user.email}" %></h1>
+<% else %>
+	<h1>Your Info</h1>
+<% end %>

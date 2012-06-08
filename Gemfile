@@ -54,7 +54,7 @@ group :assets do
   
   gem 'google-webfonts'
   
-  gem 'facebox-rails'
+  # gem 'facebox-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby

@@ -20,9 +20,9 @@
 //= require equation_editor/eq_config
 //= require equation_editor/eq_editor-lite-11
 //= require on_the_spot
-//= require jquery.facebox
+//= require facebox
 //= require_tree .
 
 $(document).ready(function() {
-	jQuery('a[rel*=facebox]').facebox()
+	$('a[rel*=facebox]').facebox()
 })
