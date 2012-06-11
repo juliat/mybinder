@@ -1,1 +1,2 @@
-<%= render :partial => "form" %>
+console.log("ran js");
+$('#facebox .content').html(<%= escape_javascript(render :partial => "form") %>);

@@ -1,10 +1,9 @@
 <%= content_tag_for(:li, online_resource) do %>
-	<h6><%= link_to(online_resource.name, online_resource.url)%></h6>
-	<p><%= online_resource.description %></p>
-	<p>Contributed by <%= online_resource.user.email %></p>
-	<%= link_to 'Edit', edit_online_resource_path(online_resource), :remote => true, :rel => "facebox" %>
-	<%# link_to "Edit", "#edit_online_resource_form", :rel => "facebox" %>
-	<%= link_to "Delete", online_resource, :confirm => 'Are you sure?', :method => :delete, :remote => true %></td>
+	<h6 class="name"><%= link_to(online_resource.name, online_resource.url)%> <i class ="icon-arrow-right"></i></h6>
+	<%= link_to raw("&times;"), online_resource, :confirm => 'Are you sure?', :method => :delete, :remote => true, :class => "delete" %>
+	<p class="description"><%= online_resource.description %></p>
+	<p class="contributor">Contributed by <%= online_resource.user.email %></p>
+	<%# link_to 'Edit', edit_online_resource_path(online_resource), :remote => true, :rel => "facebox" %>
 	<hr>
 <% end %>
 		

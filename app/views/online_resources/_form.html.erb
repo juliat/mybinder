@@ -1,10 +1,15 @@
-<% unless @online_resource.nil? 
+<% 
+# logic to handle cases where online resource is a local variable (editing)
+# vs cases where online resource is an instance variable (creating new)
+unless @online_resource.nil? 
 	online_resource = @online_resource 
 	editing = true
 else
 	editing = false
-end %>
-<%= simple_form_for online_resource, :remote => true, :html => { :class => 'form-horizontal' } do |f| %>
+end 
+%>
+
+<%= simple_form_for online_resource, :remote => true, :html => { :class => 'form form-horizontal' } do |f| %>
 	<legend><%= controller.action_name == "edit" ? "Edit this" : "Contribute" %> Resource</legend>
 	<%= f.input :user_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" } %>
 	<% if editing 

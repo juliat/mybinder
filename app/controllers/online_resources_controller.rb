@@ -34,7 +34,7 @@ class OnlineResourcesController < ApplicationController
 
   # GET /online_resources/1/edit
   def edit
-    @online_resource = OnlineResource.find(params[:id])
+    @online_resource = OnlineResource.find(params[:id])   
   end
 
   # POST /online_resources
@@ -62,8 +62,6 @@ class OnlineResourcesController < ApplicationController
     respond_to do |format|
       if @online_resource.update_attributes(params[:online_resource])
         format.html { head :no_content }
-        format.json { head :no_content }
-        format.xml  { head :ok }
         format js # updated
       else
         format.html { head :no_content }
