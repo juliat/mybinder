@@ -47,7 +47,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'therubyracer'
-  gem 'twitter-bootstrap-rails'
+
   
   gem 'google-webfonts'
   
@@ -77,3 +77,4 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'twitter-bootstrap-rails'
