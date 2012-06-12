@@ -49,9 +49,6 @@ group :assets do
   gem 'therubyracer'
   gem 'twitter-bootstrap-rails'
   
-  gem 'jquery-rails'
-  gem 'jquery-ui-rails'
-  
   gem 'google-webfonts'
   
   # gem 'facebox-rails'
@@ -76,3 +73,7 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
