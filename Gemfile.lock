@@ -4,6 +4,16 @@ GIT
   specs:
     nested_form (0.2.1)
 
+GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: 34c2d3fcb7e8d721eb8f81ef7ce0ce34ac7b3e68
+  specs:
+    twitter-bootstrap-rails (2.1.0)
+      actionpack (>= 3.1)
+      less-rails (~> 2.2.2)
+      railties (>= 3.1)
+      therubyracer (~> 0.10.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -201,11 +211,6 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.0.9)
-      actionpack (>= 3.1)
-      less-rails (~> 2.2.2)
-      railties (>= 3.1)
-      therubyracer (~> 0.10.1)
     tzinfo (0.3.33)
     uglifier (1.2.4)
       execjs (>= 0.3.0)
@@ -249,6 +254,6 @@ DEPENDENCIES
   simplecov
   tconsole (= 1.1.1)
   therubyracer
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails!
   uglifier (>= 1.0.3)
   validates_timeliness
