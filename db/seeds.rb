@@ -31,7 +31,7 @@ def parseEquationFile(file)
 end
 
 # takes a module and returns an array of equation objects for it
-# (equation objects have mod_id., img file and latex)
+# (equation objects have mod_id., number, img file and latex)
 def getUnitEquations(unit, modules)
 	directory = "./public/data/physics_curriculum/unit_#{unit["unit_num"]}/equations/"
 	
@@ -46,6 +46,8 @@ def getUnitEquations(unit, modules)
 		e = parseEquationFile(e)
 		# add the full filename to that hash, minus the extension
 		e['file'] = eFileName
+		
+		puts e
 		
 		# now use eFileName variable to store file name with no extension
 		eFileName = eFileName[0, eFileName.length - 4]

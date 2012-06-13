@@ -24,7 +24,7 @@
 			<ul>
 				<% for equation in mod.equations %>
 					<li>
-						<%= image_tag  equation.image_file, :alt => "#{equation.latex}" %>
+						<%= image_tag "http://latex.codecogs.com/gif.latex?#{equation.latex}", :alt => "#{equation.latex}" %>
 					</li>
 				<% end %>
 			</ul>
