@@ -14,4 +14,7 @@
 	<div id="new_online_resource_form" style="display: none">
 		<%= render :partial => "online_resources/form", :locals => {:online_resource => @new_online_resource, :resourceable_id => @resourceable_id} %>
 	</div>
+<% else %>
+	<%= link_to "Contribute a Resource", "#new_online_resource_form", :rel => "", :class => "btn btn-primary disabled" %>
+	<p>Please login or register to contribute a resource.</p>
 <% end %>

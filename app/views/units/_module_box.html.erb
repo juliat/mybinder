@@ -15,7 +15,7 @@
 		<h3>Topics</h3>
 		<ul class="topics">
 			<% for topic in mod.topics.in_order %>
-			<li><%= link_to(topic.name, topic_path(topic)) %></li>
+			<li><h4><%= link_to(topic.name, topic_path(topic)) %></h4></li>
 			<% end %>
 		</ul>
 	</div>
