@@ -1,4 +1,3 @@
-<h2>Detailed Versions of this Activity</h2>
 <ul id="detailed_activities">
 	<% for activity in @activity.detailed_activities %>
 		<%= render :partial => 'detailed_activities/detailed_activity', :locals => {:detailed_activity => activity} %>

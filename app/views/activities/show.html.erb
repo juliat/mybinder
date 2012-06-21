@@ -1,3 +1,16 @@
+<ul class="breadcrumb">
+  <li>
+    <%= link_to(@course.name, course_path(@course)) %><span class="divider">/</span>
+  </li>
+  <li>
+    <%= link_to("#{@unit.name} : #{@mod.name}", unit_path(@unit))%><span class="divider">/</span>
+  </li>
+  <li>
+    <%= link_to(@topic.name, topic_path(@topic))%><span class="divider">/</span>
+  </li>
+  <li class="active"><%= @activity.name %></li>
+</ul>  
+
 <h1>Activity: <%= @activity.name %></h1>
 
 <div class="rationale">
@@ -10,6 +23,7 @@
     <%= @activity.prior_knowledge %>
 </div>
 
+<h3>Detailed Versions of this Activity</h3>
 <%= render :partial => 'detailed_activities', :locals => {:activity_id => @activity.id} %>
 
 <% if can? :update, @activity %>

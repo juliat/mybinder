@@ -17,6 +17,10 @@ class ActivitiesController < ApplicationController
   # GET /activities/1.json
   def show
     @activity = Activity.find(params[:id])
+    @topic = @activity.topic
+    @mod = @topic.mod
+    @unit = @mod.unit
+    @course = @unit.course
     
     @online_resources = @activity.online_resources
     @resourceable_id = @activity.id
