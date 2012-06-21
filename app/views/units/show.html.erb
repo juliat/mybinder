@@ -26,13 +26,38 @@
 <!-- accordion -->
 <%= render :partial => "unit_things" %>
 
+	<ul class="nav nav-tabs" id="myTab">
+        <% first = true %>
+        <% for mod in @mods %>
+        
+            <% if first %>
+            <li class="active">
+            <% first = false %>
+            
+            <% else %>
+            <li>
+            <% end %>
+            
+                <a href="#mod<%= mod.number %>" data-toggle="tab">
+                    Module <%= mod.number %>
+                </a>
+            </li>
+        <% end %>
+	</ul>
 
-<% unless @mods.empty? %>
-    <!-- modules -->
-    <% for mod in @mods %>
-        <%= render :partial => 'module_box', :locals => {:mod => mod} %>
+	<div class="tab-content">
+    <% unless @mods.empty? %>
+        <% for mod in @mods %>
+            <% if mod.number == "1" 
+                locals = {:mod => mod, :first => true }
+            else
+                locals = {:mod => mod, :first => false }
+            end %>
+            
+            <%= render :partial => 'module_box', :locals => locals %>
+        <% end %>
     <% end %>
-<% end %>
+    </div>
 
 <!--
 <div class="form-actions">

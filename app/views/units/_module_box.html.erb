@@ -1,4 +1,4 @@
-<div class="module_box well">
+<div class="tab-pane <%= first ? "first" : "" %>" id="mod<%= mod.number %>">
 	<h2>Module <%= mod.number %></h2>
 	<% unless mod.topics.nil? %>
 	<p><%= mod.days %> Days</p>
@@ -6,7 +6,7 @@
 		<h3>Textbook Pages</h3>
 		<ul>
 			<% for ref in mod.text_references %>
-				<li><%= "#{ref.book} #{ref.location}" %></li>
+			<li><%= "#{ref.book} #{ref.location}" %></li>
 			<% end %>
 		</ul>
 	</div>
@@ -14,37 +14,37 @@
 		<h3>Topics</h3>
 		<ul>
 			<% for topic in mod.topics.in_order %>
-				<li><%= link_to(topic.name, topic_path(topic)) %></li>
+			<li><%= link_to(topic.name, topic_path(topic)) %></li>
 			<% end %>
 		</ul>
 	</div>
 	<div class="equations">
 		<h3>Threshold Equations</h3>
 		<% unless mod.equations.empty? %>
-			<ul>
-				<% for equation in mod.equations %>
-					<li>
-						<%= image_tag "http://latex.codecogs.com/gif.latex?#{equation.latex}", :alt => "#{equation.latex}" %>
-					</li>
-				<% end %>
-			</ul>
+		<ul>
+			<% for equation in mod.equations %>
+			<li>
+			<%= image_tag "http://latex.codecogs.com/gif.latex?#{equation.latex}", :alt => "#{equation.latex}" %>
+			</li>
+			<% end %>
+		</ul>
 		<% else %>
-			<p class="nil-message">There aren't any threshold equations for this module.</p>
+		<p class="nil-message">There aren't any threshold equations for this module.</p>
 		<% end %>
 	</div>
 	<div class="problems">
 		<h3>Threshold Problems</h3>
 		<% unless mod.sorted_threshold_problems.nil? %>
-			<% mod.sorted_threshold_problems.each do |type, problems| %>
-				<h4><%= type %></h4>
-				<ul>
-					<% for problem in problems %>
-						<li><%= problem %></li>
-					<% end %>
-				</ul>
+		<% mod.sorted_threshold_problems.each do |type, problems| %>
+		<h4><%= type %></h4>
+		<ul>
+			<% for problem in problems %>
+			<li><%= problem %></li>
 			<% end %>
+		</ul>
+		<% end %>
 		<% else %>
-			<p class="nil-message">There aren't any threshold problems for this module.</p>
+		<p class="nil-message">There aren't any threshold problems for this module.</p>
 		<% end %>
 	</div>
 	<% else %>
