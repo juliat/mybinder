@@ -3,19 +3,19 @@
 	<h2>Module <%= mod.number %></h2>
 	<% unless mod.topics.nil? %>
 	<p><%= mod.days %> Days</p>
-	<div class="notes">
-		<h3>Textbook Pages</h3>
-		<ul>
-			<% for ref in mod.text_references %>
-			<li><%= "#{ref.book} #{ref.location}" %></li>
-			<% end %>
-		</ul>
-	</div>
 	<div class="topics">
 		<h3>Topics</h3>
 		<ul class="topics">
 			<% for topic in mod.topics.in_order %>
 			<li><h4><%= link_to(topic.name, topic_path(topic)) %></h4></li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="notes">
+		<h3>Textbook Pages</h3>
+		<ul>
+			<% for ref in mod.text_references %>
+			<li><%= "#{ref.book} #{ref.location}" %></li>
 			<% end %>
 		</ul>
 	</div>

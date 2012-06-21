@@ -55,4 +55,8 @@ class Mod < ActiveRecord::Base
         end   
         return sorted_problems
     end
+    
+    def name
+        "Module #{number}"
+    end
 end

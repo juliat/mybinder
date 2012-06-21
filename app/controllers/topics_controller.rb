@@ -25,6 +25,10 @@ class TopicsController < ApplicationController
   # GET /topics/1.json
   def show
     @topic = Topic.find(params[:id])
+    @course = @topic.mod.unit.course
+    @unit = @topic.mod.unit
+    @mod = @topic.mod
+    
     
     @online_resources = @topic.online_resources
     @resourceable_id = @topic.id
