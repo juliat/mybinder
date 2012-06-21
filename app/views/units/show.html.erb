@@ -1,20 +1,18 @@
 <%- model_class = @unit.class -%>
 <h1><%= link_to(@unit.course.name, course_path(@unit.course)) %> > <%=t '.title', :default => @unit.name %></h1>
 
-<div class="row">
-    <p class="span2">
-      <strong><%= model_class.human_attribute_name(:start_date) %>:</strong>
-      <%= humanize_date(@unit.start_date) %>
+<a href="#" class="btn" rel="popover" data-title="This unit is <%= @unit.days %> days long." 
+    data-content="
+    <p>
+      <strong>Start date:</strong>
+        <%= humanize_date(@unit.start_date) %>
     </p>
-    <p class="span2">
-      <strong><%= model_class.human_attribute_name(:end_date) %>:</strong>
+    <p>
+      <strong>End date:</strong>
       <%= humanize_date(@unit.end_date) %>
-    </p>
-    <p class="span3">
-      <strong><%= model_class.human_attribute_name(:days) %>:</strong>
-      <%= @unit.days %>
-    </p>
-</div>
+    <p>">
+      Pacing
+</a>
 
 <div class="row">
     <p class="span9">
