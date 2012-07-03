@@ -35,7 +35,7 @@ jQuery(function($) {
           }
         }
       }
-
+      // console.log("nested field debugging");
       // Make a unique ID for the new child
       var regexp  = new RegExp('new_' + assoc, 'g');
       var new_id  = new Date().getTime();
