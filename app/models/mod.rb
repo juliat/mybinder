@@ -36,17 +36,20 @@ class Mod < ActiveRecord::Base
     # returns a hash mapping problem type names to lists of problems of that type
     def sorted_threshold_problems
         # if there are no threshold problems, return nil
-        unless self.threshold_problems.empty?
+        threshold_problems = self.threshold_problems.all
+        if threshold_problems.empty?
             return nil
         end
         sorted_problems = {}
         problem_types = ProblemType.all.map{|type| type.name}
+        puts problem_types
         problem_count = 0
         # for each type
         problem_types.each do |type|
+            puts type
             # get all the problems of that type and put the problems into an array
             types_problems = []
-            problems_for_type = self.threshold_problems.for_type(type)
+            problems_for_type = self.threshold_problems.select{|problem| problem.problem_type.name == type}
             problems_for_type.each do |prob|
                 types_problems << prob.problem
             end

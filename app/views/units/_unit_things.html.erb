@@ -1,66 +1,66 @@
 <div id="accordion2" class="accordion">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                  Standards
-                </a>
-              </div>
-              <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
-                <div class="accordion-inner">
-                    <ul class="unstyled">
-                    <% @unit.standards.each do |std| %>
-                        <li><a href="#" rel="tooltip" title="<%= "#{std.author_org.name} : #{std.author_org_code}" %>"><i class="icon-check"></i></a><%= std.statement %></li>
-                    <% end %>
-                    </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a href="#collapseTwo" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                  Key Concepts
-                </a>
-              </div>
-              <div class="accordion-body collapse" id="collapseTwo">
-                <div class="accordion-inner">
-                    <ol>
-                        <% @unit.key_concepts.each do |concept| %>
-                            <li><%= concept.statement %></li>
-                        <% end %>
-                    </ol>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a href="#collapseThree" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                  Key Terms
-                </a>
-              </div>
-              <div class="accordion-body collapse" id="collapseThree">
-                <div class="accordion-inner">
-                    <ul>
-                        <% @unit.key_terms.each do |term| %>
-                            <li><%= term.term %></li>
-                        <% end %>
-                    </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a href="#collapseFour" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                  Common Student Misconceptions
-                </a>
-              </div>
-              <div class="accordion-body collapse" id="collapseFour">
-                <div class="accordion-inner">
-                    <ul>
-                        <% @unit.misconceptions.each do |miscon| %>
-                            <li><%= miscon.statement %></li>
-                        <% end %>
-                    </ul>
-                </div>
-              </div>
-            </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+        Standards
+      </a>
+    </div>
+    <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
+      <div class="accordion-inner">
+          <ul class="unstyled">
+          <% @unit.standards.each do |std| %>
+              <li><a href="#" rel="tooltip" title="<%= "#{std.author_org.name} : #{std.author_org_code}" %>"><i class="icon-check"></i></a><%= std.statement %></li>
+          <% end %>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#collapseTwo" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+        Key Concepts
+      </a>
+    </div>
+    <div class="accordion-body collapse" id="collapseTwo">
+      <div class="accordion-inner">
+          <ol>
+              <% @unit.key_concepts.each do |concept| %>
+                  <li><%= concept.statement %></li>
+              <% end %>
+          </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#collapseThree" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+        Key Terms
+      </a>
+    </div>
+    <div class="accordion-body collapse" id="collapseThree">
+      <div class="accordion-inner">
+          <ul>
+              <% @unit.key_terms.each do |term| %>
+                  <li><%= term.term %></li>
+              <% end %>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a href="#collapseFour" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+        Common Student Misconceptions
+      </a>
+    </div>
+    <div class="accordion-body collapse" id="collapseFour">
+      <div class="accordion-inner">
+          <ul>
+              <% @unit.misconceptions.each do |miscon| %>
+                  <li><%= miscon.statement %></li>
+              <% end %>
+          </ul>
+      </div>
+    </div>
+  </div>
 </div>

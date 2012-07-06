@@ -20,7 +20,7 @@
 	/* append the submitted element to the online resources list */
 	$(document).bind('afterClose.facebox', function() {
 		or_list.append('<%= escape_javascript(render(@online_resource)) %>');
-		or_list.children().last().effect('highlight', {color: 'cyan', mode: 'show'}, 2000);
+		or_list.children().last().effect('highlight', {color: 'white', mode: 'show'}, 2000);
 		
 	})
 	/* reset the form */

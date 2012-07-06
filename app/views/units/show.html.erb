@@ -23,16 +23,18 @@
     </a></h3>
 </div>
 
-<div class="row">
+<div id="unit_notes" class="row">
     <p class="span9">
       <strong><%= model_class.human_attribute_name(:notes) %>:</strong><br>
       <%= @unit.notes %>
     </p>
 </div>
 
-<!-- accordion -->
+<!-- standards, key concepts, key terms, misconceptions -->
 <%= render :partial => "unit_things" %>
-<div class="tabbable tabs-left">
+
+<div id="modules">
+  <h2>Modules</h2>
 	<ul class="nav nav-tabs" id="myTab">
         <% first = true %>
         <% for mod in @mods %>

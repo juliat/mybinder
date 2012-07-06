@@ -7,7 +7,7 @@
 
     <div class="form-actions">
       <%= activity_form.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to 'Cancel', activities_path, :class => 'btn' %>
+      <%= link_to 'Cancel', topic_path(@activity.topic), :class => 'btn' %>
     </div>
 </div>
 <% end %>
