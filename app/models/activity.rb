@@ -1,10 +1,10 @@
 class Activity < ActiveRecord::Base
     
-    attr_accessible :name, :prior_knowledge, :rationale, :topic_id, :detailed_activities_attributes
+    attr_accessible :name, :number, :prior_knowledge, :rationale, :topic_id, :detailed_activities_attributes
       
     # Validations
     # =================================================================================
-    validates_presence_of :name, :rationale, :prior_knowledge
+    validates_presence_of :name, :rationale
     
     # no validations for format
     

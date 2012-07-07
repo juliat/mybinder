@@ -1,6 +1,5 @@
 Activity Name: Net force and equilibrium activity (Carts and Masses Activity)
-<p>
+
 Conditions of equilibrium and non-equilibrium are emphasized in this activity.  Net force and its relationship to acceleration are also investigated.  The students will see how the force due to gravity and friction interact by way of string in tension. A lab write up will be required as will individual web-based research. 
-</p><p>
+
 Problem solving, data collection and confirming theoretical calculations through experimentation are emphasized.
-</p>

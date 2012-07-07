@@ -17,9 +17,18 @@ def createMatchDataHash(match_data)
 	return data_hash
 end
 
-def parseEquationFile(file)
+def parseFile(file, modelType)
+	if modelType == "Activity"
+		file_abbreviation = "A"
+	elsif modelType == "Equation"
+		file_abbreviation = "Eq"
+	end
+
 	puts "Parsing file #{file}"
-	fileRegex = /U(?<unit_num>\d)_M(?<mod_num>\d)_Eq(?<eq_num>\d)(?<file_type>((\.gif)|(\.txt)))/
+	fileRegex = /U(?<unit_num>\d)_M(?<mod_num>\d)[\w_]{0,}(?<file_type>((\.gif)|(\.txt)|(\.doc)|(\.docx)|(\.ppt)|(\.pdf)))/
+
+	puts file
+
 	matchData = file.match(fileRegex)
 	if matchData.nil?
 		puts "NO MATCH: #{file}"
@@ -27,6 +36,7 @@ def parseEquationFile(file)
 		puts "MATCH: #{file}"
 		fileInfo = createMatchDataHash(matchData)
 	end
+	
 	return fileInfo
 end
 
@@ -43,7 +53,7 @@ def getUnitEquations(unit, modules)
 		eFileName = e # save filename
 		
 		# get hash of data about file 
-		e = parseEquationFile(e)
+		e = parseFile(e, "Equation")
 		# add the full filename to that hash, minus the extension
 		e['file'] = eFileName
 		
@@ -77,6 +87,100 @@ def getUnitEquations(unit, modules)
 	equations = equationsHash.map{|fileName, equationObject| equationObject}
 	
 	return equations
+end
+
+# takes a blurb of text about an activity
+# returns a hash including the activity name and rationale
+def parseActivityName(txt)
+	nameRegex = /Activity Name: (?<name>[\w \(\)-]{1,})[\s]/
+	match_data = txt.match(nameRegex)
+	if match_data.nil?
+		puts 'NO MATCH'
+		return
+	else
+		activityData = createMatchDataHash(match_data)
+	end
+	return activityData
+end
+
+def getUnitActivities(unit)
+	directory = "./public/data/physics_curriculum/unit_#{unit["unit_num"]}/activities/"
+
+	unitActivities = Dir.entries(directory).select{|entry| entry.length > 2}
+	
+	puts "Unit Activities:"
+	puts unitActivities
+	
+	activitiesHash = {}
+	unitActivities.each do |a|
+		aFileName = a # save filename
+		
+		# get hash of data about file 
+		a = parseFile(a, "Activity")
+		# add the full filename to that hash, minus the extension
+		a['file'] = aFileName
+		
+		puts "File: "
+		puts a
+		
+		# now use eFileName variable to store file name with no extension
+		unless a['file_type'] == ".docx"
+			fileExtensionLength = 4
+		else
+			fileExtensionLength = 5
+		end
+
+		# in this case, the filename is the first part : U#_M#_A#
+		aFileName = aFileName[0, 8]
+		puts aFileName
+		
+		# if the equationObjects array doesn't already contain an activity with the same filename (no extension)
+		unless activitiesHash.keys.include?(aFileName) 
+			# then create a new equation object that's got that as the filename 
+			activity = Activity.new()
+			# activity.topic_id
+			activity.number = a['a_num']
+		else
+			activity = activitiesHash[aFileName]
+		end
+		
+		# if the file's not a text file, then it's an associated doc (for a detailed activity (?))
+		if a['file_type'] == ".txt"
+			# fetch and read file text
+			file = File.new(directory + a['file'], 'r')
+			firstLine = file.gets()
+			aData = parseActivityName(firstLine)
+			# add data from file to activity object
+			if aData['name'].nil?
+				puts "UH OH"
+				return
+			end
+			activity.name = aData['name']
+
+			rationale = ""
+			# lines that aren't first line are rationale
+			file.each_line do |line|
+				unless line == firstLine
+					rationale << line
+				end
+			end
+
+			#add rationale to activity object
+			activity.rationale = rationale
+
+			puts "Activity:"
+			puts activity.name
+			puts activity.rationale
+	
+
+			# then save the updated activity to the activitiesHash
+			activitiesHash[aFileName] = activity
+		end
+	end
+	# map the activitiesHash into an array of activity objects
+	activities = activitiesHash.map{|fileName, activityObject| activityObject}
+	
+	return activities
 end
 
 
@@ -140,6 +244,13 @@ def saveData(data_hash)
 		end
 		
 		@mod.save!
+	end
+
+	# activities
+	activities = data_hash["activities"]
+	activities.each do |a|
+		puts a.name
+		a.save!
 	end
 	
 	# topics
@@ -217,8 +328,7 @@ def saveData(data_hash)
 		@textR.textbookable_id = @prob.id
 		@textR.textbookable_type = "ThresholdProblem"
 		@textR.save!
-	end
-	
+	end	
 end
    
 
@@ -498,7 +608,8 @@ Dir.foreach('./public/data/physics_curriculum/txt/') do |file|
 		end
 		
 		# now get all the equations for the unit
-		equations = getUnitEquations(unit, modules)
+		equations  = getUnitEquations(unit, modules)
+		activities = getUnitActivities(unit)
 
 		data_hash = { "unit" => unit,
 					  "modules" => modules,
@@ -509,7 +620,8 @@ Dir.foreach('./public/data/physics_curriculum/txt/') do |file|
 					  "key_terms" => key_terms,
 					  "misconceptions" => misconceptions,
 					  "threshold_problems" => threshold_problems,
-					  "equations" => equations
+					  "equations" => equations,
+					  "activities" => activities
 					}
 		saveData(data_hash)
 	end

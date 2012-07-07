@@ -1,7 +1,5 @@
 Activity Name: Types of forces activity
 
-<p>
 There are many forces that can act on an object.  The students should be exposed to as many forces as possible.  Use a hands-on activity that gives experience dealing with several of the following forces; weight, normal force, frictional force, tension force, compression thrust force, air drag, water drag, and so on.
-</p><p>
+
 Problem solving, data collection and confirming theoretical calculations through experimentation should be emphasized.  The following equipment could be utilized in developing this activity: carts, ticker tapes, photo gates, accelerometers, and so on.
-</p>

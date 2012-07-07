@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20120523190306) do
     t.text     "rationale"
     t.text     "prior_knowledge"
     t.integer  "topic_id"
+    t.integer  "number"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end

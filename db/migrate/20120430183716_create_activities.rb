@@ -5,6 +5,7 @@ class CreateActivities < ActiveRecord::Migration
       t.text :rationale
       t.text :prior_knowledge
       t.integer :topic_id
+      t.integer :number
 
       t.timestamps
     end

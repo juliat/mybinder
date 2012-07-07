@@ -1,8 +1,7 @@
 Activity Name: Circular motion with washers activity
 
-<p>In this activity students see how uniform circular motion is maintained (radius of 80 cm kept constant) using a variety of different weights.  The key here is that the tension is directed inward to the center of the circle.  Also as the tension increases so too does the number of revolutions per unit time.
-</p><p>
+In this activity students see how uniform circular motion is maintained (radius of 80 cm kept constant) using a variety of different weights.  The key here is that the tension is directed inward to the center of the circle.  Also as the tension increases so too does the number of revolutions per unit time.
+
 It is important to note that students analyze the steady state of uniform circular motion and often forget that as they begin to twirl the rubber stopper, it is not in uniform circular motion.  The initial motion provides an “initial velocity” for the steady state.
-</p><p>
+
 This activity can be performed with a variety of materials depending on what is available in each classroom.
-</p>
