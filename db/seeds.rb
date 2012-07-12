@@ -1,12 +1,7 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+# helper to turn match_data object returned by running regex match into a hash
 def createMatchDataHash(match_data)
 	data_names = match_data.names
 	data_values = match_data.captures
@@ -17,6 +12,8 @@ def createMatchDataHash(match_data)
 	return data_hash
 end
 
+# parses the name of a file
+# expects the file to either be an activity file or an equation file
 def parseFile(file, modelType)
 	if modelType == "Activity"
 		file_abbreviation = "A"
@@ -108,6 +105,7 @@ def getUnitActivities(unit)
 
 	unitActivities = Dir.entries(directory).select{|entry| entry.length > 2}
 	
+	# just printing so we know things are running
 	puts "Unit Activities:"
 	puts unitActivities
 	
@@ -144,17 +142,20 @@ def getUnitActivities(unit)
 			activity = activitiesHash[aFileName]
 		end
 		
-		# if the file's not a text file, then it's an associated doc (for a detailed activity (?))
+		# if the file's not a text file, then it's an associated document
 		if a['file_type'] == ".txt"
 			# fetch and read file text
 			file = File.new(directory + a['file'], 'r')
 			firstLine = file.gets()
 			aData = parseActivityName(firstLine)
+			
 			# add data from file to activity object
+			
 			if aData['name'].nil?
-				puts "UH OH"
+				puts "Activity must have name. Activity filename parsing seems to have failed."
 				return
 			end
+
 			activity.name = aData['name']
 
 			rationale = ""
@@ -192,8 +193,8 @@ def setDateYear(datestr, date)
 	end
 end
 
+# save all the objects we've been making into the app database
 def saveData(data_hash)
-	
 	# save unit
 	@unit = Unit.new
 	@unit.course_id = @course.id
@@ -358,9 +359,9 @@ def parseTextbookRef(line)
 	return createMatchDataHash(match_data)
 end
 
+# =====================================================================================================================
 # Done defining; now running things
 # =====================================================================================================================
-
 
 [User, Course, Unit, Mod, Topic, Goal, Misconception, ProblemType, ThresholdProblem, TextReference, Equation].each(&:delete_all)
 
