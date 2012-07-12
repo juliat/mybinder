@@ -8,8 +8,8 @@
 
 <% @activities.each do |activity| %>
   <tr>
-    <td><%= link_to activity.name, activity %></td>
-    <td><%= activity.topic_id %></td>
+    <td><%= link_to activity.name, edit_activity_path(activity) %></td>
+    <td><%= activity.topic.nil? ? link_to("Update Please", edit_activity_path(activity)) : activity.topic.name %></td>
   </tr>
 <% end %>
 </table>
