@@ -25,9 +25,10 @@ class DetailedActivitiesController < ApplicationController
   # GET /detailed_activities/new.json
   def new
     @detailed_activity = DetailedActivity.new
-
+    @detailed_activity.activity_id = params[:activity_id] unless params[:activity_id].nil?
+    
     respond_to do |format|
-      format.html { redirect_to url_for(@detailed_activity.activity) }
+      format.html # new.html.erb
       format.json { render json: @detailed_activity }
     end
   end

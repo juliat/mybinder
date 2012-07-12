@@ -1,11 +1,14 @@
+<h2>Detailed Versions of this Activity</h2>
+<p>These detailed versions include information about materials, student grouping, and
+other lesson logistics.
+</p>
+
 <ul id="detailed_activities">
 	<% for activity in @activity.detailed_activities %>
 		<%= render :partial => 'detailed_activities/detailed_activity', :locals => {:detailed_activity => activity} %>
 	<% end %>
 </ul>
 
-<% @detailed_activity = DetailedActivity.new() %>
-<% if can? :create, @detailed_activity %>
-	<%= render :partial => "detailed_activities/contribute_activity", 
-	:locals => {:detailed_activity => @detailed_activity, :activity_id => activity_id} %>
+<% if can? :create, DetailedActivity %>
+	<%= link_to "Contribute Your Version of this Activity!", new_detailed_activity_path(:activity_id => @activity.id ), :class => 'btn btn-primary' %>
 <% end %>

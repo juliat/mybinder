@@ -23,10 +23,9 @@
     <%= @activity.prior_knowledge %>
 </div>
 
-<h3>Detailed Versions of this Activity</h3>
 <%= render :partial => 'detailed_activities', :locals => {:activity_id => @activity.id} %>
 
-<% if can? :update, @activity %>
-    <%= link_to 'Edit', edit_activity_path(@activity) %> |
-<% end %>
-<%= link_to 'Back', topic_path(@activity.topic) %>
+<%# if can? :update, @activity %>
+    <%# link_to 'Edit', edit_activity_path(@activity) %> 
+<%# end %>
+<%# link_to 'Back', topic_path(@activity.topic) %>
