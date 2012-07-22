@@ -5,6 +5,7 @@ class Activity < ActiveRecord::Base
     # Validations
     # =================================================================================
     validates_presence_of :name, :rationale
+    # topic should be required
     
     # no validations for format
     
@@ -18,4 +19,9 @@ class Activity < ActiveRecord::Base
     has_many :online_resources, :as => :resourceable
     accepts_nested_attributes_for :online_resources, :allow_destroy => true
   
+    # Methods
+    # =================================================================================
+    def unit
+        return self.topic.module.unit
+    end
 end
