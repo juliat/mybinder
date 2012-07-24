@@ -393,6 +393,14 @@ for type in prob_types
 	@type.save!
 end
 
+# goal types
+goal_types = ["Knowledge", "Skill"]
+for type in goal_types 
+	@type = GoalType.new()
+	@type.name = type
+	@type.save!
+end
+
 Dir.foreach('./public/data/physics_curriculum/txt/') do |file|
 	puts file
 	if file.match(/physics_unit_\d.txt$/)
