@@ -13,7 +13,15 @@
     <% @goals.each do |goal| %>
       <tr>
         <td><%= goal.statement %></td>
-        <td><%= goal.goal_type.nil? ? "" : goal.goal_type.name	 %></td>
+        <% if goal.goal_type.nil? %>
+			<td id= "goal<%= goal.id %>_type">
+				<% for type in @goalTypes %>
+					<%= link_to type.name, edit_goal_path(goal, :from => 'index', :type => "#{type.id}"), :remote => true %>
+				<% end %>
+			</td>
+		<% else %>
+			<td id= "goal<%= goal.id %>_type"><%= goal.goal_type.name %></td>
+        <% end %>
         <td><%= goal.topic.name %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

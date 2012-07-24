@@ -2,7 +2,8 @@ class GoalsController < ApplicationController
   # GET /goals
   # GET /goals.json
   def index
-    @goals = Goal.all
+    @goals = Goal.order('id')
+    @goalTypes = GoalType.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -35,6 +36,13 @@ class GoalsController < ApplicationController
   # GET /goals/1/edit
   def edit
     @goal = Goal.find(params[:id])
+    # in case this is a quick complete...
+    if !params[:type].nil? #&& GoalType.all.map{|g| g.id}.include?(params[:type])
+      @goal.goal_type_id = params[:type]
+	  @goal.save!
+      flash[:notice] = "Goal type has been changed."
+      redirect_to goals_path
+    end
   end
 
   # POST /goals

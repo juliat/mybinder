@@ -62,7 +62,6 @@ class OnlineResourcesController < ApplicationController
     respond_to do |format|
       if @online_resource.update_attributes(params[:online_resource])
         format.html { head :no_content }
-        format js # updated
       else
         format.html { head :no_content }
         format.json { render json: @online_resource.errors, status: :unprocessable_entity }
