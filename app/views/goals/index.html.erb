@@ -3,22 +3,18 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:statement) %></th>
       <th><%= model_class.human_attribute_name(:goal_type_id) %></th>
       <th><%= model_class.human_attribute_name(:topic_id) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @goals.each do |goal| %>
       <tr>
-        <td><%= link_to goal.id, goal_path(goal) %></td>
         <td><%= goal.statement %></td>
-        <td><%= goal.goal_type_id %></td>
-        <td><%= goal.topic_id %></td>
-        <td><%=l goal.created_at %></td>
+        <td><%= goal.goal_type.nil? ? "" : goal.goal_type.name	 %></td>
+        <td><%= goal.topic.name %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_goal_path(goal), :class => 'btn btn-mini' %>
