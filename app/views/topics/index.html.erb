@@ -2,21 +2,19 @@
 <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 <table class="table table-striped">
   <thead>
-    <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:mod_id) %></th>
+    <tr>      
       <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th>Unit</th>
+      <th>Module</th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @topics.each do |topic| %>
       <tr>
-        <td><%= link_to topic.id, topic_path(topic) %></td>
-        <td><%= topic.mod_id %></td>
         <td><%= topic.name %></td>
-        <td><%=l topic.created_at %></td>
+		<td><%= topic.unit.name %></td>
+        <td><%= topic.mod.number %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_topic_path(topic), :class => 'btn btn-mini' %>

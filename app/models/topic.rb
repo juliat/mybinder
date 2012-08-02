@@ -20,4 +20,9 @@ class Topic < ActiveRecord::Base
     scope :for_mod, lambda {|mod_id| where("mod_id = ?", mod_id) }
     scope :in_order, order("number")
     
+    # Methods
+    # ============================================================================== 
+    def unit
+		return self.mod.unit
+	end
 end
