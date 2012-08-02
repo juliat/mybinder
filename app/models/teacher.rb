@@ -4,5 +4,7 @@ class Teacher < ActiveRecord::Base
   # Relationships
   # =================================================================================
   belongs_to :user
-
+  has_many :course_classes
+  has_many :courses, :through => :course_classes
+  
 end
