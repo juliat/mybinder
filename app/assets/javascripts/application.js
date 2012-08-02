@@ -15,6 +15,7 @@
 //= require jquery-ui
 //= require jquery_nested_form
 //= require twitter/bootstrap
+//= require on_the_spot
 //= require_tree .
 
 $(document).ready(function() {

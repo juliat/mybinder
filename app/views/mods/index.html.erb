@@ -1,22 +1,22 @@
 <%- model_class = Mod.new.class -%>
-<h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+<h1>Modules</h1>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+	  <th>Unit</th>
+	  <th>Number</th>
       <th><%= model_class.human_attribute_name(:days) %></th>
-      <th><%= model_class.human_attribute_name(:unit_id) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th>Topics</th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @mods.each do |mod| %>
       <tr>
-        <td><%= link_to mod.id, mod_path(mod) %></td>
+		<td><%= mod.unit.name %></td>
+        <td><%= mod.number %></td>
         <td><%= mod.days %></td>
-        <td><%= mod.unit_id %></td>
-        <td><%=l mod.created_at %></td>
+        <td><%= mod.topics.map{|topic| topic.name}.join(", ") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_mod_path(mod), :class => 'btn btn-mini' %>

@@ -1,4 +1,7 @@
 class GoalsController < ApplicationController
+
+  can_edit_on_the_spot
+
   # GET /goals
   # GET /goals.json
   def index
