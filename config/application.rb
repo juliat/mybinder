@@ -58,6 +58,14 @@ module Mybinder
     
     # forcing app to not access the DB or load models when precompiling your assets
     config.assets.initialize_on_precompile = false
+    
+    # Configure generators values. Many other options are available, be sure to check the documentation.
+	config.generators do |g|
+	  g.stylesheets false
+	  g.test_framework :shoulda
+	  g.fallbacks[:shoulda] = :test_unit 
+	  g.fixture_replacement :factory_girl
+	end
 
   end
 end
