@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Goal:</b>
+  <%= @goal_progress.goal_id %>
+</p>
+
+<p>
+  <b>Course class:</b>
+  <%= @goal_progress.course_class_id %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @goal_progress.completed %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @goal_progress.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_goal_progress_path(@goal_progress) %> |
+<%= link_to 'Back', goal_progresses_path %>

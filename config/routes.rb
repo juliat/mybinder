@@ -1,5 +1,7 @@
 Mybinder::Application.routes.draw do
   
+  resources :goal_progresses
+
   resources :course_classes
 
   resources :tests
