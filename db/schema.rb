@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120523190306) do
+ActiveRecord::Schema.define(:version => 20120802053301) do
 
   create_table "activities", :force => true do |t|
     t.string   "name"
@@ -25,6 +25,16 @@ ActiveRecord::Schema.define(:version => 20120523190306) do
 
   create_table "author_orgs", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "course_classes", :force => true do |t|
+    t.integer  "teacher_id"
+    t.integer  "course_id"
+    t.string   "name"
+    t.date     "start_date"
+    t.date     "end_date"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -64,6 +74,15 @@ ActiveRecord::Schema.define(:version => 20120523190306) do
     t.integer  "number"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+  end
+
+  create_table "goal_progresses", :force => true do |t|
+    t.integer  "goal_id"
+    t.integer  "course_class_id"
+    t.boolean  "completed"
+    t.text     "notes"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "goal_types", :force => true do |t|
@@ -147,6 +166,7 @@ ActiveRecord::Schema.define(:version => 20120523190306) do
   end
 
   create_table "teachers", :force => true do |t|
+    t.integer  "user_id"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "school"

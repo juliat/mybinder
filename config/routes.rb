@@ -1,12 +1,12 @@
 Mybinder::Application.routes.draw do
   
-  resources :goal_progresses
+	resources :goal_progresses
 
-  resources :course_classes
+	resources :course_classes
 
-  resources :tests
+	resources :tests
 
-    devise_for :users
+	devise_for :users
 
     resources :courses
     resources :units
@@ -15,6 +15,7 @@ Mybinder::Application.routes.draw do
     resources :detailed_activities
     resources :equations
     resources :online_resources
+    resources :teachers
   
     # allow for use of on_the_spot with routes
     resources :topics do

@@ -1,29 +1,19 @@
-<%= form_for(@course_class) do |f| %>
-  <% if @course_class.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@course_class.errors.count, "error") %> prohibited this course_class from being saved:</h2>
-
-      <ul>
-      <% @course_class.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :teacher_id %><br />
-    <%= f.number_field :teacher_id %>
-  </div>
-  <div class="field">
-    <%= f.label :course_id %><br />
-    <%= f.number_field :course_id %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+<%= simple_form_for @course_class, :html => { :class => 'form-horizontal' } do |f| %>
+	<%= f.input :teacher_id, :as => :hidden, :input_html => { :value => "#{current_user.id}" }%>
+	<%= f.association :course %>
+	<%= f.input :name %>
+	<%= f.input :start_date, :label => "Start Date", :as => :date, :start_year => Date.today.year - 1,
+						  :end_year => Date.today.year + 1,
+						  :order => [:month, :day, :year],
+						  :input_html => { :class => 'span2' } %>
+						  
+	<%= f.input :end_date, :label => "End Date", :as => :date, :start_year => Date.today.year - 1,
+					  :end_year => Date.today.year + 1,
+					  :order => [:month, :day, :year],
+					  :input_html => { :class => 'span2' } %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                topics_path, :class => 'btn' %>
   </div>
 <% end %>
