@@ -1,5 +1,5 @@
-<% unless @teacher.user.id == current_user.id %>
-	<%= render :partial => "teacher_info" %>
+<% if @teacher.user.id == current_user.id %>
+	<%= render :partial => "teacher_dashboard" %>
 <% else %>
 	<%= render :partial => "teacher_profile" %>
 <% end %>

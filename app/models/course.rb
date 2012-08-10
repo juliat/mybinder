@@ -6,6 +6,7 @@ class Course < ActiveRecord::Base
     validates_presence_of :name, :description
 
     # Relationships
+    # =================================================================================
     has_many :units
     has_many :mods, :through => :units
     has_many :topics, :through => :mods
@@ -13,4 +14,7 @@ class Course < ActiveRecord::Base
     has_many :online_resources, :as => :resourceable
     has_many :course_classes
     has_many :teachers, :through => :course_classes
+    
+    # Methods
+    # =================================================================================
 end

@@ -1,0 +1,51 @@
+<h1>Your Dashboard</h1>
+<div class="dash-course row">
+	<h2>[Course Name]</h2>
+	
+	<div id="course-place" class="section span4">
+		<h3>Currently, this course is on</h3>
+		<table>
+			<tr>
+				<th>Unit</th>
+				<td>[unit]</td>
+			</tr>
+			<tr>
+				<th>Module</th>
+				<td>[module]</td>
+			</tr>
+			<tr>
+				<th>Topic</th>
+				<td>[topic]</td>
+			</tr>
+		</table>
+		<p>The last topic was [last topic link].</p>
+		<p>The next topic is [next topic link]</p>
+	</div>
+	
+	<div id="current-activities" class="section span4">
+		<h3>Current Activities</h3>
+		<div class="activity-preview">
+			<h4>[Activity Name]</h4>
+			<div class="detailed-activities">
+				<div class="contributed-da">
+					<p>[teacher name] contributed a version of this activity.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="current-goals" class="section span4">
+		<h3>Current Goals</h3>
+		<div class="current-goal-type">
+			<h4>[Goal Type]</h4>
+			<ul>
+				<li>[goal]</li>
+			</ul>
+		</div>
+		<div class="mark-class-progress">
+			<h4>Mark your classes' progress on these goals:</h4>
+			<a href=<%= new_course_class_path %>>Add a new class</a>
+		</div>
+	</div>
+	
+</div>

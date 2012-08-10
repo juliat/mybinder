@@ -1,2 +1,12 @@
-<h1>Your Information</h1>
+<h1>Information about this Teacher</h1>
+<table>
+	<tr>
+		<th>Name</th>
+		<td><%= "#{@teacher.first_name} #{@teacher.last_name}" %></td>
+	</tr>
+	<tr>
+		<th>School</th>
+		<td><%= @teacher.school %></td>
+	</tr>
+</table>
 

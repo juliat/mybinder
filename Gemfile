@@ -23,6 +23,7 @@ gem 'carrierwave', '>= 0.5.3'
 group :development do
     gem 'hirb'
 	gem "rails-erd"
+	gem "awesome_print"
 end
 
 # Gems used only in testing

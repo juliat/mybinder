@@ -40,9 +40,7 @@ class Unit < ActiveRecord::Base
     scope :for_course, lambda {|course_id| where("course_id = ?", course_id) }
     scope :in_sequence, order("number")
     
-    
-    
     # Methods
     # ==================================================================================
-   
+    
 end

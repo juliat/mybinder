@@ -2,7 +2,8 @@ class GoalProgressesController < ApplicationController
   # GET /goal_progresses
   # GET /goal_progresses.json
   def index
-    @goal_progresses = GoalProgress.all
+    @goal_progresses = GoalProgress.find(:all, :include => [:goal])
+    @goal_progresses = GoalProgress.sorted(@goal_progresses)
 
     respond_to do |format|
       format.html # index.html.erb

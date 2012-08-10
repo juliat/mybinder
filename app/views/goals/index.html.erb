@@ -1,39 +1,38 @@
-<%- model_class = Goal.new.class -%>
-<h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th><%= model_class.human_attribute_name(:statement) %></th>
-      <th><%= model_class.human_attribute_name(:goal_type_id) %></th>
-      <th><%= model_class.human_attribute_name(:topic_id) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @goals.each do |goal| %>
-      <tr>
-        <td><%= goal.statement %></td>
-       
-		<td id= "goal<%= goal.id %>_type"> 
-			<% data = GoalType.all.map{|goal_type| [goal_type.id, goal_type.name]} %>
-			<% goal_type_text = goal.goal_type.nil? ? "Click to edit." : goal.goal_type.name  %>
-			<%= on_the_spot_edit goal, :goal_type_id, :type => :select, :data => data, :display_text => goal_type_text %>
-		</td>
+<h1>All Goals for this Course</h1>
+<% @goals.each do |unit, mods_hash| %>
+	<h2><%= unit.name %></h2>
+	<% mods_hash.each do |mod, topics_hash| %>
+		<h3><%= mod.name %></h3>
+		<% topics_hash.each do |topic, goals_list| %>
+			<h4><%= topic.name %></h4>
+			<table class="table table-striped">
+				<tbody>
+			<% goals_list.each do |goal| %>
+				<tr>
+					<td><%= goal.statement %></td>
+				   
+					<td id= "goal<%= goal.id %>_type"> 
+						<% data = GoalType.all.map{|goal_type| [goal_type.id, goal_type.name]} %>
+						<% goal_type_text = goal.goal_type.nil? ? "Click to edit goal type." : goal.goal_type.name  %>
+						<%= on_the_spot_edit goal, :goal_type_id, :type => :select, :data => data, :display_text => goal_type_text %>
+					</td>
 
-        <td><%= goal.topic.name %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_goal_path(goal), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      goal_path(goal),
-                      :method => :delete,
-                      :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+					<td>
+					  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+								  edit_goal_path(goal), :class => 'btn btn-mini' %>
+					  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+								  goal_path(goal),
+								  :method => :delete,
+								  :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+								  :class => 'btn btn-mini btn-danger' %>
+					</td>
+				  </tr>
+			<% end %>
+				</tbody>
+			</table>
+		<% end %>
+	<% end %>
+<% end %>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_goal_path,
