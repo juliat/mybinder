@@ -1,10 +1,4 @@
 Mybinder::Application.routes.draw do
-  
-	resources :goal_progresses
-
-	resources :course_classes
-
-	resources :tests
 
 	devise_for :users
 
@@ -16,6 +10,9 @@ Mybinder::Application.routes.draw do
     resources :equations
     resources :online_resources
     resources :teachers
+	resources :goal_progresses
+	resources :course_classes
+	resources :tests
   
     # allow for use of on_the_spot with routes
     resources :topics do
@@ -30,7 +27,12 @@ Mybinder::Application.routes.draw do
         get :get_attribute_on_the_spot
       end
     end
-  
+    resources :goal_progresses do
+	  collection do
+        put :update_attribute_on_the_spot
+        get :get_attribute_on_the_spot
+      end
+    end  
   
     root :to => 'courses#index'
 

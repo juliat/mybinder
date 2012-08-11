@@ -1,4 +1,8 @@
 class GoalProgressesController < ApplicationController
+
+  # load_and_authorize_resource, :except => [:update_attribute_on_the_spot]
+  can_edit_on_the_spot
+
   # GET /goal_progresses
   # GET /goal_progresses.json
   def index

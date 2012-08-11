@@ -20,7 +20,7 @@ class Ability
     elsif
         user.role == "teacher"
         can :read, [Course, Unit, Topic, Mod, OnlineResource]
-        can [:read, :create, :update], DetailedActivity
+        can [:read, :create, :update], [DetailedActivity, CourseClass, GoalProgress]
         
         can [:show, :update, :destroy], User do |a_user|
             user.id == a_user.id

@@ -22,9 +22,9 @@
 						<tbody>
 							<% goal.goal_progresses.each do |goal_progress| %>
 							<tr>
-								<td><%= goal_progress.completed %></td>
+								<td><%= on_the_spot_edit(goal_progress, :completed, :type => :select, :data => [[1, 'true'], [2, 'false']]) %></td>
 								<td><%= goal_progress.course_class.name %></td>
-								<td><%= goal_progress.notes %></td>
+								<td><%= on_the_spot_edit(goal_progress, :notes, :type => :textarea) %></td>
 							</tr>
 							<% end %>
 						</tbody>
