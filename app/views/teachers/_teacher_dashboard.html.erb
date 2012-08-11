@@ -44,6 +44,11 @@
 		</div>
 		<div class="mark-class-progress">
 			<h4>Mark your classes' progress on these goals:</h4>
+			<ul class="course_classes">
+			<% for course in @course_classes %>
+				<li><%= course.name %></li>
+			<% end %>
+			</ul>
 			<a href=<%= new_course_class_path %>>Add a new class</a>
 		</div>
 	</div>

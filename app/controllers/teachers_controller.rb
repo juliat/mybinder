@@ -14,6 +14,7 @@ class TeachersController < ApplicationController
   # GET /teachers/1.json
   def show
     @teacher = Teacher.find(params[:id])
+    @course_classes = CourseClass.for_teacher(@teacher.user_id)
 
     respond_to do |format|
       format.html # show.html.erb

@@ -10,6 +10,9 @@ class CourseClass < ActiveRecord::Base
   belongs_to :course
   belongs_to :teacher
   
+  # Scopes
+  # =================================================================================
+  scope :for_teacher, lambda {|teacher_id| where("teacher_id = ?", teacher_id)}
   
   # Callbacks
   # =================================================================================

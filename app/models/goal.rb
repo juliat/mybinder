@@ -17,8 +17,10 @@ class Goal < ActiveRecord::Base
 
     # Scopes
     # =================================================================================
+    scope :for_unit, lambda{|unit_id| joins(:topic => :mod).where("unit_id = ?", unit_id) }
+    scope :for_mod, lambda{|mod_id| joins(:topic => :mod).where("mod_id = ?", mod_id) }
     scope :for_topic, lambda {|topic_id| where("topic_id = ?", topic_id) }
-    scope :in_sequential_order, order("number")
+    scope :in_sequential_order, joins(:topic => [{:mod => :unit}]).order("units.number, mods.number, topics.number, goals.number")
     
     # Methods
     # =================================================================================
@@ -37,6 +39,21 @@ class Goal < ActiveRecord::Base
 		self.topic.mod.unit.course
 	end
 	
+	# absolute number -- the number of the goal in the course overall
+	def absolute_number
+		# the absolute number of the goal in the course overall is the number of the goal
+		# plus the number of goals in all preceding units
+		units_before  = self.unit.number - 1
+		preceding_goals_count = 0
+		units_before.times do |unit|
+			unless unit == 0
+				unit = Unit.find_by_number(unit)
+				preceding_goals_count = preceding_goals_count + unit.goals.count
+			end
+		end
+		return self.number + preceding_goals_count
+	end		
+	
 	
     # class method to get all goals hierarchically sorted
     # takes a list of goals
@@ -51,6 +68,11 @@ class Goal < ActiveRecord::Base
 			goals_sorted_by_mod.each do |mod, goals|
 				# get a hash of the goals sorted by topic
 				goals_sorted_by_topic = goals.classify{|goal| goal.topic}
+				
+				# sort each topic's goals list numerically
+				goals_sorted_by_topic.each do |topic, goals_list|
+					goals_list = goals_list.sort_by{|goal| goal.absolute_number}
+				end
 				
 				# store that hash in the place of the goals in the goals_sorted_by_mod hash
 				goals_sorted_by_mod[mod] = goals_sorted_by_topic

@@ -5,7 +5,7 @@ class GoalsController < ApplicationController
   # GET /goals
   # GET /goals.json
   def index
-    @goals = Goal.all
+    @goals = Goal.in_sequential_order
     @goals = Goal.sorted(@goals)
     @goalTypes = GoalType.all
 

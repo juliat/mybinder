@@ -10,9 +10,12 @@ class GoalProgress < ActiveRecord::Base
 	# Scope
 	# =================================================================================
 	scope :for_course_class, lambda {|course_class_id| where("course_class_id = ?", course_class_id) }
+	scope :for_teacher, lambda {|teacher_id| joins(:teacher).where("teacher_id =", teacher_id) }
+
 	
 	# Methods
     # =================================================================================
+
     # class method to get all goal progresses hierarchically sorted
     # takes a list of goal_progresses
     def self.sorted(goal_progresses)
