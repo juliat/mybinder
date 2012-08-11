@@ -3,7 +3,7 @@ class CreateGoalProgresses < ActiveRecord::Migration
     create_table :goal_progresses do |t|
       t.integer :goal_id
       t.integer :course_class_id
-      t.boolean :completed
+      t.boolean :completed, :default => true
       t.text :notes
 
       t.timestamps

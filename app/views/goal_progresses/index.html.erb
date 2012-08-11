@@ -1,18 +1,38 @@
 <h1>Your Classes' Progress</h1>
 
+<ol>
 <% @goals.each do |unit, mods_hash| %>
-	<h2><%= unit.name %></h2>
+	<h2>Unit <%= unit.number %>: <%= unit.name %></h2>
 	<% mods_hash.each do |mod, topics_hash| %>
 		<h3><%= mod.name %></h3>
 		<% topics_hash.each do |topic, goals_list| %>
 			<h4><%= topic.name %></h4>
-			<ol>
 			<% goals_list.each do |goal| %>
 				<li class="goal-statement" id="goal-statement-<%= goal.id %>">
-					<%= goal.number %>. <%= goal.statement %>
+					<%= goal.statement %>
+
+					<table class="classes-goal-progress">
+						<thead>
+							<tr>
+								<th>Achieved</th>
+								<th>Class</th>
+								<th>Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% goal.goal_progresses.each do |goal_progress| %>
+							<tr>
+								<td><%= goal_progress.completed %></td>
+								<td><%= goal_progress.course_class.name %></td>
+								<td><%= goal_progress.notes %></td>
+							</tr>
+							<% end %>
+						</tbody>
+					</table>
+
 				</li>
 			<% end %>
-			</ol>
 		<% end %>
 	<% end %>
 <% end %>
+</ol>

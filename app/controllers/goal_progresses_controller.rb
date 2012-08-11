@@ -2,7 +2,7 @@ class GoalProgressesController < ApplicationController
   # GET /goal_progresses
   # GET /goal_progresses.json
   def index
-    @goals = Goal.find(:all, :include => [:goal_progresses])
+    @goals = Goal.in_sequential_order.includes([:goal_progresses])
     @goals = Goal.sorted(@goals)
 
     respond_to do |format|

@@ -17,8 +17,6 @@ class Goal < ActiveRecord::Base
 
     # Scopes
     # =================================================================================
-    scope :for_unit, lambda{|unit_id| joins(:topic => :mod).where("unit_id = ?", unit_id) }
-    scope :for_mod, lambda{|mod_id| joins(:topic => :mod).where("mod_id = ?", mod_id) }
     scope :for_topic, lambda {|topic_id| where("topic_id = ?", topic_id) }
     scope :in_sequential_order, joins(:topic => [{:mod => :unit}]).order("units.number, mods.number, topics.number, goals.number")
     
@@ -45,11 +43,9 @@ class Goal < ActiveRecord::Base
 		# plus the number of goals in all preceding units
 		units_before  = self.unit.number - 1
 		preceding_goals_count = 0
-		units_before.times do |unit|
-			unless unit == 0
-				unit = Unit.find_by_number(unit)
-				preceding_goals_count = preceding_goals_count + unit.goals.count
-			end
+		for unit in 1..units_before
+			unit = Unit.find_by_number(unit)
+			preceding_goals_count = preceding_goals_count + unit.goals.count
 		end
 		return self.number + preceding_goals_count
 	end		
