@@ -16,5 +16,6 @@
 	</div>
 <% else %>
 	<%= link_to "Contribute a Resource", "#new_online_resource_form", :rel => "", :class => "btn btn-primary disabled" %>
-	<p>Please login or register to contribute a resource.</p>
+	<p>Please <%= link_to("login", new_user_session_path) %> or 
+	<%= link_to("register", new_user_registration_path) %> to contribute a resource.</p>
 <% end %>
