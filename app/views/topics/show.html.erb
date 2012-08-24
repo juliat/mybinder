@@ -12,18 +12,15 @@
 
 <h1><%= @topic.name %></h1>
 <h2>Goals</h2>
-<ol>
+
 <% unless @topic.goals.empty? %>
-    <% for goal in @topic.goals.in_order %>
-        <%# if current_user.role == "admin" %>
-<!--
-            <li><%= on_the_spot_edit goal, :statement %></li>
--->
-        <%# else %>
-            <li><%= goal.statement %></li>
-        <%# end %>
-    <% end %>
-</ol>
+    <% goals_list = @topic.goals.in_sequential_order %>
+	<% if can? :edit, goals_list.first %>
+		<%= render :partial => "goals/editable_table_list", :locals => {:goals_list => goals_list} %>
+	<% else %>
+		<%= render :partial => "goals/numbered_goals_list", :locals => {:goals_list => goals_list} %>
+	<% end %>
+
 <% else %>
     <p>There aren't any goals for this topic.</p>
 <% end %>

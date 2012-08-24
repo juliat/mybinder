@@ -5,26 +5,7 @@
 		<h3><%= mod.name %></h3>
 		<% topics_hash.each do |topic, goals_list| %>
 			<h4><%= topic.name %></h4>
-			<table class="table table-striped">
-				<tbody>
-			<% goals_list.each do |goal| %>
-				<tr>
-					<td><%= goal.absolute_number %>. <%= goal.statement %></td>
-				   
-					<td id= "goal<%= goal.id %>_type"> 
-						<% data = GoalType.all.map{|goal_type| [goal_type.id, goal_type.name]} %>
-						<% goal_type_text = goal.goal_type.nil? ? "Click to edit goal type." : goal.goal_type.name  %>
-						<%= on_the_spot_edit goal, :goal_type_id, :type => :select, :data => data, :display_text => goal_type_text %>
-					</td>
-
-					<td>
-					  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-								  edit_goal_path(goal), :class => 'btn btn-mini' %>
-					</td>
-				  </tr>
-			<% end %>
-				</tbody>
-			</table>
+			<%= render :partial => "editable_table_list", :locals => {:goals_list => goals_list} %>
 		<% end %>
 	<% end %>
 <% end %>
