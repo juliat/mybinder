@@ -1,5 +1,5 @@
 <ol>
 <% for goal in goals_list %>
-	<li><%= goal.statement %></li>
+	<li class="<%= goal.goal_type.nil? ? "" : goal.goal_type.name.downcase %>"><%= goal.statement %></li>
 <% end %>
 </ol>
