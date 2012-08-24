@@ -12,7 +12,9 @@
 </ul>  
 
 <h1>Activity: <%= @activity.name %></h1>
-
+<% if can? :update, @activity %>
+    <%= link_to 'Edit this Activity', edit_activity_path(@activity), :class => 'btn' %> 
+<% end %>
 <div class="rationale">
     <h2>Rationale</h2>
     <%= @activity.rationale %>
@@ -26,10 +28,6 @@
 <% end %>
 
 <%= render :partial => 'detailed_activities', :locals => {:activity_id => @activity.id} %>
-
-<% if can? :update, @activity %>
-    <%= link_to 'Edit', edit_activity_path(@activity) %> 
-<% end %>
 
 <!-- there should be a standard back link format -->
 <%# link_to 'Back', topic_path(@activity.topic) %>

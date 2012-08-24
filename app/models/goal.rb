@@ -13,6 +13,8 @@ class Goal < ActiveRecord::Base
     has_many :standard_goal_mappings
     has_many :standards, :through => :standard_goal_mappings
     has_many :goal_progresses
+    has_many :activity_goals
+    has_many :activities, :through => :activity_goals
     # has a type id
 
     # Scopes
