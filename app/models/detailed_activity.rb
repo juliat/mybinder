@@ -11,4 +11,10 @@ class DetailedActivity < ActiveRecord::Base
     # Scopes
     # =================================================================================
     scope :for_user, lambda{|user_id| where("user_id = ?", user_id)}
+    
+    # Methods
+    # =================================================================================
+    def creator
+		self.user.email
+	end
 end

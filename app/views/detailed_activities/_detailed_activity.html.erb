@@ -1,5 +1,5 @@
 <li class="well">
-	<h5><%= detailed_activity.name %></h5>
+	<h5><%= detailed_activity.name %>, by <%= detailed_activity.creator %></h5>
 	<p><%= detailed_activity.description %></p>
 	<% unless detailed_activity.documents.empty? %>
 	<h6>Activity Documents</h6>
