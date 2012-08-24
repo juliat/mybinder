@@ -2,3 +2,9 @@
 <%= f.input :name %>
 <%= f.input :rationale %>
 <%= f.input :prior_knowledge %>
+<%= f.association :activity_goals, 
+	:collection => Goal.for_topic(@activity.topic).in_sequential_order, 
+	:label_method => lambda{|goal| goal.statement}, 
+	:as => :check_boxes 
+%>
+

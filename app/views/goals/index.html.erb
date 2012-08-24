@@ -2,9 +2,8 @@
 <% @goals.each do |unit, mods_hash| %>
 	<h2>Unit <%= unit.number %>: <%= unit.name %></h2>
 	<% mods_hash.each do |mod, topics_hash| %>
-		<h3><%= mod.name %></h3>
 		<% topics_hash.each do |topic, goals_list| %>
-			<h4><%= topic.name %></h4>
+			<h3><%= mod.name %> / <%= topic.name %></h3>
 			<%= render :partial => "editable_table_list", :locals => {:goals_list => goals_list} %>
 		<% end %>
 	<% end %>
