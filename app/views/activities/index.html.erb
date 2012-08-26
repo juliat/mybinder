@@ -4,12 +4,14 @@
   <tr>
     <th>Name</th>
     <th>Topic</th>
+    <th>Official Detailed Version</th>
   </tr>
 
 <% @activities.each do |activity| %>
   <tr>
     <td><%= link_to activity.name, edit_activity_path(activity) %></td>
     <td><%= activity.topic.nil? ? link_to("Update Please", edit_activity_path(activity)) : activity.topic.name %></td>
+    <td>Add, edit, blah, with detailed activities.</td>
   </tr>
 <% end %>
 </table>
