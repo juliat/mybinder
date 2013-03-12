@@ -86,10 +86,10 @@ ActiveRecord::Schema.define(:version => 20120824065437) do
   create_table "goal_progresses", :force => true do |t|
     t.integer  "goal_id"
     t.integer  "course_class_id"
-    t.boolean  "completed",       :default => true
+    t.boolean  "completed",       :default => false
     t.text     "notes"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
   end
 
   create_table "goal_types", :force => true do |t|
